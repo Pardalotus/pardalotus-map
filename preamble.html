@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            body {
+                font-family: "Work Sans", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: <weight>;
+                font-style: normal;
+            }
+
+            .bar {
+                fill: steelblue;
+            }
+
+            .bar:hover {
+                fill: orange;
+            }
+
+            blockquote {
+                background: #eef;
+
+                padding: 0.2em 1em 0.2em 1em;
+            }
+
+            blockquote p {
+                padding: 0.2em 1em 0.2em 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="width: 50%; float: left">
+            <h1>Pardalotus Scholarly Publishing Technology Map</h1>
+            <p>
+                Here is a list of concepts and organizations that may be useful
+                to developers or techies in scholarly publishing, especially
+                early-career. It's not (yet) complete, authoritative, or
+                objective! Just things I've come across whilst working in
+                scholarly publishing.
+            </p>
+
+            <p>
+                This file is available in <a href="file.ttl">Turtle</a> format
+                if you prefer. Yes, it's an <a href="#Ontology">ontology</a> but
+                not on purpose.
+            </p>
+            <p>
+                It is maintained by <a href="https://afandian.com">Joe Wass</a>,
+                and licensed
+                <a href="https://creativecommons.org/licenses/by-nc/4.0/"
+                    >CC BY-NC 4.0</a
+                >. All contributions welcome, please submit a merge request!
+            </p>
+            <p>
+                To get started,
+                <strong
+                    >jump to <a href="#Intro">Introductory Topics</a></strong
+                >
+            </p>
+            <!-- content -->
+        </div>
+        <div id="panel" style="width: 50%; height: 100%; float: right">
+            <div id="container" style="position: fixed; height: 100%"></div>
+        </div>
+    </body>
+    <script type="module">
+        import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+
+        const graph = "<!-- data -->";
+
+        const width = window.innerWidth / 2;
+        const height = window.innerHeight;
+        const types = Array.from(new Set(graph.map((d) => d.type)));
+        const nodes = Array.from(
+            new Set(graph.flatMap((l) => [l.source, l.target])),
+            (id) => ({ id }),
+        );
+
+        const links = graph.map((d) => Object.create(d));
+
+        const drag = (simulation) => {
+            function dragstarted(event, d) {
+                if (!event.active) simulation.alphaTarget(0.3).restart();
+                d.fx = d.x;
+                d.fy = d.y;
+            }
+
+            function dragged(event, d) {
+                d.fx = event.x;
+                d.fy = event.y;
+            }
+
+            function dragended(event, d) {
+                if (!event.active) simulation.alphaTarget(0);
+                d.fx = null;
+                d.fy = null;
+            }
+
+            return d3
+                .drag()
+                .on("start", dragstarted)
+                .on("drag", dragged)
+                .on("end", dragended);
+        };
+
+        const simulation = d3
+            .forceSimulation(nodes)
+            .force(
+                "link",
+                d3.forceLink(links).id((d) => d.id),
+            )
+            .force("charge", d3.forceManyBody().strength(-400))
+            .force("x", d3.forceX())
+            .force("y", d3.forceY());
+
+        const svg = d3
+            .create("svg")
+            .attr("viewBox", [-width / 2, -height / 2, width, height])
+            .attr("width", width)
+            .attr("height", height)
+            .attr(
+                "style",
+                "max-width: 100%; height: auto; font: 12px sans-serif;",
+            );
+
+        // Per-type markers, as they don't inherit styles.
+        svg.append("defs")
+            .selectAll("marker")
+            .data(types)
+            .join("marker")
+            .attr("id", (d) => `arrow-${d}`)
+            .attr("viewBox", "0 -5 10 10")
+            .attr("refX", 15)
+            .attr("refY", -0.5)
+            .attr("markerWidth", 6)
+            .attr("markerHeight", 6)
+            .attr("orient", "auto")
+            .append("path")
+            .attr("fill", "black")
+            .attr("d", "M0,-5L10,0L0,5");
+
+        const link = svg
+            .append("g")
+            .attr("fill", "none")
+            .attr("stroke-width", 1.5)
+            .selectAll("path")
+            .data(links)
+            .join("path")
+            .attr("stroke", (d) => "red")
+            .attr(
+                "marker-end",
+                (d) => `url(${new URL(`#arrow-${d.type}`, location)})`,
+            );
+
+        const node = svg
+            .append("g")
+            .attr("fill", "currentColor")
+            .attr("stroke-linecap", "round")
+            .attr("stroke-linejoin", "round")
+            .selectAll("g")
+            .data(nodes)
+            .join("g")
+            .call(drag(simulation))
+            .on("click", (event, d) => {
+                window.location.hash = "#" + d.id.replace(/\s+/g, "");
+            })
+            .style("cursor", "pointer");
+
+        node.append("circle")
+            .attr("stroke", "white")
+            .attr("stroke-width", 1.5)
+            .attr("r", 4);
+
+        node.append("text")
+            .attr("x", 8)
+            .attr("y", "0.31em")
+            .text((d) => d.id)
+            .clone(true)
+            .lower()
+            .attr("fill", "none")
+            .attr("stroke", "white")
+            .attr("stroke-width", 3);
+
+        simulation.on("tick", () => {
+            link.attr("d", linkArc);
+            node.attr("transform", (d) => `translate(${d.x},${d.y})`);
+        });
+
+        function linkArc(d) {
+            const r = Math.hypot(
+                d.target.x - d.source.x,
+                d.target.y - d.source.y,
+            );
+            return `
+            M${d.source.x},${d.source.y}
+            A${r},${r} 0 0,1 ${d.target.x},${d.target.y}
+          `;
+        }
+
+        container.append(svg.node());
+
+        function centreOn(nodeId) {
+            const targetNode = nodes.find((n) => n.id === nodeId);
+            if (
+                targetNode &&
+                targetNode.x !== undefined &&
+                targetNode.y !== undefined
+            ) {
+                // The viewBox is centered at [-width/2, -height/2, width, height]
+                // So node coordinates are already relative to center (0,0)
+                // We need to pan the viewBox to put the node at the center
+                const scale = 1;
+                const newViewBoxX = targetNode.x - width / 2;
+                const newViewBoxY = targetNode.y - height / 2;
+
+                // Apply the transform by updating the viewBox
+                svg.transition()
+                    .duration(750)
+                    .attr(
+                        "viewBox",
+                        `${newViewBoxX} ${newViewBoxY} ${width} ${height}`,
+                    );
+            }
+        }
+
+        // Handle hash changes
+        function handleHashChange() {
+            const hash = window.location.hash.slice(1); // Remove the '#'
+            if (hash) {
+                centreOn(hash);
+            }
+        }
+
+        // Listen for hash changes
+        window.addEventListener("hashchange", handleHashChange);
+
+        // Handle initial hash if present
+        if (window.location.hash) {
+            // Wait a bit for the simulation to stabilize
+            setTimeout(() => {
+                handleHashChange();
+            }, 1000);
+        }
+    </script>
+</html>

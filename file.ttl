@@ -1,0 +1,910 @@
+@base <https://map.pardalotus.tech/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix f: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s: <https://schema.org/> .
+@prefix o: <https://www.w3.org/TR/owl-ref/#> .
+@prefix k: <http://www.w3.org/2004/02/skos/core#> .
+
+
+<Topic> f:label "Topic";.
+
+<Entity> f:subClassOf <Topic>.
+<Standard> f:subClassOf <Topic>;.
+<Literature> f:subClassOf <Topic>;.
+<ScholCommTopic> f:subClassOf <Topic>;  a <Intro>.
+<Service> f:subClassOf <Topic>; a <Intro>.
+<Individual> f:subClassOf <Entity>; a <Intro>.
+<Organization> f:subClassOf <Entity>; a <Intro>.
+<PublishingPlatform> f:subClassOf <Service>; f:label "Publishing Platform (manuscript tracking, peer review, etc)"; a <Intro>.
+<ReadingPlatform> f:subClassOf <Service>; f:label "Reading, commenting, sharing platform"; a <Intro>.
+<AbstractingAndIndexing> f:subClassOf <Service>; f:seeAlso <https://en.wikipedia.org/wiki/Indexing_and_abstracting_service> .
+
+<Identifier> f:subClassOf <Topic>; a <Intro>.
+<Blog> f:subClassOf <Literature>; a <Intro>.
+<Newsletter> f:subClassOf <Literature>;.
+<PodcastSeries> f:subClassOf <Literature>;.
+<Tool> f:subClassOf <Topic>;;  a <Intro>.
+
+<PodcastSeries> f:sameAs <s:PodcastSeries>.
+
+<Society> f:subClassOf <Organization>;.
+<Society> f:label "Society or Association".
+
+
+<BuiltBy> a rdf:predicate; f:label "Built By";.
+<MaintainedBy> a rdf:predicate; f:label "Maintained By";.
+<AcquiredBy> a rdf:predicate; f:label "acquired by".
+
+<Signatory> a rdf:predicate; f:label "Signatory".
+
+<Homepage> a rdf:predicate; f:label "Homepage".
+<BackgroundReading> a rdf:predicate; f:label "Background Reading".
+
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> f:label "see also".
+<SourceCode> a rdf:predicate; f:label "Source Code".
+<RelatedTo> a rdf:predicate; f:label "Related to";.
+<SourceLicense> a rdf:predicate; f:label "Source License";.
+
+<FF1000> <Parent> <TaylorAndFrancis>;.
+<OpenSource> f:label "Open Source Code";.
+<Proprietory> f:label "Proprietory Code";.
+
+
+<Intro> f:label "Introductory Topic"; f:comment "Topics that are a good way into this map. These are unique or specific to scholarly infrastructure".
+
+# ScholCommTopic
+
+
+<Integrity>
+    a <ScholCommTopic> ;
+    f:label "Integrity" ;
+    f:comment "Research integrity refers to all of the factors that underpin good research practice and promote trust and confidence in the research process - RIO";
+    f:seeAlso <https://ukrio.org/research-integrity/what-is-research-integrity/>
+.
+
+<SingaporeStatement>
+  f:label "Singapore Statement on Research Integrity";
+  <About> <Integrity>;
+  <Homepage> <https://www.wcrif.org/statement>.
+
+
+
+<JournalTransfers> a <ScholCommTopic>; f:label "Journal Transfers"; f:comment "Transfer of journal between publishers. Often happens around the start of the year. Can mean big changes in metadata.";.
+<CoAccess> a <ScholCommTopic>;.
+<MultipleResolution> a <ScholCommTopic>;.
+<Afiliation> a <ScholCommTopic>; f:comment "Afiliation of an author, i.e. which instutition they're working for. Authors can change afiliations, so this can be recorded against the Work at the time of publication".
+<Content> a <ScholCommTopic>; f:comment "Scholarly Content (literature, datasets, video, etc)".
+<Metadata> a <ScholCommTopic>; f:comment "Scholarly metadata. Information about content.".
+<Contributor> a <ScholCommTopic>; f:comment "Contribution to research and publication (e.g. authorship)";.
+<References> a <ScholCommTopic>; f:comment "References between scholarly works (aka citations)".
+
+
+
+
+
+# Concepts
+<Sleuth>
+f:subclassOf <Individual>;
+f:label "Research Integrity Sleuth";
+<About> <Integrity>;
+<BackgroundReading> <https://www.nature.com/articles/d41586-025-02163-z>;
+<BackgroundReading> <https://retractionwatch.com/2018/06/17/meet-the-scientific-sleuths-ten-whove-had-an-impact-on-the-scientific-literature/>;
+<BackgroundReading> <https://www.nature.com/articles/d41586-025-02163-z>;
+.
+
+
+
+<Defunct> f:label "Defunct Organization or Service";.
+
+<DoiRegistrationAgency>
+f:subClassOf <Organization>;
+f:label "DOI Registration Agency";
+s:seeAlso "https://www.doi.org/the-community/existing-registration-agencies/";
+<RelatedTo> <DOI>
+.
+
+<JATS> f:label "Journal Article Tag Suite (JATS)";.
+<JATS> f:seeAlso <https://jats4r.niso.org/>;
+<RelatedTo> <Content>
+.
+
+# Tools
+
+<JabRef>
+a s:tool;
+.
+
+# PIDs
+<DOI>
+a <PID>
+.
+
+<PID> f:label "Persistent Identifier (PID)";.
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> f:label "is a";.
+
+# Sources
+
+<MidnightAtTheCassablanca>
+a <PodcastSeries> ;
+f:label "Midnight At The Cassablanca";
+.
+
+<GetFTR> f:label "Get Fulltext Research"; f:seeAlso <https://www.getfulltextresearch.com/people-and-partners>; <RelatedTo> <Content>.
+
+
+<EverythingHertz>
+a <PodcastSeries>;
+f:label "Everything Hertz";
+
+.
+
+# Organizations
+
+s:Publisher f:label "Publisher".
+
+<PLOS>
+a s:Publisher;
+<Uses> <EditorialManager>;
+<Uses> <Aperta>;
+a s:Publisher;
+<Access> <OpenAccess>;
+<Homepage> <https://plos.org/>
+.
+
+<Access> f:seeAlso <https://www.niso.org/publications/rp-22-2021-ali>;.
+
+<MetadataConverter> a <Tool>; <RelatedTo> <Metadata>.
+
+<RobotsCooking> a <Blog>; f:seeAlso <https://www.robotscooking.com/>;.
+
+<Refworks> f:seeAlso <https://refworks.proquest.com/learn-more/>; <Parent> <ProQuest>; <RelatedTo> <References>.
+
+<ProQuest> f:seeAlso <https://www.proquest.com/>; <Homepage> <https://www.proquest.com/> .
+
+<EditorialManager> a <PublishingPlatform>;.
+
+<DataDryad>
+a s:Organization;
+f:label "Data Dryad";
+f:seeAlso <https://blog.datadryad.org/>;
+<Signatory> <POSI>;
+<Homepage> <https://datadryad.org/>
+.
+
+<HIndex> f:label "h-index"; a <Metric>.
+
+<Hindawi>
+a s:Publisher;
+<acquiredBy> <Wiley>;
+<Access> <OpenAccess>;
+a <Defunct>;
+<Homepage> <https://hindawi.com/>
+.
+
+<Wiley>
+a s:Publisher;
+f:label "Wiley";
+<Homepage> <https://www.wiley.com/>
+.
+
+
+<WebOfScience>
+f:label "Web of Science"; <Homepage> <https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/> .
+
+<Clarivate>
+f:label "Clarivate"; <Homepage> <https://clarivate.com/> .
+
+<ImgTwin>
+f:label "Imgtwin".
+
+<TaylorAndFrancis>
+a s:Publisher;
+f:label "Taylor and Francis";
+<Homepage> <https://taylorandfrancis.com/>
+.
+
+<KGL>
+a s:ServiceProvider;
+f:label "Knowledge Works Global";
+.
+
+<RetractionWatch>
+<indexedBy>
+<Crossref>;
+<Homepage> <https://retractionwatch.com/>
+.
+
+<CREDIT> a <Ontology>; f:label "Contributor Role Taxonomy (CRediT)"; f:seeAlso <https://credit.niso.org/>; <CreatedBy> <NISO>; f:seeAlso <https://groups.niso.org/higherlogic/ws/public/download/31067/CRediT_Taxonomy_Terms_and_Definitions_list>; <ImplementedBy> <Crossref>.
+
+# Platforms
+#
+<RogueScholar>
+f:label "Rogue Scholar";
+a <Platform>
+.
+
+
+<Aperta>
+a <Platform>;
+<CreatedBy>
+<PLoS>;
+f:seeAlso <https://scholarlykitchen.sspnet.org/2017/12/20/end-aperta-journal-submission-systems-remain-challenging/>;.
+
+
+<FRBR> f:label "Functional Requirements for Bibliographic Records (FRBR)"; f:seeAlso <https://en.wikipedia.org/wiki/Functional_Requirements_for_Bibliographic_Records>; a <Ontology>.
+
+<ActivityPub> f:label "ActivityPub"; <Uses> <JSONLD>; a <Schema>; f:comment "Open, decentralized social networking protocol based on ActivityStreams 2.0 and JSON-LD".
+
+<ProvO> f:label "PROV-O"; f:comment "Ontology for provenance of metadata and other information"; f:seeAlso <https://www.w3.org/TR/prov-o/>; a <Ontology>;.
+
+<Vivo> f:label "VIVO"; f:comment "VIVO is member-supported, open source software and an ontology for representing scholarship"; a <Ontology>; f:seeAlso <https://wiki.lyrasis.org/display/VIVODOC/All+Documentation>.
+
+
+
+<ExOrdo>
+f:label "Ex Ordo";
+s:seeAlso <https://www.exordo.com/>;
+.
+
+<PeerRef>
+f:label "Peer Ref";
+.
+
+<ScholarOne>
+f:label "ScholarOne";
+<acquiredBy> <Silverchair>;
+.
+
+<Hypothesis>
+a <ReadingPlatform>; <Homepage> <https://web.hypothes.is/> .
+
+<Zenodo>
+f:seeAlso <https://about.zenodo.org/>; s:parentOrganization <CERN>; <Homepage> <https://zenodo.org/>.
+
+
+
+# DOI RAs
+
+<Crossref>
+a <DoiRegistrationAgency>;
+f:label "Crossref";
+f:seeAlso <https://crossref.org>;
+<Signatory> <POSI>;
+<SourceCode> <https://gitlab.com/crossref>;
+<SourceLicense> <OpenSource>, <Proprietory>;
+<Homepage> <https://www.crossref.org/>
+.
+
+<AiritiDoi>
+a <DoiRegistrationAgency>;
+f:label "Airiti DOI";
+f:comment "Taiwan";
+f:seeAlso <http://www.airiti.com/en/page_doi.html>
+.
+
+<BsiIdentify>
+a <DoiRegistrationAgency>;
+f:label "bsi.identify";
+f:seeAlso <https://identify.bsigroup.com/>;
+f:comment "Product Information"
+.
+
+<ChineseDoi>
+a <DoiRegistrationAgency>;
+f:label "Chinese DOI";
+f:seeAlso <http://dx.chinadoi.cn/>
+.
+
+<CNKI>
+a <DoiRegistrationAgency>;
+f:label "China National Knowledge Infrastructure (CNKI)";
+f:seeAlso <https://oversea.cnki.net/index/>
+.
+
+<ContentVersion> f:label "Content Version (VOR, Preprint)"; f:comment "Version of Record (VOR) vs preprint etc"; f:seeAlso <https://en.wikipedia.org/wiki/Version_of_record>; a <Concept>;.
+
+<DataCite>
+a <DoiRegistrationAgency>;
+f:label "DataCite";
+f:seeAlso <https://datacite.org>;
+<Signatory> <POSI>;
+<Homepage> <https://datacite.org/>
+.
+
+<EIDR>
+a <DoiRegistrationAgency>;
+f:label "Entertainment Identifier Registry (EIDR)";
+f:seeAlso <https://www.eidr.org/>
+.
+
+
+<HAND>
+a <DoiRegistrationAgency>;
+f:label "Human Digital";
+f:seeAlso <https://www.handidentity.com/>;
+f:label "business requirements of Hollywood & sports";
+.
+
+<JALC>
+a <DoiRegistrationAgency>;
+f:label "Japan Link Center (JaLC)";
+f:comment "Japan";
+f:seeAlso <https://japanlinkcenter.org/top/english.html>
+.
+
+<KISTI>
+a <DoiRegistrationAgency>;
+f:label "Korean DOI Center";
+f:comment "Korea";
+f:seeAlso <https://www.doi.or.kr/wordpress/#content>
+.
+
+<MEDRA>
+a <DoiRegistrationAgency>;
+f:label "multilingual European DOI Registration Agency (mEDRA)";
+f:seeAlso <https://www.medra.org/>
+.
+
+<OP>
+a <DoiRegistrationAgency>;
+f:label "The Publications Office of the European Union (OP)";
+f:seeAlso <https://op.europa.eu/en/home>
+.
+
+<ScholarlyAngels>
+f:label "Scholarly Angels";
+.
+
+# Events
+
+<LondonBookFair>
+f:label "London Book Fair";
+.
+
+
+<FrankfurtBookFair>
+f:label "Frankfurt Book Fair";
+.
+
+
+# Funders
+
+# Associations
+
+<STM>
+f:label "STM";
+a <Society>;
+.
+
+
+# Initiatives
+
+<Initiative> f:label "Initative or Topic"; .
+
+<RI2>
+f:label "RI2 Research Integrity Risk Index";
+<About> <Integrity>;
+f:seeAlso <https://en.wikipedia.org/wiki/Research_Integrity_Risk_Index>;
+f:seeAlso <https://sites.aub.edu.lb/lmeho/ri2/>;
+a <Initiative>;
+.
+
+<PlanS>
+f:label "Plan S";
+a <Initiative>;
+.
+
+<KnowledgeFutures>
+f:label "Knowledge Futures";
+.
+
+<PubPub>
+f:label "PubPub";
+f:seeAlso <https://www.knowledgefutures.org/updates/2025-06-update/>;
+a <Defunct>;
+.
+
+
+<CadmoreMedia>
+f:label "Cadmore Media";
+.
+
+<Thoth>
+f:label "Thoth";
+.
+
+<COMET>
+f:label "COMET Data";
+.
+
+<Silverchair>
+f:label "Silverchair";
+.
+
+<OpenAccess>
+f:label "Open Access";
+.
+
+<DiamondOA>
+f:label "Diamond Open Access";
+a <OpenAccess>;.
+
+<GreenOA>
+f:label "Green Open Access";
+f:comment "Author self-archives. Personal, institution or independent repository. Free of charge to author.";
+a <OpenAccess>;.
+
+<DiamondOA>
+f:label "Diamond Open Access";
+a <OpenAccess>;.
+
+<GoldOA>
+f:label "Gold Open Access";
+f:comment "Publisher makes content available immediately. APC.";
+a <OpenAccess>;.
+
+<BronzeOA>
+f:label "Bronze Open Access";
+a <OpenAccess>;.
+
+<DiamondOA>
+f:label "Diamond Open Access";
+a <OpenAccess>;.
+
+# People
+<Cheshire>
+a <Sleuth>;
+.
+
+<GuillaumeCabanac>
+a <Sleuth>;
+.
+
+<KevinPatrick>
+a <Sleuth>;
+.
+
+
+<AnnaAbalkina>
+a <Sleuth>;
+.
+
+
+
+
+# Inbox
+#
+<Publons>
+f:label "Publons";
+.
+
+
+
+<DataSeer>
+f:label "DataSeer";
+.
+
+<ALPSP>
+f:label "Association of Learned and Professional Society Publishers (ALPSPS)";
+f:seeAlso <https://www.alpsp.org/>;
+a <Society>
+.
+
+
+<Alchemist>
+f:label "Alchemist Review";
+a <Tool>;
+f:seeAlso <https://www.hum.works/review>;
+<CreatedBy> <Hum>;
+.
+
+<NLNet> f:seeAlso <https://nlnet.nl/>;.
+
+<Nikau> f:seeAlso <https://nikau.consulting/>;.
+
+<Wax> <CreatedBy> <NLNet>, <Nikau>.
+
+<FAIR> f:label "FAIR";.
+<Signposting> f:label "Signposting the scholarly web"; f:seeAlso <https://signposting.org/>; f:seeAlso <https://signposting.org/FAIR/>;.
+
+<N2T> a <Resolver>; <Supports> <ARK>.
+
+<ARK> a <PID>; f:seeAlso <https://en.wikipedia.org/wiki/Archival_Resource_Key>;.
+
+<PURL> f:label "Persistent uniform resource locator (PURL)"; f:seeAlso <https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator>.
+
+<Handle> f:seeAlso <https://en.wikipedia.org/wiki/Handle_System>;  .
+
+<DOI> <BuiltOn> <Handle>;.
+
+<CiteAs> f:label "CiteAs"; f:seeAlso <https://en.wikipedia.org/wiki/Handle_System>;.
+
+<ResourceSync> f:label "ResourceSync".
+
+<SiteMap> f:label "Site Map";.
+
+<Memento> f:label "Memento"; f:seeAlso <https://www.rfc-editor.org/rfc/rfc7089.txt>;.
+
+<JWT> f:label "JWT";.
+
+<OpenLibHums> f:label "Open Library of Humanities (OLH)"; f:seeAlso <https://www.openlibhums.org/>; <Access> <DiamondOA>;.
+<Janeway> a <PublishingPlatform>; f:seeAlso <https://www.openlibhums.org/site/janeway/>; s:parentOrganization <OpenLibHums>.
+
+
+<Elsevier> f:label "Elsevier" ; <Homepage> <https://www.elsevier.com/>; a s:Publisher.
+
+
+<ROR> f:label "ROR" ; <Homepage> <https://ror.org/> .
+
+
+<ORCID> f:label "ORCID" ; a <PID> ; <Homepage> <https://orcid.org/> .
+<Mendeley> f:label "Mendeley"; <Homepage> <https://www.mendeley.com/> .
+
+
+<SpringerNature> f:label "SpringerNature" ; <Homepage> <https://www.springernature.com/> .
+
+
+<Altmetric> f:label "Altmetric.com" ; o:differentFrom <Altmetrics>; s:parentOrganization <DigitalScience>; <Homepage> <https://www.altmetric.com/> ; a <ServiceProvider>.
+
+
+
+<Altmetrics> f:label "Alt Metrics"; o:differentFrom <Altmetric>; f:seeAlso <https://doi.org/10.5281/zenodo.12684248>;  a <Metric>.
+
+<PubPeer> f:label "PubPeer" ;
+a <PeerReviewPlatform>;
+<Topic> <PostPublicationPeerReview>;
+<Topic> <OpenPeerReview>;
+f:comment "Allow users to make public comments on articles. Post-publication peer review.";
+f:seeAlso <https://pubpeer.com/static/faq>;
+<SourceCode> <https://github.com/PubPeerFoundation>;
+<Homepage> <https://pubpeer.com/>
+.
+
+<Medrxiv> f:label "medRxiv"; f:comment "The Preprint Server for Health Sciences"; f:seeAlso <https://www.medrxiv.org/>; <Homepage> <https://www.medrxiv.org/> .
+
+<GoogleScholar> f:label "Google Scholar" ; <Homepage> <https://scholar.google.com/> .
+
+
+<OpenFunderRegistry> f:label "Open Funder Registry AKA Fundref"; <PublishedBy> <Crossref>; <MaintainedBy> <Elsevier>; <Related> <ROR>; <Uses> <SKOS>; a <Ontology>.
+
+<SKOS> f:label "SKOS: Simple Knowledge Organization Format"; <Related> <RDF>; a <Ontology>.
+<DublinCore> f:label "Dublin Core"; a <Ontology>;.
+<SchemaOrg> f:label "Schema.org"; a <Ontology>;.
+<Wikidata> a <Ontology>;.
+
+
+<Schema> f:label "Schema";.
+
+<CrossrefXmlDeposit> a <Schema>; .
+<CiteprocJson> a <Schema>;.
+<JsonSchema> a <Schema>;.
+<OpenApi> <Related> <JsonSchema>;.
+
+
+
+<Crossref> <Implements> <CrossrefXmlDeposit>, <CiteprocJson>, <BibTex>, <RDFXML>, <Turtle>;.
+
+<CERN> a <Organization>.
+
+<Ontology> f:label "Ontology or Taxonomy"; f:comment "An Ontology is a formal method for organizing information. Usually with RDF. Taxonomies talk about types of things, and ontologies talk about specific things. But there's no reason to differentiate here."; f:seeAlso <https://lov.linkeddata.es/dataset/lov>;.
+
+<BIBFRAME> f:label "BIBFRAME"; f:seeAlso <https://en.wikipedia.org/wiki/BIBFRAME>; a <Ontology>;.
+
+<MARC> f:label "Machine-readable Cataloging (MARC)"; f:seeAlso <https://en.wikipedia.org/wiki/MARC_standards>; <Related> <BIBFRAME>;.
+
+<Kudos> f:label <Kudos>;.
+
+<PlumX> f:label <PlumX>; a <MetricsPlatform>; f:seeAlso <https://www.elsevier.com/insights/metrics/plumx>.
+
+
+<OAIPMH> f:label "OAI-PMH"; .
+<Crossref> <Implements> <OAIPMH>;.
+
+
+<Frontiers> f:label "Frontiers" ; <Homepage> <https://www.frontiersin.org/> .
+
+
+<Overton> f:label "Overton" ; <Homepage> <https://www.overton.io/> .
+
+
+<IPRegistry> f:label "IP Registry" ; .
+
+
+<SSP> f:label "SSP" ; .
+
+<ScienceInsider> a s:Blog; f:seeAlso <https://www.science.org/news/scienceinsider>;.
+
+<EditorialOffice> f:label "Editorial Office" ; .
+
+
+<OriginEditorial> f:label "Origin Editorial" ; .
+
+
+<MolecularConnections> f:label "Molecular Connections" ; .
+
+
+<OpenCitations> f:label "OpenCitations" ; <Signatory> <POSI>; <Homepage> <https://opencitations.net/> .
+
+
+<Coko> f:label "Coko" ; .
+
+<OpenAlex> f:label "OpenAlex" ; <Signatory> <POSI>; <Homepage> <https://openalex.org/> .
+<SciteAi> f:label "Scite.ai" ; .
+<POSI> f:label "POSI";.
+<MAG> f:label "Microsoft Academic Graph"; a <Defunct>.
+
+<GitHub> f:label "GitHub"; f:seeAlso <https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content>; <Homepage> <https://github.com/> .
+
+<CDL> f:label "CDL"; ; .
+
+<Blackwell> f:label "Blackwell"; ; .
+
+<BibTeX> f:label "BibTeX"; .
+<ContentNegotiation> f:label "DOI.org Content Negotiation"; f:comment "AKA CrossCite"; f:seeAlso <https://citation.doi.org/>; f:seeAlso <https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Content_negotiation>; <RelatedTo> <DOI>.
+<ContentNegotiation> <Implements> <BibTex>;.
+<ContentNegotiation> <Implements> <RDFXML>;.
+<ContentNegotiation> <Implements> <Turtle>;.
+<RDF> a <DataModel>;.
+
+<RDFXML> <SerializationFormat> <RDF>;.
+<JSONLD> <SerializationFormat> <RDF>; f:label "JSON-LD"; .
+<Turtle> <SerializationFormat> <RDF>;.
+
+
+<BioOne> f:label "BioOne"; ; .
+
+<ProjectMuse> f:label "ProjectMuse"; ; .
+
+<DeltaThink> f:label "DeltaThink"; ; .
+
+<SubscribeToOpen> f:label "SubscribeToOpen"; ; .
+
+<dARK> f:label "dARK"; <BasedOn> <ARK>;.
+<LaReferencia> f:label "La Referencia"; f:seeAlso <https://25.scielo.org/en/seminars/la-referencia/>;.
+
+<COAR> f:label "Confederation of Open Access Repositories"; f:seeAlso <https://coar-repositories.org/>; <Homepage> <https://coar-repositories.org/> .
+<COARVocab> f:seeAlso <https://vocabularies.coar-repositories.org/>; a <Taxonomy>; <CuratedBy> <COAR>;.
+
+<CRIS> f:label "current research information system (CRIS)".
+
+<Atypon> f:label "Atypon"; ; .
+
+<PreReview> f:label "PreReview"; ; .
+
+<LibraryTechnologyGuides> f:seeAlso <https://librarytechnology.org/>;.
+
+<SpecialIssue> f:label "SpecialIssue"; ; .
+
+<PreprintServer> f:label "PreprintServer"; ; .
+
+<Arxiv> f:label "Arxiv"; <Homepage> <https://arxiv.org/> .
+
+<BioArxiv> f:label "BioArxiv"; <Homepage> <https://www.biorxiv.org/> .
+
+<OASPA> f:label "OASPA"; <Homepage> <https://www.oaspa.org/> .
+
+<BioMedCentral> f:label "BioMedCentral"; <Homepage> <https://www.biomedcentral.com/> .
+
+<Phenom> f:label "Phenom"; ; .
+<OpenAire> f:label "OpenAire";.
+<ELife> f:label "ELife"; <Signatory> <POSI>; <Topic> <OpenPeerReview>; a s:Publisher; <Access> <OpenAccess>; <Homepage> <https://elifesciences.org/>.
+
+<Aperta> f:label "Aperta"; a <Defunct>; .
+
+<InvenioRDM> f:label "InvenioRDM"; <Homepage> <https://inveniosoftware.org/products/rdm/> ; <MaintainedBy> <CERN> .
+
+<IOI> f:label "Invest In Open"; .
+
+
+<http://www.w3.org/2000/01/rdf-schema#related> f:label "Related";.
+
+<ResearchSquare> f:label "ResearchSquare"; ; .
+
+<ScholarlyKitchen> f:label "ScholarlyKitchen"; a s:Blog ; f:seeAlso <https://scholarlykitchen.sspnet.org/>; <PublishedBy> <SSP> .
+
+<CascadeJournal> f:label "CascadeJournal"; ; .
+
+<ImpactFactor> f:label "ImpactFactor"; a <Metric> ; .
+
+
+<ALM> a <Initiative>; f:label "Article-Level Metrics (ALM)"; f:comment "Article Level Metrics seek to shift evaluation from the whole-journal toward the individual article" ; f:related <JLM>; f:related <Altmetrics> .
+
+<JLM> a <Initiative>; f:label "Journal Level Metrics (JLM)"; f:seeAlso <https://pmc.ncbi.nlm.nih.gov/articles/PMC10196720/>.
+
+<JIF> f:label "JIF"; ; .
+
+<ScientificReports> f:label "ScientificReports"; ; .
+
+<Protocol> f:label "Protocol"; ; .
+
+<RubricPeerReview> f:label "RubricPeerReview"; ; .
+
+<CreativeCommons> f:label "CreativeCommons"; <Homepage> <https://creativecommons.org/> .
+
+<HHMI> f:label "HHMI"; ; .
+
+<RAID> f:label "RAID"; ; .
+
+<OpenData> f:label "OpenData"; ; .
+
+<CommercialData> f:label "CommercialData"; ; .
+
+<Wikidata> f:label "Wikidata"; <Homepage> <https://www.wikidata.org/> .
+
+<Wikipedia> f:label "Wikipedia"; <Homepage> <https://www.wikipedia.org/> .
+
+<Dimensions> f:label "Dimensions";s:parentOrganization <DigitalScience> ; <Homepage> <https://www.dimensions.ai/> .
+
+<Figshare> f:label "Figshare";s:parentOrganization <DigitalScience> ; <Homepage> <https://figshare.com/> .
+<Overleaf> f:label "Overleaf";s:parentOrganization <DigitalScience> ; f:comment "Authoring and collaboration platform. LaTeX"; <Homepage> <https://www.overleaf.com/> .
+<Papers> f:label "Papers";s:parentOrganization <DigitalScience> ; .
+<ReadCube> f:label "ReadCube";s:parentOrganization <DigitalScience> ; <Homepage> <https://www.readcube.com/> .
+<SymplecticElements> f:label "Symplectic Elements";s:parentOrganization <DigitalScience> ; .
+<WriteFull> f:label "WriteFull";s:parentOrganization <DigitalScience> ; .
+
+<Analytics> f:label "Analytics"; ; .
+
+<Metric> f:label "Metric"; ; .
+
+<DONA> f:label "DONA"; f:related <DOI>; .
+
+<ISNI> f:label "ISNI"; a <PID> ; .
+
+<ISBN> f:label "ISBN"; a <PID>; .
+
+<ISSN> f:label "ISSN"; a <PID>; .
+
+<WikiDataId> a <PID>; <ProductOf> <WikiData>; f:label "Wikidata Q ID".
+
+<ThompsonReuters> f:label "ThompsonReuters"; ; .
+
+<CNRI> f:label "CNRI"; f:related <DOI>; f:related <DONA> ; .
+
+<MakeDataCount> f:label "MakeDataCount"; a <Initative> ; f:related <DataCite> .
+
+<SCOPUS> f:label "SCOPUS"; a <MetaDataSource>; <Homepage> <https://www.scopus.com/> .
+
+<ResearchGate> f:label "ResearchGate"; <Homepage> <https://www.researchgate.net/> .
+
+<Shibboleth> f:label "Shibboleth"; ; .
+
+<NISO> f:label "NISO"; <Homepage> <https://www.niso.org/> .
+
+<HighWirePress> f:label "HighWirePress"; ; .
+
+<Ithaka> f:label "Ithaka"; ; .
+
+<Scholastica> f:label "Scholastica"; <Homepage> <https://scholasticahq.com/> .
+
+<SSP> f:label "SSP"; <Homepage> <https://www.sspnet.org/> .
+
+<JSTOR> f:label "JSTOR"; <Homepage> <https://www.jstor.org/> .
+
+<PKP> f:label "PKP"; <Signatory> <POSI>; <Homepage> <https://pkp.sfu.ca/> .
+
+<OJS> f:label "OJS"; <Homepage> <https://pkp.sfu.ca/software/ojs/> .
+
+<OpenAlexIds> f:label "OpenAlexIds"; ; .
+
+
+<Cassini> f:label "Cassini";.
+
+<Signals> f:label "Research Signals";.
+
+<ERROR> f:label "Estimating the Reliability & Robustness of Research"; f:seeAlso <https://error.reviews/about/>;
+.
+
+<Barcelona> f:label "Barcelona Declaration on Open Research Information";
+f:seeAlso <https://barcelona-declaration.org> ;
+f:seeAlso <https://barcelona-declaration.org/news/20250625_bologna_meeting_report_now_available/>;
+f:seeAlso <https://doi.org/10.5281/zenodo.15730917>;
+
+.
+
+<Wellcome> f:label "Wellcome Trust"; a <Funder>;
+<Signatory> <Barcelona>;
+
+.
+
+
+<Funder> f:label "Funder"; .
+
+
+<Journalology> f:seeAlso <https://ck.journalology.com/posts>; a <Newsletter> .
+
+
+
+
+<CLOCKSS> f:label "CLOCKSS"; <Signatory> <POSI>; <Topic> <Preservation> .
+
+<CORE> f:label "CORE"; <Signatory> <POSI>; <Homepage> <https://core.ac.uk/> .
+
+<COUNTER> f:label "COUNTER"; <Signatory> <POSI>; <Topic> <Metrics> ; f:seeAlso <https://www.countermetrics.org/>; <Homepage> <https://www.countermetrics.org/> .
+
+<DOAJ> f:label "DOAJ"; <Signatory> <POSI>; <Homepage> <https://doaj.org/> .
+
+<EuropePMC> f:label "EuropePMC"; <Signatory> <POSI>; a s:Publisher; <Homepage> <https://europepmc.org/> .
+
+<HAL+> f:label "HAL+"; <Signatory> <POSI>; .
+
+<JOSS> f:label "JOSS"; <Signatory> <POSI>; a <Journal>; <Access> <OpenAccess> .
+
+<LiberateScience> f:label "LiberateScience"; <Signatory> <POSI>; .
+
+<OAPEN> f:label "OAPEN"; <Signatory> <POSI>; <Topic> <OpenAccess> .
+
+<DOAB> f:label "DOAB"; <Signatory> <POSI>; .
+
+<OASwitchboard> f:label "OASwitchboard"; <Signatory> <POSI>; <Topic> <OpenAccess>.
+
+<OPERAS> f:label "OPERAS"; <Signatory> <POSI>; .
+
+<PeerCommunityIn> f:label "PeerCommunityIn"; <Signatory> <POSI>; .
+
+<Sciety> f:label "Sciety"; <Signatory> <POSI>; <Homepage> <https://sciety.org/> .
+
+<SciPost> f:label "SciPost"; <Signatory> <POSI>; <Homepage> <https://scipost.org/> .
+
+<Hum> f:label "Hum"; a <ServiceProvider>; f:seeAlso <https://www.hum.works/>.
+
+<ClearSkies> f:label "Clear Skies"; <About> <Integrity>; a <ServiceProvider>.
+
+<WikiCite> a <Initative>; f:seeAlso <http://wikicite.org/> .
+
+<OCLC> f:label "OCLC"; <Homepage> <https://www.oclc.org/> .
+<Zotero> f:label "Zotero"; <BuiltBy> <DigitalScience>; a <Tool>; <SourceLicense> <OpenSource>; <BackgroundReading> <https://www.zotero.org/support/plugins>; <Homepage> <https://www.zotero.org/>;
+.
+
+
+
+
+<DUL>
+f:label "Distributed Usage Logging (DUL)";
+f:seeAlso <https://stm-assoc.org/what-we-do/strategic-areas/standards-technology/access-identity-2/distributed-usage-logging-dul/>;
+<CreatedBy> <Crossref>;
+<acquiredBy> <STM>;
+.
+
+<WorldCat> f:label "WorldCat" .
+<LibraryBase> f:label "LibraryBase" .
+<CNRI> f:label "CNRI" .
+<TurnItIn> f:label "TurnItIn" .
+<CrossMark> f:label "CrossMark"; <CreatedBy> <Crossref>; <Uses> <DublinCore>.
+<DigitalScience> f:label "DigitalScience" ; s:parentOrganization <Holtzbrinck>; s:seeAlso <https://www.digital-science.com/blog/2017/11/owns-digital-science-question/>.
+<RDA> f:label "RDA" .
+<Ingenta> f:label "Ingenta" .
+<IngentaConnect> f:label "IngentaConnect" .
+<Force11> f:label "Force11"; f:seeAlso <https://www.youtube.com/@force1141>; <Homepage> <https://force11.org/> .
+
+<Cactus> f:label "CACTUS"; f:seeAlso <https://cactusglobal.com/>
+.
+
+<OSF> f:label "Open Science Framework (OSF)"; f:seeAlso <https://osf.io/>; <Homepage> <https://osf.io/> .
+
+<COS> f:label "Center for Open Science"; f:seeAlso <https://www.cos.io/>; <Homepage> <https://www.cos.io/> .
+
+<OpenScienceMontioring> f:seeAlso <https://doi.org/10.5281/zenodo.15807480>, <https://open-science-monitoring.org/>;.
+
+
+<Sci-Rep> f:label "Sci-Rep".
+
+<Scitility> f:label "Scitility".
+
+
+<TEI> f:seeAlso <https://tei-c.org/>.
+
+<GROBID> <Implements> <TEI>.
+
+<PublisherSpeakPodcast> a <PodcastSeries>; <Homepage> <https://www.youtube.com/@ThePublisherspeakPodcast>.
+
+
+<OpenUrl> a <Standard>.
+
+<BiblioGlutton> a <Tool>; f:label "biblio-glutton"; <Homepage> <https://github.com/kermitt2/biblio-glutton>.
+
+<ISTEX> a <Identifier>; <Homepage> <https://github.com/istex/istex-ark>.
+
+
+
+<IIIINdex> a <Index>; f:label "Open Innovation Data Index"; <Homepage> <https://iiindex.org/>.
