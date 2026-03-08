@@ -8,7 +8,7 @@ import json
 g = Graph()
 g.parse('./file.ttl')
 
-BUILD_DIR = "target"
+BUILD_DIR = "docs"
 
 base_uri = 'https://map.pardalotus.tech/'
 
