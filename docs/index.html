@@ -34,10 +34,18 @@
             blockquote p {
                 padding: 0.2em 1em 0.2em 1em;
             }
+
+            #content-pane p,
+            #content-pane h1,
+            #content-pane h2,
+            #content-pane h3 {
+                padding-left: 1em;
+                padding-right: 1em;
+            }
         </style>
     </head>
     <body>
-        <div style="width: 50%; float: left; padding: 1em">
+        <div style="width: 50%; float: left" id="content-pane">
             <h1>Pardalotus Scholarly Publishing Technology Map</h1>
             <p>
                 Here is a list of concepts and organizations that may be useful
@@ -48,8 +56,8 @@
             </p>
 
             <p>
-                This file is available in <a href="file.ttl">Turtle</a> format
-                if you prefer. Yes, it's an <a href="#Ontology">ontology</a> but
+                This file is available in <a href="map.ttl">Turtle</a> format if
+                you prefer. Yes, it's an <a href="#Ontology">ontology</a> but
                 not on purpose.
             </p>
             <p>
@@ -57,7 +65,10 @@
                 and licensed
                 <a href="https://creativecommons.org/licenses/by-nc/4.0/"
                     >CC BY-NC 4.0</a
-                >. All contributions welcome, please submit a merge request!
+                >. All contributions welcome,
+                <a href="https://github.com/Pardalotus/pardalotus-map/"
+                    >please submit a merge request</a
+                >!
             </p>
             <p>
                 To get started,
@@ -71,52 +82,48 @@
 <p>Article Level Metrics seek to shift evaluation from the whole-journal toward the individual article </p>
 </blockquote>
 <ul>
-<li>Type of <a href="#Initiative">Initative or Topic</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#Initiative">Initative or Topic</a>. </li>
+<li>Type of <a href="#Metric">Metric</a>. </li>
 <li>Related <a href="#JLM">Journal Level Metrics (JLM)</a> </li>
 <li>Related <a href="#Altmetrics">Alt Metrics</a> </li>
 </ul>
 <p><a name='ALPSP'></a></p>
 <h2>Association of Learned and Professional Society Publishers (ALPSPS)</h2>
-<p>See: <a href="https://www.alpsp.org/">https://www.alpsp.org/</a> </p>
 <ul>
-<li>Type of <a href="#Society">Society or Association</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://www.alpsp.org/">https://www.alpsp.org/</a> </li>
+<li>Type of <a href="#Society">Society or Association</a>. </li>
+<li>Link <a href="https://www.alpsp.org/">https://www.alpsp.org/</a> </li>
 </ul>
 <p><a name='ARK'></a></p>
 <h2>Archival Resource Key (ARK)</h2>
-<p>See: <a href="https://en.wikipedia.org/wiki/Archival_Resource_Key">https://en.wikipedia.org/wiki/Archival_Resource_Key</a> </p>
 <ul>
-<li>Type of <a href="#PID">Persistent Identifier (PID)</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://arks.org/">https://arks.org/</a> </li>
+<li>Type of <a href="#PID">Persistent Identifier (PID)</a>. </li>
+<li>Link <a href="https://en.wikipedia.org/wiki/Archival_Resource_Key">https://en.wikipedia.org/wiki/Archival_Resource_Key</a> </li>
+<li>Link <a href="https://arks.org/">https://arks.org/</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
 <li><a href="#N2T">Name-to-Thing (N2T) Resolver</a> Supports ～</li>
 <li><a href="#dARK">dARK</a> BasedOn ～</li>
 </ul>
+<p><a name='AaronTay'></a></p>
+<h2>AaronTay</h2>
+<blockquote>
+<p>Aaron Tay's newsletter about librarianship, authorship, very technology focussed. Focus on AI these days. </p>
+</blockquote>
+<ul>
+<li>Type of <a href="#BlogNewsletter">Blogs and newsletters</a>. </li>
+<li>Link <a href="https://aarontay.substack.com/">https://aarontay.substack.com/</a> </li>
+</ul>
 <p><a name='AbstractingAndIndexing'></a></p>
 <h2>Abstracting and Indexing Service</h2>
-<p>See: <a href="https://en.wikipedia.org/wiki/Indexing_and_abstracting_service">https://en.wikipedia.org/wiki/Indexing_and_abstracting_service</a> </p>
-<h3>Other</h3>
 <ul>
 <li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Service">Service</a> </li>
+<li>Link <a href="https://en.wikipedia.org/wiki/Indexing_and_abstracting_service">https://en.wikipedia.org/wiki/Indexing_and_abstracting_service</a> </li>
 </ul>
 <p><a name='Access'></a></p>
 <h2>Access</h2>
-<p>See: <a href="https://www.niso.org/publications/rp-22-2021-ali">https://www.niso.org/publications/rp-22-2021-ali</a> </p>
-<p><a name='AcquiredBy'></a></p>
-<h2>acquired by</h2>
 <ul>
-<li>Type of <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate</a> </li>
+<li>Link <a href="https://www.niso.org/publications/rp-22-2021-ali">https://www.niso.org/publications/rp-22-2021-ali</a> </li>
 </ul>
 <p><a name='ActivityPub'></a></p>
 <h2>ActivityPub</h2>
@@ -124,51 +131,45 @@
 <p>Open, decentralized social networking protocol based on ActivityStreams 2.0 and JSON-LD </p>
 </blockquote>
 <ul>
-<li>Type of <a href="#Schema">Schema</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#Schema">Schema</a>. </li>
 <li>Uses <a href="#JSONLD">JSON-LD</a> </li>
 </ul>
-<p><a name='Afiliation'></a></p>
-<h2>Afiliation</h2>
+<p><a name='Affiliation'></a></p>
+<h2>Affiliation</h2>
 <blockquote>
-<p>Afiliation of an author, i.e. which instutition they're working for. Authors can change afiliations, so this can be recorded against the Work at the time of publication. Affiliation can be indicated by an organisation identifier, or linked via an author's ORCID ID </p>
+<p>Affiliation of an author, i.e. which instutition they're working for. Authors can change affiliations, so this can be recorded against the Work at the time of publication. Affiliation can be indicated by an organisation identifier, or linked via an author's ORCID ID </p>
 </blockquote>
-<p>See: <a href="https://map.pardalotus.tech/ROR">https://map.pardalotus.tech/ROR</a> </p>
-<p>See: <a href="https://map.pardalotus.tech/ORCID">https://map.pardalotus.tech/ORCID</a> </p>
 <ul>
-<li>Type of <a href="#ScholCommTopic">Scholarly Communication Topic</a> </li>
+<li>Type of <a href="#ScholCommTopic">Scholarly Communication Topic</a>. </li>
+<li>Related to <a href="#ROR">ROR</a> </li>
+<li>Related to <a href="#ORCID">ORCID</a> </li>
 </ul>
 <p><a name='AiritiDoi'></a></p>
 <h2>Airiti DOI</h2>
 <blockquote>
 <p>Taiwan </p>
 </blockquote>
-<p>See: <a href="http://www.airiti.com/en/page_doi.html">http://www.airiti.com/en/page_doi.html</a> </p>
 <ul>
-<li>Type of <a href="#DoiRegistrationAgency">DOI Registration Agency</a> </li>
+<li>Type of <a href="#DoiRegistrationAgency">DOI Registration Agency</a>. </li>
+<li>Link <a href="http://www.airiti.com/en/page_doi.html">http://www.airiti.com/en/page_doi.html</a> </li>
 </ul>
 <p><a name='Alchemist'></a></p>
 <h2>Alchemist Review</h2>
-<p>See: <a href="https://www.hum.works/review">https://www.hum.works/review</a> </p>
 <ul>
-<li>Type of <a href="#Tool">Tool</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#Tool">Tool</a>. </li>
+<li>Link <a href="https://www.hum.works/review">https://www.hum.works/review</a> </li>
 <li>CreatedBy <a href="#Hum">Hum</a> </li>
 </ul>
 <p><a name='Altmetric'></a></p>
 <h2>Altmetric.com</h2>
 <ul>
-<li>Type of <a href="#ServiceProvider">ServiceProvider</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#ServiceProvider">ServiceProvider</a>. </li>
+<li>Type of <a href="#Metric">Metric</a>. </li>
+<li>Type of <a href="#Altmetrics">Alt Metrics</a>. </li>
 <li>https://www.w3.org/TR/owl-ref/#differentFrom <a href="#Altmetrics">Alt Metrics</a> </li>
 <li>https://schema.org/parentOrganization <a href="#DigitalScience">DigitalScience</a> </li>
-<li>Homepage <a href="https://www.altmetric.com/">https://www.altmetric.com/</a> </li>
+<li>Link <a href="https://www.altmetric.com/">https://www.altmetric.com/</a> </li>
+<li>Related <a href="#Altmetrics">Alt Metrics</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -176,17 +177,21 @@
 </ul>
 <p><a name='Altmetrics'></a></p>
 <h2>Alt Metrics</h2>
-<p>See: <a href="https://doi.org/10.5281/zenodo.12684248">https://doi.org/10.5281/zenodo.12684248</a> </p>
 <ul>
-<li>Type of <a href="#Metric">Metric</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#Metric">Metric</a>. </li>
 <li>https://www.w3.org/TR/owl-ref/#differentFrom <a href="#Altmetric">Altmetric.com</a> </li>
+<li>Link <a href="https://doi.org/10.5281/zenodo.12684248">https://doi.org/10.5281/zenodo.12684248</a> </li>
+</ul>
+<h3>Instances</h3>
+<ul>
+<li><a href="#Altmetric">Altmetric.com</a> </li>
+<li><a href="#PlumX">PlumX</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
 <li><a href="#Altmetric">Altmetric.com</a> https://www.w3.org/TR/owl-ref/#differentFrom ～</li>
+<li><a href="#Altmetric">Altmetric.com</a> Related ～</li>
+<li><a href="#PlumX">PlumX</a> Related ～</li>
 <li><a href="#ALM">Article-Level Metrics (ALM)</a> Related ～</li>
 </ul>
 <p><a name='Analytics'></a></p>
@@ -194,18 +199,15 @@
 <p><a name='AnnaAbalkina'></a></p>
 <h2>Anna Abalkina</h2>
 <ul>
-<li>Type of <a href="#Sleuth">Research Integrity Sleuth</a> </li>
+<li>Type of <a href="#Sleuth">Research Integrity Sleuth</a>. </li>
 </ul>
 <p><a name='Aperta'></a></p>
 <h2>Aperta</h2>
-<p>See: <a href="https://scholarlykitchen.sspnet.org/2017/12/20/end-aperta-journal-submission-systems-remain-challenging/">https://scholarlykitchen.sspnet.org/2017/12/20/end-aperta-journal-submission-systems-remain-challenging/</a> </p>
 <ul>
-<li>Type of <a href="#Platform">Platform</a> </li>
-<li>Type of <a href="#Defunct">Defunct Organization or Service</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#Platform">Platform</a>. </li>
+<li>Type of <a href="#Defunct">Defunct Organization or Service</a>. </li>
 <li>CreatedBy <a href="#PLoS">PLoS</a> </li>
+<li>Link <a href="https://scholarlykitchen.sspnet.org/2017/12/20/end-aperta-journal-submission-systems-remain-challenging/">https://scholarlykitchen.sspnet.org/2017/12/20/end-aperta-journal-submission-systems-remain-challenging/</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -213,36 +215,31 @@
 </ul>
 <p><a name='Arxiv'></a></p>
 <h2>Arxiv</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://arxiv.org/">https://arxiv.org/</a> </li>
+<li>Link <a href="https://arxiv.org/">https://arxiv.org/</a> </li>
 </ul>
 <p><a name='Atypon'></a></p>
 <h2>Atypon</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://www.atypon.com/">https://www.atypon.com/</a> </li>
+<li>Link <a href="https://www.atypon.com/">https://www.atypon.com/</a> </li>
 </ul>
 <p><a name='BIBFRAME'></a></p>
 <h2>BIBFRAME</h2>
-<p>See: <a href="https://en.wikipedia.org/wiki/BIBFRAME">https://en.wikipedia.org/wiki/BIBFRAME</a> </p>
 <ul>
-<li>Type of <a href="#Ontology">Ontology or Taxonomy</a> </li>
+<li>Type of <a href="#Ontology">Ontology or Taxonomy</a>. </li>
+<li>Link <a href="https://en.wikipedia.org/wiki/BIBFRAME">https://en.wikipedia.org/wiki/BIBFRAME</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
 <li><a href="#MARC">Machine-readable Cataloging (MARC)</a> Related ～</li>
 </ul>
-<p><a name='BackgroundReading'></a></p>
-<h2>Background Reading</h2>
-<ul>
-<li>Type of <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate</a> </li>
-</ul>
 <p><a name='Barcelona'></a></p>
 <h2>Barcelona Declaration on Open Research Information</h2>
-<p>See: <a href="https://barcelona-declaration.org">https://barcelona-declaration.org</a> </p>
-<p>See: <a href="https://barcelona-declaration.org/news/20250625_bologna_meeting_report_now_available/">https://barcelona-declaration.org/news/20250625_bologna_meeting_report_now_available/</a> </p>
-<p>See: <a href="https://doi.org/10.5281/zenodo.15730917">https://doi.org/10.5281/zenodo.15730917</a> </p>
+<ul>
+<li>Link <a href="https://barcelona-declaration.org">https://barcelona-declaration.org</a> </li>
+<li>Link <a href="https://barcelona-declaration.org/news/20250625_bologna_meeting_report_now_available/">https://barcelona-declaration.org/news/20250625_bologna_meeting_report_now_available/</a> </li>
+<li>Link <a href="https://doi.org/10.5281/zenodo.15730917">https://doi.org/10.5281/zenodo.15730917</a> </li>
+</ul>
 <h3>References</h3>
 <ul>
 <li><a href="#Wellcome">Wellcome Trust</a> Signatory ～</li>
@@ -252,68 +249,58 @@
 <p><a name='BiblioGlutton'></a></p>
 <h2>biblio-glutton</h2>
 <ul>
-<li>Type of <a href="#Tool">Tool</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://github.com/kermitt2/biblio-glutton">https://github.com/kermitt2/biblio-glutton</a> </li>
+<li>Type of <a href="#Tool">Tool</a>. </li>
+<li>Link <a href="https://github.com/kermitt2/biblio-glutton">https://github.com/kermitt2/biblio-glutton</a> </li>
 </ul>
 <p><a name='BioArxiv'></a></p>
 <h2>BioArxiv</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://www.biorxiv.org/">https://www.biorxiv.org/</a> </li>
+<li>Link <a href="https://www.biorxiv.org/">https://www.biorxiv.org/</a> </li>
 </ul>
 <p><a name='BioMedCentral'></a></p>
 <h2>BioMedCentral</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://www.biomedcentral.com/">https://www.biomedcentral.com/</a> </li>
+<li>Link <a href="https://www.biomedcentral.com/">https://www.biomedcentral.com/</a> </li>
 </ul>
 <p><a name='BioOne'></a></p>
 <h2>BioOne</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://bioone.org/">https://bioone.org/</a> </li>
+<li>Link <a href="https://bioone.org/">https://bioone.org/</a> </li>
 </ul>
 <p><a name='Blackwell'></a></p>
 <h2>Blackwell</h2>
 <ul>
-<li>Type of <a href="#Publisher">Publisher</a> </li>
+<li>Type of <a href="#Publisher">Publisher</a>. </li>
 </ul>
-<p><a name='Blog'></a></p>
-<h2>Blog</h2>
+<p><a name='BlogNewsletter'></a></p>
+<h2>Blogs and newsletters</h2>
+<ul>
+<li>Type of <a href="#Intro">Introductory Topic</a>. </li>
+<li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Literature">Literature</a> </li>
+</ul>
 <h3>Instances</h3>
 <ul>
-<li>
-<p><a href="#RobotsCooking">Robots Cooking</a> </p>
-</li>
-<li>
-<p>Type of <a href="#Intro">Introductory Topic</a> </p>
-</li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Literature">Literature</a> </li>
+<li><a href="#RobotsCooking">Robots Cooking</a> </li>
+<li><a href="#ScienceInsider">ScienceInsider</a> </li>
+<li><a href="#Pardalotus">Pardalotus Blog</a> </li>
+<li><a href="#ScholarlyKitchen">ScholarlyKitchen</a> </li>
+<li><a href="#Journalology">Journalology</a> </li>
+<li><a href="#PubTechRadar">PubTechRadar</a> </li>
+<li><a href="#AaronTay">AaronTay</a> </li>
 </ul>
 <p><a name='BronzeOA'></a></p>
 <h2>Bronze Open Access</h2>
 <ul>
-<li>Type of <a href="#OpenAccess">Open Access</a> </li>
+<li>Type of <a href="#OpenAccess">Open Access</a>. </li>
 </ul>
 <p><a name='BsiIdentify'></a></p>
 <h2>bsi.identify</h2>
 <blockquote>
 <p>Product Information </p>
 </blockquote>
-<p>See: <a href="https://identify.bsigroup.com/">https://identify.bsigroup.com/</a> </p>
 <ul>
-<li>Type of <a href="#DoiRegistrationAgency">DOI Registration Agency</a> </li>
-</ul>
-<p><a name='BuiltBy'></a></p>
-<h2>Built By</h2>
-<ul>
-<li>Type of <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate</a> </li>
+<li>Type of <a href="#DoiRegistrationAgency">DOI Registration Agency</a>. </li>
+<li>Link <a href="https://identify.bsigroup.com/">https://identify.bsigroup.com/</a> </li>
 </ul>
 <p><a name='CDL'></a></p>
 <h2>CDL</h2>
@@ -321,16 +308,13 @@
 <p>California Digital Library, involved in a lot of open infrastructure </p>
 </blockquote>
 <ul>
-<li>Type of <a href="#Organization">Organization</a> </li>
+<li>Type of <a href="#Organization">Organization</a>. </li>
 </ul>
 <p><a name='CERN'></a></p>
 <h2>CERN</h2>
 <ul>
-<li>Type of <a href="#Organization">Organization</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://home.cern/">https://home.cern/</a> </li>
+<li>Type of <a href="#Organization">Organization</a>. </li>
+<li>Link <a href="https://home.cern/">https://home.cern/</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -339,31 +323,27 @@
 </ul>
 <p><a name='CLOCKSS'></a></p>
 <h2>CLOCKSS</h2>
-<h3>Other</h3>
 <ul>
 <li>Signatory <a href="#POSI">POSI</a> </li>
 <li>Topic <a href="#Preservation">Preservation</a> </li>
-<li>Homepage <a href="https://clockss.org/">https://clockss.org/</a> </li>
+<li>Link <a href="https://clockss.org/">https://clockss.org/</a> </li>
 </ul>
 <p><a name='CNKI'></a></p>
 <h2>China National Knowledge Infrastructure (CNKI)</h2>
-<p>See: <a href="https://oversea.cnki.net/index/">https://oversea.cnki.net/index/</a> </p>
 <ul>
-<li>Type of <a href="#DoiRegistrationAgency">DOI Registration Agency</a> </li>
+<li>Type of <a href="#DoiRegistrationAgency">DOI Registration Agency</a>. </li>
+<li>Link <a href="https://oversea.cnki.net/index/">https://oversea.cnki.net/index/</a> </li>
 </ul>
 <p><a name='CNRI'></a></p>
 <h2>CNRI</h2>
-<h3>Other</h3>
 <ul>
 <li>Related <a href="#DOI">DOI</a> </li>
 <li>Related <a href="#DONA">Digital Object Numbering Authority (DONA)</a> </li>
 </ul>
 <p><a name='COAR'></a></p>
 <h2>Confederation of Open Access Repositories</h2>
-<p>See: <a href="https://coar-repositories.org/">https://coar-repositories.org/</a> </p>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://coar-repositories.org/">https://coar-repositories.org/</a> </li>
+<li>Link <a href="https://coar-repositories.org/">https://coar-repositories.org/</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -371,57 +351,47 @@
 </ul>
 <p><a name='COARVocab'></a></p>
 <h2>COARVocab</h2>
-<p>See: <a href="https://vocabularies.coar-repositories.org/">https://vocabularies.coar-repositories.org/</a> </p>
 <ul>
-<li>Type of <a href="#Taxonomy">Taxonomy</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#Taxonomy">Taxonomy</a>. </li>
+<li>Link <a href="https://vocabularies.coar-repositories.org/">https://vocabularies.coar-repositories.org/</a> </li>
 <li>CuratedBy <a href="#COAR">Confederation of Open Access Repositories</a> </li>
 </ul>
 <p><a name='COMET'></a></p>
 <h2>COMET Data</h2>
 <p><a name='CORE'></a></p>
 <h2>CORE</h2>
-<h3>Other</h3>
 <ul>
 <li>Signatory <a href="#POSI">POSI</a> </li>
-<li>Homepage <a href="https://core.ac.uk/">https://core.ac.uk/</a> </li>
+<li>Link <a href="https://core.ac.uk/">https://core.ac.uk/</a> </li>
 </ul>
 <p><a name='COS'></a></p>
 <h2>Center for Open Science</h2>
-<p>See: <a href="https://www.cos.io/">https://www.cos.io/</a> </p>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://www.cos.io/">https://www.cos.io/</a> </li>
+<li>Link <a href="https://www.cos.io/">https://www.cos.io/</a> </li>
 </ul>
 <p><a name='COUNTER'></a></p>
 <h2>COUNTER</h2>
-<p>See: <a href="https://www.countermetrics.org/">https://www.countermetrics.org/</a> </p>
-<h3>Other</h3>
 <ul>
 <li>Signatory <a href="#POSI">POSI</a> </li>
 <li>Topic <a href="#Metrics">Metrics</a> </li>
-<li>Homepage <a href="https://www.countermetrics.org/">https://www.countermetrics.org/</a> </li>
+<li>Link <a href="https://www.countermetrics.org/">https://www.countermetrics.org/</a> </li>
 </ul>
 <p><a name='CREDIT'></a></p>
 <h2>Contributor Role Taxonomy (CRediT)</h2>
-<p>See: <a href="https://credit.niso.org/">https://credit.niso.org/</a> </p>
-<p>See: <a href="https://groups.niso.org/higherlogic/ws/public/download/31067/CRediT_Taxonomy_Terms_and_Definitions_list">https://groups.niso.org/higherlogic/ws/public/download/31067/CRediT_Taxonomy_Terms_and_Definitions_list</a> </p>
 <ul>
-<li>Type of <a href="#Ontology">Ontology or Taxonomy</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#Ontology">Ontology or Taxonomy</a>. </li>
+<li>Link <a href="https://credit.niso.org/">https://credit.niso.org/</a> </li>
+<li>Link <a href="https://groups.niso.org/higherlogic/ws/public/download/31067/CRediT_Taxonomy_Terms_and_Definitions_list">https://groups.niso.org/higherlogic/ws/public/download/31067/CRediT_Taxonomy_Terms_and_Definitions_list</a> </li>
 <li>CreatedBy <a href="#NISO">NISO</a> </li>
 <li>ImplementedBy <a href="#Crossref">Crossref</a> </li>
-<li>Homepage <a href="https://credit.niso.org/">https://credit.niso.org/</a> </li>
 </ul>
 <p><a name='CRIS'></a></p>
 <h2>current research information system (CRIS)</h2>
 <p><a name='Cactus'></a></p>
 <h2>CACTUS</h2>
-<p>See: <a href="https://cactusglobal.com/">https://cactusglobal.com/</a> </p>
+<ul>
+<li>Link <a href="https://cactusglobal.com/">https://cactusglobal.com/</a> </li>
+</ul>
 <p><a name='CadmoreMedia'></a></p>
 <h2>Cadmore Media</h2>
 <p><a name='CascadeJournal'></a></p>
@@ -431,21 +401,23 @@
 <p><a name='Cheshire'></a></p>
 <h2>Cheshire (research integrity sleuth)</h2>
 <ul>
-<li>Type of <a href="#Sleuth">Research Integrity Sleuth</a> </li>
+<li>Type of <a href="#Sleuth">Research Integrity Sleuth</a>. </li>
 </ul>
 <p><a name='ChineseDoi'></a></p>
 <h2>Chinese DOI</h2>
-<p>See: <a href="http://dx.chinadoi.cn/">http://dx.chinadoi.cn/</a> </p>
 <ul>
-<li>Type of <a href="#DoiRegistrationAgency">DOI Registration Agency</a> </li>
+<li>Type of <a href="#DoiRegistrationAgency">DOI Registration Agency</a>. </li>
+<li>Link <a href="http://dx.chinadoi.cn/">http://dx.chinadoi.cn/</a> </li>
 </ul>
 <p><a name='CiteAs'></a></p>
 <h2>CiteAs</h2>
-<p>See: <a href="https://en.wikipedia.org/wiki/Handle_System">https://en.wikipedia.org/wiki/Handle_System</a> </p>
+<ul>
+<li>Link <a href="https://en.wikipedia.org/wiki/Handle_System">https://en.wikipedia.org/wiki/Handle_System</a> </li>
+</ul>
 <p><a name='CiteprocJson'></a></p>
 <h2>CiteprocJson</h2>
 <ul>
-<li>Type of <a href="#Schema">Schema</a> </li>
+<li>Type of <a href="#Schema">Schema</a>. </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -454,31 +426,32 @@
 <p><a name='Clarivate'></a></p>
 <h2>Clarivate</h2>
 <ul>
-<li>Type of <a href="#ServiceProvider">ServiceProvider</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://clarivate.com/">https://clarivate.com/</a> </li>
+<li>Type of <a href="#ServiceProvider">ServiceProvider</a>. </li>
+<li>Link <a href="https://clarivate.com/">https://clarivate.com/</a> </li>
 </ul>
 <p><a name='ClearSkies'></a></p>
 <h2>Clear Skies</h2>
 <ul>
-<li>Type of <a href="#ServiceProvider">ServiceProvider</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#ServiceProvider">ServiceProvider</a>. </li>
 <li>About <a href="#Integrity">Integrity</a> </li>
+</ul>
+<p><a name='ClosedSource'></a></p>
+<h2>Closed Source Code</h2>
+<h3>References</h3>
+<ul>
+<li><a href="#EditorialManager">Editorial Manager</a> Source License ～</li>
+<li><a href="#ScholarOne">ScholarOne</a> Source License ～</li>
+<li><a href="#Crossref">Crossref</a> Source License ～</li>
 </ul>
 <p><a name='CoAccess'></a></p>
 <h2>Co-Access</h2>
 <ul>
-<li>Type of <a href="#ScholCommTopic">Scholarly Communication Topic</a> </li>
+<li>Type of <a href="#ScholCommTopic">Scholarly Communication Topic</a>. </li>
 </ul>
 <p><a name='Coko'></a></p>
 <h2>Coko</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://coko.foundation/">https://coko.foundation/</a> </li>
+<li>Link <a href="https://coko.foundation/">https://coko.foundation/</a> </li>
 </ul>
 <p><a name='CommercialData'></a></p>
 <h2>Commercial Data</h2>
@@ -488,7 +461,7 @@
 <p>Scholarly Content (literature, datasets, video, etc) </p>
 </blockquote>
 <ul>
-<li>Type of <a href="#ScholCommTopic">Scholarly Communication Topic</a> </li>
+<li>Type of <a href="#ScholCommTopic">Scholarly Communication Topic</a>. </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -500,10 +473,9 @@
 <blockquote>
 <p>AKA CrossCite </p>
 </blockquote>
-<p>See: <a href="https://citation.doi.org/">https://citation.doi.org/</a> </p>
-<p>See: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Content_negotiation">https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Content_negotiation</a> </p>
-<h3>Other</h3>
 <ul>
+<li>Link <a href="https://citation.doi.org/">https://citation.doi.org/</a> </li>
+<li>Link <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Content_negotiation">https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Content_negotiation</a> </li>
 <li>Related to <a href="#DOI">DOI</a> </li>
 <li>Implements <a href="#BibTex">BibTex</a> </li>
 <li>Implements <a href="#RDFXML">RDFXML</a> </li>
@@ -514,9 +486,9 @@
 <blockquote>
 <p>Version of Record (VOR) vs preprint etc </p>
 </blockquote>
-<p>See: <a href="https://en.wikipedia.org/wiki/Version_of_record">https://en.wikipedia.org/wiki/Version_of_record</a> </p>
 <ul>
-<li>Type of <a href="#Concept">Concept</a> </li>
+<li>Type of <a href="#Concept">Concept</a>. </li>
+<li>Link <a href="https://en.wikipedia.org/wiki/Version_of_record">https://en.wikipedia.org/wiki/Version_of_record</a> </li>
 </ul>
 <p><a name='Contributor'></a></p>
 <h2>Contributor</h2>
@@ -524,34 +496,29 @@
 <p>Contribution to research and publication (e.g. authorship) </p>
 </blockquote>
 <ul>
-<li>Type of <a href="#ScholCommTopic">Scholarly Communication Topic</a> </li>
+<li>Type of <a href="#ScholCommTopic">Scholarly Communication Topic</a>. </li>
 </ul>
 <p><a name='CreativeCommons'></a></p>
 <h2>CreativeCommons</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://creativecommons.org/">https://creativecommons.org/</a> </li>
+<li>Link <a href="https://creativecommons.org/">https://creativecommons.org/</a> </li>
 </ul>
 <p><a name='CrossMark'></a></p>
 <h2>CrossMark</h2>
-<h3>Other</h3>
 <ul>
 <li>CreatedBy <a href="#Crossref">Crossref</a> </li>
 <li>Uses <a href="#DublinCore">Dublin Core</a> </li>
 </ul>
 <p><a name='Crossref'></a></p>
 <h2>Crossref</h2>
-<p>See: <a href="https://crossref.org">https://crossref.org</a> </p>
 <ul>
-<li>Type of <a href="#DoiRegistrationAgency">DOI Registration Agency</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#DoiRegistrationAgency">DOI Registration Agency</a>. </li>
+<li>Link <a href="https://crossref.org">https://crossref.org</a> </li>
+<li>Link <a href="https://www.crossref.org/">https://www.crossref.org/</a> </li>
 <li>Signatory <a href="#POSI">POSI</a> </li>
 <li>Source Code <a href="https://gitlab.com/crossref">https://gitlab.com/crossref</a> </li>
 <li>Source License <a href="#OpenSource">Open Source Code</a> </li>
-<li>Source License <a href="#Proprietory">Proprietory Code</a> </li>
-<li>Homepage <a href="https://www.crossref.org/">https://www.crossref.org/</a> </li>
+<li>Source License <a href="#ClosedSource">Closed Source Code</a> </li>
 <li>Implements <a href="#CrossrefXmlDeposit">CrossrefXmlDeposit</a> </li>
 <li>Implements <a href="#CiteprocJson">CiteprocJson</a> </li>
 <li>Implements <a href="#BibTex">BibTex</a> </li>
@@ -570,7 +537,7 @@
 <p><a name='CrossrefXmlDeposit'></a></p>
 <h2>CrossrefXmlDeposit</h2>
 <ul>
-<li>Type of <a href="#Schema">Schema</a> </li>
+<li>Type of <a href="#Schema">Schema</a>. </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -578,24 +545,19 @@
 </ul>
 <p><a name='DOAB'></a></p>
 <h2>DOAB</h2>
-<h3>Other</h3>
 <ul>
 <li>Signatory <a href="#POSI">POSI</a> </li>
 </ul>
 <p><a name='DOAJ'></a></p>
 <h2>DOAJ</h2>
-<h3>Other</h3>
 <ul>
 <li>Signatory <a href="#POSI">POSI</a> </li>
-<li>Homepage <a href="https://doaj.org/">https://doaj.org/</a> </li>
+<li>Link <a href="https://doaj.org/">https://doaj.org/</a> </li>
 </ul>
 <p><a name='DOI'></a></p>
 <h2>DOI</h2>
 <ul>
-<li>Type of <a href="#PID">Persistent Identifier (PID)</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#PID">Persistent Identifier (PID)</a>. </li>
 <li>BuiltOn <a href="#Handle">Handle System</a> </li>
 </ul>
 <h3>References</h3>
@@ -607,7 +569,6 @@
 </ul>
 <p><a name='DONA'></a></p>
 <h2>Digital Object Numbering Authority (DONA)</h2>
-<h3>Other</h3>
 <ul>
 <li>Related <a href="#DOI">DOI</a> </li>
 </ul>
@@ -617,22 +578,19 @@
 </ul>
 <p><a name='DUL'></a></p>
 <h2>Distributed Usage Logging (DUL)</h2>
-<p>See: <a href="https://stm-assoc.org/what-we-do/strategic-areas/standards-technology/access-identity-2/distributed-usage-logging-dul/">https://stm-assoc.org/what-we-do/strategic-areas/standards-technology/access-identity-2/distributed-usage-logging-dul/</a> </p>
-<h3>Other</h3>
 <ul>
+<li>Link <a href="https://stm-assoc.org/what-we-do/strategic-areas/standards-technology/access-identity-2/distributed-usage-logging-dul/">https://stm-assoc.org/what-we-do/strategic-areas/standards-technology/access-identity-2/distributed-usage-logging-dul/</a> </li>
 <li>CreatedBy <a href="#Crossref">Crossref</a> </li>
 <li>acquiredBy <a href="#STM">STM</a> </li>
 </ul>
 <p><a name='DataCite'></a></p>
 <h2>DataCite</h2>
-<p>See: <a href="https://datacite.org">https://datacite.org</a> </p>
 <ul>
-<li>Type of <a href="#DoiRegistrationAgency">DOI Registration Agency</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#DoiRegistrationAgency">DOI Registration Agency</a>. </li>
+<li>Link <a href="https://datacite.org">https://datacite.org</a> </li>
+<li>Link <a href="https://datacite.org/">https://datacite.org/</a> </li>
 <li>Signatory <a href="#POSI">POSI</a> </li>
-<li>Homepage <a href="https://datacite.org/">https://datacite.org/</a> </li>
+<li>Source License <a href="#OpenSource">Open Source Code</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -640,17 +598,20 @@
 </ul>
 <p><a name='DataDryad'></a></p>
 <h2>Data Dryad</h2>
-<p>See: <a href="https://blog.datadryad.org/">https://blog.datadryad.org/</a> </p>
 <ul>
-<li>Type of <a href="https://schema.org/Organization">https://schema.org/Organization</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="https://schema.org/Organization">https://schema.org/Organization</a>. </li>
+<li>Link <a href="https://blog.datadryad.org/">https://blog.datadryad.org/</a> </li>
+<li>Link <a href="https://datadryad.org/">https://datadryad.org/</a> </li>
 <li>Signatory <a href="#POSI">POSI</a> </li>
-<li>Homepage <a href="https://datadryad.org/">https://datadryad.org/</a> </li>
 </ul>
 <p><a name='DataSeer'></a></p>
 <h2>DataSeer</h2>
+<blockquote>
+<p>developer of AI-powered research integrity solutions </p>
+</blockquote>
+<ul>
+<li>Link <a href="https://dataseer.ai/">https://dataseer.ai/</a> </li>
+</ul>
 <p><a name='Defunct'></a></p>
 <h2>Defunct Organization or Service</h2>
 <h3>Instances</h3>
@@ -663,16 +624,13 @@
 <p><a name='DeltaThink'></a></p>
 <h2>DeltaThink</h2>
 <ul>
-<li>Type of <a href="#ServiceProvider">ServiceProvider</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://www.deltathink.com/">https://www.deltathink.com/</a> </li>
+<li>Type of <a href="#ServiceProvider">ServiceProvider</a>. </li>
+<li>Link <a href="https://www.deltathink.com/">https://www.deltathink.com/</a> </li>
 </ul>
 <p><a name='DiamondOA'></a></p>
 <h2>Diamond Open Access</h2>
 <ul>
-<li>Type of <a href="#OpenAccess">Open Access</a> </li>
+<li>Type of <a href="#OpenAccess">Open Access</a>. </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -680,10 +638,9 @@
 </ul>
 <p><a name='DigitalScience'></a></p>
 <h2>DigitalScience</h2>
-<p>See: <a href="https://www.digital-science.com/blog/2017/11/owns-digital-science-question/">https://www.digital-science.com/blog/2017/11/owns-digital-science-question/</a> </p>
-<h3>Other</h3>
 <ul>
 <li>https://schema.org/parentOrganization <a href="#Holtzbrinck">Holtzbrinck</a> </li>
+<li>Link <a href="https://www.digital-science.com/blog/2017/11/owns-digital-science-question/">https://www.digital-science.com/blog/2017/11/owns-digital-science-question/</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -699,14 +656,17 @@
 </ul>
 <p><a name='Dimensions'></a></p>
 <h2>Dimensions</h2>
-<h3>Other</h3>
 <ul>
 <li>https://schema.org/parentOrganization <a href="#DigitalScience">DigitalScience</a> </li>
-<li>Homepage <a href="https://www.dimensions.ai/">https://www.dimensions.ai/</a> </li>
+<li>Link <a href="https://www.dimensions.ai/">https://www.dimensions.ai/</a> </li>
 </ul>
 <p><a name='DoiRegistrationAgency'></a></p>
 <h2>DOI Registration Agency</h2>
-<p>See: <a href="https://www.doi.org/the-community/existing-registration-agencies/">https://www.doi.org/the-community/existing-registration-agencies/</a> </p>
+<ul>
+<li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Organization">Organization</a> </li>
+<li>Link <a href="https://www.doi.org/the-community/existing-registration-agencies/">https://www.doi.org/the-community/existing-registration-agencies/</a> </li>
+<li>Related to <a href="#DOI">DOI</a> </li>
+</ul>
 <h3>Instances</h3>
 <ul>
 <li><a href="#Crossref">Crossref</a> </li>
@@ -722,15 +682,10 @@
 <li><a href="#MEDRA">multilingual European DOI Registration Agency (mEDRA)</a> </li>
 <li><a href="#OP">The Publications Office of the European Union (OP)</a> </li>
 </ul>
-<h3>Other</h3>
-<ul>
-<li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Organization">Organization</a> </li>
-<li>Related to <a href="#DOI">DOI</a> </li>
-</ul>
 <p><a name='DublinCore'></a></p>
 <h2>Dublin Core</h2>
 <ul>
-<li>Type of <a href="#Ontology">Ontology or Taxonomy</a> </li>
+<li>Type of <a href="#Ontology">Ontology or Taxonomy</a>. </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -738,33 +693,31 @@
 </ul>
 <p><a name='EIDR'></a></p>
 <h2>Entertainment Identifier Registry (EIDR)</h2>
-<p>See: <a href="https://www.eidr.org/">https://www.eidr.org/</a> </p>
 <ul>
-<li>Type of <a href="#DoiRegistrationAgency">DOI Registration Agency</a> </li>
+<li>Type of <a href="#DoiRegistrationAgency">DOI Registration Agency</a>. </li>
+<li>Link <a href="https://www.eidr.org/">https://www.eidr.org/</a> </li>
 </ul>
 <p><a name='ELife'></a></p>
 <h2>ELife</h2>
 <ul>
-<li>Type of <a href="#Publisher">Publisher</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#Publisher">Publisher</a>. </li>
 <li>Signatory <a href="#POSI">POSI</a> </li>
 <li>Topic <a href="#OpenPeerReview">OpenPeerReview</a> </li>
+<li>Topic <a href="#PostPublicationPeerReview">PostPublicationPeerReview</a> </li>
 <li>Access <a href="#OpenAccess">Open Access</a> </li>
-<li>Homepage <a href="https://elifesciences.org/">https://elifesciences.org/</a> </li>
+<li>Link <a href="https://elifesciences.org/">https://elifesciences.org/</a> </li>
 </ul>
 <p><a name='ERROR'></a></p>
 <h2>Estimating the Reliability &amp; Robustness of Research</h2>
-<p>See: <a href="https://error.reviews/about/">https://error.reviews/about/</a> </p>
+<ul>
+<li>Link <a href="https://error.reviews/about/">https://error.reviews/about/</a> </li>
+</ul>
 <p><a name='EditorialManager'></a></p>
 <h2>Editorial Manager</h2>
 <ul>
-<li>Type of <a href="#PublishingPlatform">Publishing Platform (manuscript tracking, peer review, etc)</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://www.editorialmanager.com/">https://www.editorialmanager.com/</a> </li>
+<li>Type of <a href="#PublishingPlatform">Publishing Platform (manuscript tracking, peer review, etc)</a>. </li>
+<li>Link <a href="https://www.editorialmanager.com/">https://www.editorialmanager.com/</a> </li>
+<li>Source License <a href="#ClosedSource">Closed Source Code</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -775,11 +728,8 @@
 <p><a name='Elsevier'></a></p>
 <h2>Elsevier</h2>
 <ul>
-<li>Type of <a href="#Publisher">Publisher</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://www.elsevier.com/">https://www.elsevier.com/</a> </li>
+<li>Type of <a href="#Publisher">Publisher</a>. </li>
+<li>Link <a href="https://www.elsevier.com/">https://www.elsevier.com/</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -787,7 +737,6 @@
 </ul>
 <p><a name='Entity'></a></p>
 <h2>Entity</h2>
-<h3>Other</h3>
 <ul>
 <li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Topic">Topic</a> </li>
 </ul>
@@ -799,59 +748,51 @@
 <p><a name='EuropePMC'></a></p>
 <h2>EuropePMC</h2>
 <ul>
-<li>Type of <a href="#Publisher">Publisher</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#Publisher">Publisher</a>. </li>
 <li>Signatory <a href="#POSI">POSI</a> </li>
-<li>Homepage <a href="https://europepmc.org/">https://europepmc.org/</a> </li>
+<li>Link <a href="https://europepmc.org/">https://europepmc.org/</a> </li>
 </ul>
 <p><a name='EverythingHertz'></a></p>
 <h2>Everything Hertz</h2>
 <ul>
-<li>Type of <a href="#PodcastSeries">Podcast Series</a> </li>
+<li>Type of <a href="#PodcastSeries">Podcast Series</a>. </li>
 </ul>
 <p><a name='ExOrdo'></a></p>
 <h2>Ex Ordo</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://www.exordo.com/">https://www.exordo.com/</a> </li>
+<li>Link <a href="https://www.exordo.com/">https://www.exordo.com/</a> </li>
 </ul>
 <p><a name='FAIR'></a></p>
 <h2>FAIR</h2>
 <p><a name='FF1000'></a></p>
 <h2>F1000</h2>
-<h3>Other</h3>
 <ul>
 <li>Parent <a href="#TaylorAndFrancis">Taylor and Francis</a> </li>
 </ul>
 <p><a name='FRBR'></a></p>
 <h2>Functional Requirements for Bibliographic Records (FRBR)</h2>
-<p>See: <a href="https://en.wikipedia.org/wiki/Functional_Requirements_for_Bibliographic_Records">https://en.wikipedia.org/wiki/Functional_Requirements_for_Bibliographic_Records</a> </p>
 <ul>
-<li>Type of <a href="#Ontology">Ontology or Taxonomy</a> </li>
+<li>Type of <a href="#Ontology">Ontology or Taxonomy</a>. </li>
+<li>Link <a href="https://en.wikipedia.org/wiki/Functional_Requirements_for_Bibliographic_Records">https://en.wikipedia.org/wiki/Functional_Requirements_for_Bibliographic_Records</a> </li>
 </ul>
 <p><a name='Figshare'></a></p>
 <h2>Figshare</h2>
-<h3>Other</h3>
 <ul>
 <li>https://schema.org/parentOrganization <a href="#DigitalScience">DigitalScience</a> </li>
-<li>Homepage <a href="https://figshare.com/">https://figshare.com/</a> </li>
+<li>Link <a href="https://figshare.com/">https://figshare.com/</a> </li>
 </ul>
 <p><a name='Force11'></a></p>
 <h2>Force11</h2>
-<p>See: <a href="https://www.youtube.com/@force1141">https://www.youtube.com/@force1141</a> </p>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://force11.org/">https://force11.org/</a> </li>
+<li>Link <a href="https://www.youtube.com/@force1141">https://www.youtube.com/@force1141</a> </li>
+<li>Link <a href="https://force11.org/">https://force11.org/</a> </li>
 </ul>
 <p><a name='FrankfurtBookFair'></a></p>
 <h2>Frankfurt Book Fair</h2>
 <p><a name='Frontiers'></a></p>
 <h2>Frontiers</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://www.frontiersin.org/">https://www.frontiersin.org/</a> </li>
+<li>Link <a href="https://www.frontiersin.org/">https://www.frontiersin.org/</a> </li>
 </ul>
 <p><a name='Funder'></a></p>
 <h2>Funder</h2>
@@ -864,24 +805,21 @@
 <blockquote>
 <p>Machine learning library for extracting bibliographic data from PDFs </p>
 </blockquote>
-<h3>Other</h3>
 <ul>
 <li>Implements <a href="#TEI">Text Encoding Initiative (TEI)</a> </li>
-<li>Homepage <a href="https://grobid.org/">https://grobid.org/</a> </li>
+<li>Link <a href="https://grobid.org/">https://grobid.org/</a> </li>
 </ul>
 <p><a name='GetFTR'></a></p>
 <h2>Get Fulltext Research</h2>
-<p>See: <a href="https://www.getfulltextresearch.com/people-and-partners">https://www.getfulltextresearch.com/people-and-partners</a> </p>
-<h3>Other</h3>
 <ul>
+<li>Link <a href="https://www.getfulltextresearch.com/people-and-partners">https://www.getfulltextresearch.com/people-and-partners</a> </li>
 <li>Related to <a href="#Content">Content</a> </li>
 </ul>
 <p><a name='GitHub'></a></p>
 <h2>GitHub</h2>
-<p>See: <a href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content">https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content</a> </p>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://github.com/">https://github.com/</a> </li>
+<li>Link <a href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content">https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content</a> </li>
+<li>Link <a href="https://github.com/">https://github.com/</a> </li>
 </ul>
 <p><a name='GoldOA'></a></p>
 <h2>Gold Open Access</h2>
@@ -889,13 +827,12 @@
 <p>Publisher makes content available immediately. APC. </p>
 </blockquote>
 <ul>
-<li>Type of <a href="#OpenAccess">Open Access</a> </li>
+<li>Type of <a href="#OpenAccess">Open Access</a>. </li>
 </ul>
 <p><a name='GoogleScholar'></a></p>
 <h2>Google Scholar</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://scholar.google.com/">https://scholar.google.com/</a> </li>
+<li>Link <a href="https://scholar.google.com/">https://scholar.google.com/</a> </li>
 </ul>
 <p><a name='GreenOA'></a></p>
 <h2>Green Open Access</h2>
@@ -903,41 +840,37 @@
 <p>Author self-archives. Personal, institution or independent repository. Free of charge to author. </p>
 </blockquote>
 <ul>
-<li>Type of <a href="#OpenAccess">Open Access</a> </li>
+<li>Type of <a href="#OpenAccess">Open Access</a>. </li>
 </ul>
 <p><a name='GuillaumeCabanac'></a></p>
 <h2>Guillaume Cabanac</h2>
 <ul>
-<li>Type of <a href="#Sleuth">Research Integrity Sleuth</a> </li>
+<li>Type of <a href="#Sleuth">Research Integrity Sleuth</a>. </li>
 </ul>
 <p><a name='HAL+'></a></p>
 <h2>HAL+</h2>
-<h3>Other</h3>
 <ul>
 <li>Signatory <a href="#POSI">POSI</a> </li>
 </ul>
 <p><a name='HAND'></a></p>
 <h2>Human Digital</h2>
-<p>See: <a href="https://www.handidentity.com/">https://www.handidentity.com/</a> </p>
 <ul>
-<li>Type of <a href="#DoiRegistrationAgency">DOI Registration Agency</a> </li>
+<li>Type of <a href="#DoiRegistrationAgency">DOI Registration Agency</a>. </li>
+<li>Link <a href="https://www.handidentity.com/">https://www.handidentity.com/</a> </li>
 </ul>
 <p><a name='HHMI'></a></p>
 <h2>Howard Hughes Medical Institute (HHMI)</h2>
 <p><a name='HIndex'></a></p>
 <h2>h-index</h2>
 <ul>
-<li>Type of <a href="#Metric">Metric</a> </li>
+<li>Type of <a href="#Metric">Metric</a>. </li>
 </ul>
 <p><a name='Handle'></a></p>
 <h2>Handle System</h2>
-<p>See: <a href="https://en.wikipedia.org/wiki/Handle_System">https://en.wikipedia.org/wiki/Handle_System</a> </p>
 <ul>
-<li>Type of <a href="#PID">Persistent Identifier (PID)</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://www.handle.net/">https://www.handle.net/</a> </li>
+<li>Type of <a href="#PID">Persistent Identifier (PID)</a>. </li>
+<li>Link <a href="https://en.wikipedia.org/wiki/Handle_System">https://en.wikipedia.org/wiki/Handle_System</a> </li>
+<li>Link <a href="https://www.handle.net/">https://www.handle.net/</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -945,36 +878,24 @@
 </ul>
 <p><a name='HighWirePress'></a></p>
 <h2>HighWire Press</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://www.highwirepress.com/">https://www.highwirepress.com/</a> </li>
+<li>Link <a href="https://www.highwirepress.com/">https://www.highwirepress.com/</a> </li>
 </ul>
 <p><a name='Hindawi'></a></p>
 <h2>Hindawi</h2>
 <ul>
-<li>Type of <a href="#Publisher">Publisher</a> </li>
-<li>Type of <a href="#Defunct">Defunct Organization or Service</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#Publisher">Publisher</a>. </li>
+<li>Type of <a href="#Defunct">Defunct Organization or Service</a>. </li>
 <li>acquiredBy <a href="#Wiley">Wiley</a> </li>
 <li>Access <a href="#OpenAccess">Open Access</a> </li>
-<li>Homepage <a href="https://hindawi.com/">https://hindawi.com/</a> </li>
-</ul>
-<p><a name='Homepage'></a></p>
-<h2>Homepage</h2>
-<ul>
-<li>Type of <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate</a> </li>
+<li>Link <a href="https://hindawi.com/">https://hindawi.com/</a> </li>
 </ul>
 <p><a name='Hum'></a></p>
 <h2>Hum</h2>
-<p>See: <a href="https://www.hum.works/">https://www.hum.works/</a> </p>
 <ul>
-<li>Type of <a href="#ServiceProvider">ServiceProvider</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://hum.works/">https://hum.works/</a> </li>
+<li>Type of <a href="#ServiceProvider">ServiceProvider</a>. </li>
+<li>Link <a href="https://www.hum.works/">https://www.hum.works/</a> </li>
+<li>Link <a href="https://hum.works/">https://hum.works/</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -983,20 +904,14 @@
 <p><a name='Hypothesis'></a></p>
 <h2>Hypothesis</h2>
 <ul>
-<li>Type of <a href="#ReadingPlatform">Reading, commenting, sharing platform</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://web.hypothes.is/">https://web.hypothes.is/</a> </li>
+<li>Type of <a href="#ReadingPlatform">Reading, commenting, sharing platform</a>. </li>
+<li>Link <a href="https://web.hypothes.is/">https://web.hypothes.is/</a> </li>
 </ul>
 <p><a name='IIIINdex'></a></p>
 <h2>Open Innovation Data Index</h2>
 <ul>
-<li>Type of <a href="#Index">Index</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://iiindex.org/">https://iiindex.org/</a> </li>
+<li>Type of <a href="#Index">Index</a>. </li>
+<li>Link <a href="https://iiindex.org/">https://iiindex.org/</a> </li>
 </ul>
 <p><a name='IOI'></a></p>
 <h2>Invest in Open Infrastructure</h2>
@@ -1005,26 +920,23 @@
 <p><a name='ISBN'></a></p>
 <h2>ISBN</h2>
 <ul>
-<li>Type of <a href="#PID">Persistent Identifier (PID)</a> </li>
+<li>Type of <a href="#PID">Persistent Identifier (PID)</a>. </li>
 </ul>
 <p><a name='ISNI'></a></p>
 <h2>ISNI</h2>
 <ul>
-<li>Type of <a href="#PID">Persistent Identifier (PID)</a> </li>
+<li>Type of <a href="#PID">Persistent Identifier (PID)</a>. </li>
 </ul>
 <p><a name='ISSN'></a></p>
 <h2>ISSN</h2>
 <ul>
-<li>Type of <a href="#PID">Persistent Identifier (PID)</a> </li>
+<li>Type of <a href="#PID">Persistent Identifier (PID)</a>. </li>
 </ul>
 <p><a name='ISTEX'></a></p>
 <h2>ISTEX</h2>
 <ul>
-<li>Type of <a href="#PID">Persistent Identifier (PID)</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://github.com/istex/istex-ark">https://github.com/istex/istex-ark</a> </li>
+<li>Type of <a href="#PID">Persistent Identifier (PID)</a>. </li>
+<li>Link <a href="https://github.com/istex/istex-ark">https://github.com/istex/istex-ark</a> </li>
 </ul>
 <p><a name='Identifier'></a></p>
 <h2>Identifier</h2>
@@ -1032,10 +944,7 @@
 <p>You're probably more interested in Persistent Identifiers (PIDs), but not all identifiers are persistent </p>
 </blockquote>
 <ul>
-<li>Type of <a href="#Intro">Introductory Topic</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#Intro">Introductory Topic</a>. </li>
 <li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Topic">Topic</a> </li>
 <li>f:seeAlso <a href="#PID">Persistent Identifier (PID)</a> </li>
 </ul>
@@ -1048,15 +957,12 @@
 <p><a name='ImpactFactor'></a></p>
 <h2>ImpactFactor</h2>
 <ul>
-<li>Type of <a href="#Metric">Metric</a> </li>
+<li>Type of <a href="#Metric">Metric</a>. </li>
 </ul>
 <p><a name='Individual'></a></p>
 <h2>Individual</h2>
 <ul>
-<li>Type of <a href="#Intro">Introductory Topic</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#Intro">Introductory Topic</a>. </li>
 <li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Entity">Entity</a> </li>
 </ul>
 <h3>References</h3>
@@ -1065,15 +971,13 @@
 </ul>
 <p><a name='Ingenta'></a></p>
 <h2>Ingenta</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://www.ingenta.com/">https://www.ingenta.com/</a> </li>
+<li>Link <a href="https://www.ingenta.com/">https://www.ingenta.com/</a> </li>
 </ul>
 <p><a name='IngentaConnect'></a></p>
 <h2>Ingenta Connect</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://www.ingenta.com/products/content-management/">https://www.ingenta.com/products/content-management/</a> </li>
+<li>Link <a href="https://www.ingenta.com/products/content-management/">https://www.ingenta.com/products/content-management/</a> </li>
 </ul>
 <p><a name='Initiative'></a></p>
 <h2>Initative or Topic</h2>
@@ -1091,9 +995,9 @@
 <blockquote>
 <p>Research integrity refers to all of the factors that underpin good research practice and promote trust and confidence in the research process - RIO </p>
 </blockquote>
-<p>See: <a href="https://ukrio.org/research-integrity/what-is-research-integrity/">https://ukrio.org/research-integrity/what-is-research-integrity/</a> </p>
 <ul>
-<li>Type of <a href="#ScholCommTopic">Scholarly Communication Topic</a> </li>
+<li>Type of <a href="#ScholCommTopic">Scholarly Communication Topic</a>. </li>
+<li>Link <a href="https://ukrio.org/research-integrity/what-is-research-integrity/">https://ukrio.org/research-integrity/what-is-research-integrity/</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -1117,46 +1021,43 @@
 <li><a href="#ReadingPlatform">Reading, commenting, sharing platform</a> </li>
 <li><a href="#Identifier">Identifier</a> </li>
 <li><a href="#PID">Persistent Identifier (PID)</a> </li>
-<li><a href="#Blog">Blog</a> </li>
+<li><a href="#BlogNewsletter">Blogs and newsletters</a> </li>
 <li><a href="#Tool">Tool</a> </li>
 <li><a href="#Ontology">Ontology or Taxonomy</a> </li>
 </ul>
 <p><a name='InvenioRDM'></a></p>
 <h2>InvenioRDM</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://inveniosoftware.org/products/rdm/">https://inveniosoftware.org/products/rdm/</a> </li>
+<li>Link <a href="https://inveniosoftware.org/products/rdm/">https://inveniosoftware.org/products/rdm/</a> </li>
 <li>Maintained By <a href="#CERN">CERN</a> </li>
 </ul>
 <p><a name='Ithaka'></a></p>
 <h2>Ithaka S+R</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://sr.ithaka.org/">https://sr.ithaka.org/</a> </li>
+<li>Link <a href="https://sr.ithaka.org/">https://sr.ithaka.org/</a> </li>
 </ul>
 <p><a name='JALC'></a></p>
 <h2>Japan Link Center (JaLC)</h2>
 <blockquote>
 <p>Japan </p>
 </blockquote>
-<p>See: <a href="https://japanlinkcenter.org/top/english.html">https://japanlinkcenter.org/top/english.html</a> </p>
 <ul>
-<li>Type of <a href="#DoiRegistrationAgency">DOI Registration Agency</a> </li>
+<li>Type of <a href="#DoiRegistrationAgency">DOI Registration Agency</a>. </li>
+<li>Link <a href="https://japanlinkcenter.org/top/english.html">https://japanlinkcenter.org/top/english.html</a> </li>
 </ul>
 <p><a name='JATS'></a></p>
 <h2>Journal Article Tag Suite (JATS)</h2>
-<p>See: <a href="https://jats4r.niso.org/">https://jats4r.niso.org/</a> </p>
-<h3>Other</h3>
 <ul>
+<li>Link <a href="https://jats4r.niso.org/">https://jats4r.niso.org/</a> </li>
 <li>Related to <a href="#Content">Content</a> </li>
 </ul>
 <p><a name='JIF'></a></p>
 <h2>Journal Impact Factor (JIF)</h2>
 <p><a name='JLM'></a></p>
 <h2>Journal Level Metrics (JLM)</h2>
-<p>See: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10196720/">https://pmc.ncbi.nlm.nih.gov/articles/PMC10196720/</a> </p>
 <ul>
-<li>Type of <a href="#Initiative">Initative or Topic</a> </li>
+<li>Type of <a href="#Initiative">Initative or Topic</a>. </li>
+<li>Link <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10196720/">https://pmc.ncbi.nlm.nih.gov/articles/PMC10196720/</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -1165,17 +1066,13 @@
 <p><a name='JOSS'></a></p>
 <h2>JOSS</h2>
 <ul>
-<li>Type of <a href="#Journal">Journal</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#Journal">Journal</a>. </li>
 <li>Signatory <a href="#POSI">POSI</a> </li>
 <li>Access <a href="#OpenAccess">Open Access</a> </li>
-<li>Homepage <a href="https://joss.theoj.org/">https://joss.theoj.org/</a> </li>
+<li>Link <a href="https://joss.theoj.org/">https://joss.theoj.org/</a> </li>
 </ul>
 <p><a name='JSONLD'></a></p>
 <h2>JSON-LD</h2>
-<h3>Other</h3>
 <ul>
 <li>SerializationFormat <a href="#RDF">RDF</a> </li>
 </ul>
@@ -1185,9 +1082,8 @@
 </ul>
 <p><a name='JSTOR'></a></p>
 <h2>JSTOR</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://www.jstor.org/">https://www.jstor.org/</a> </li>
+<li>Link <a href="https://www.jstor.org/">https://www.jstor.org/</a> </li>
 </ul>
 <p><a name='JWT'></a></p>
 <h2>JWT</h2>
@@ -1197,20 +1093,14 @@
 <p>Reference management software </p>
 </blockquote>
 <ul>
-<li>Type of <a href="https://schema.org/tool">https://schema.org/tool</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://www.jabref.org/">https://www.jabref.org/</a> </li>
+<li>Type of <a href="https://schema.org/tool">https://schema.org/tool</a>. </li>
+<li>Link <a href="https://www.jabref.org/">https://www.jabref.org/</a> </li>
 </ul>
 <p><a name='Janeway'></a></p>
 <h2>Janeway</h2>
-<p>See: <a href="https://www.openlibhums.org/site/janeway/">https://www.openlibhums.org/site/janeway/</a> </p>
 <ul>
-<li>Type of <a href="#PublishingPlatform">Publishing Platform (manuscript tracking, peer review, etc)</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#PublishingPlatform">Publishing Platform (manuscript tracking, peer review, etc)</a>. </li>
+<li>Link <a href="https://www.openlibhums.org/site/janeway/">https://www.openlibhums.org/site/janeway/</a> </li>
 <li>https://schema.org/parentOrganization <a href="#OpenLibHums">Open Library of Humanities (OLH)</a> </li>
 </ul>
 <p><a name='JournalTransfers'></a></p>
@@ -1219,18 +1109,21 @@
 <p>Transfer of journal between publishers. Often happens around the start of the year. Can mean big changes in metadata. </p>
 </blockquote>
 <ul>
-<li>Type of <a href="#ScholCommTopic">Scholarly Communication Topic</a> </li>
+<li>Type of <a href="#ScholCommTopic">Scholarly Communication Topic</a>. </li>
 </ul>
 <p><a name='Journalology'></a></p>
 <h2>Journalology</h2>
-<p>See: <a href="https://ck.journalology.com/posts">https://ck.journalology.com/posts</a> </p>
+<blockquote>
+<p>What's going on with Scholarly Publishers </p>
+</blockquote>
 <ul>
-<li>Type of <a href="#Newsletter">Newsletter</a> </li>
+<li>Type of <a href="#BlogNewsletter">Blogs and newsletters</a>. </li>
+<li>Link <a href="https://ck.journalology.com/posts">https://ck.journalology.com/posts</a> </li>
 </ul>
 <p><a name='JsonSchema'></a></p>
 <h2>JsonSchema</h2>
 <ul>
-<li>Type of <a href="#Schema">Schema</a> </li>
+<li>Type of <a href="#Schema">Schema</a>. </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -1239,40 +1132,39 @@
 <p><a name='KGL'></a></p>
 <h2>Knowledge Works Global</h2>
 <ul>
-<li>Type of <a href="https://schema.org/ServiceProvider">https://schema.org/ServiceProvider</a> </li>
+<li>Type of <a href="https://schema.org/ServiceProvider">https://schema.org/ServiceProvider</a>. </li>
 </ul>
 <p><a name='KISTI'></a></p>
 <h2>Korean DOI Center</h2>
 <blockquote>
 <p>Korea </p>
 </blockquote>
-<p>See: <a href="https://www.doi.or.kr/wordpress/#content">https://www.doi.or.kr/wordpress/#content</a> </p>
 <ul>
-<li>Type of <a href="#DoiRegistrationAgency">DOI Registration Agency</a> </li>
+<li>Type of <a href="#DoiRegistrationAgency">DOI Registration Agency</a>. </li>
+<li>Link <a href="https://www.doi.or.kr/wordpress/#content">https://www.doi.or.kr/wordpress/#content</a> </li>
 </ul>
 <p><a name='KevinPatrick'></a></p>
 <h2>Kevin Patrick</h2>
 <ul>
-<li>Type of <a href="#Sleuth">Research Integrity Sleuth</a> </li>
+<li>Type of <a href="#Sleuth">Research Integrity Sleuth</a>. </li>
 </ul>
 <p><a name='KnowledgeFutures'></a></p>
 <h2>Knowledge Futures</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://www.knowledgefutures.org/">https://www.knowledgefutures.org/</a> </li>
+<li>Link <a href="https://www.knowledgefutures.org/">https://www.knowledgefutures.org/</a> </li>
 </ul>
 <p><a name='Kudos'></a></p>
 <h2>Kudos</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://www.growkudos.com/">https://www.growkudos.com/</a> </li>
+<li>Link <a href="https://www.growkudos.com/">https://www.growkudos.com/</a> </li>
 </ul>
 <p><a name='LaReferencia'></a></p>
 <h2>La Referencia</h2>
-<p>See: <a href="https://25.scielo.org/en/seminars/la-referencia/">https://25.scielo.org/en/seminars/la-referencia/</a> </p>
+<ul>
+<li>Link <a href="https://25.scielo.org/en/seminars/la-referencia/">https://25.scielo.org/en/seminars/la-referencia/</a> </li>
+</ul>
 <p><a name='LiberateScience'></a></p>
 <h2>LiberateScience</h2>
-<h3>Other</h3>
 <ul>
 <li>Signatory <a href="#POSI">POSI</a> </li>
 </ul>
@@ -1280,17 +1172,17 @@
 <h2>LibraryBase</h2>
 <p><a name='LibraryTechnologyGuides'></a></p>
 <h2>LibraryTechnologyGuides</h2>
-<p>See: <a href="https://librarytechnology.org/">https://librarytechnology.org/</a> </p>
+<ul>
+<li>Link <a href="https://librarytechnology.org/">https://librarytechnology.org/</a> </li>
+</ul>
 <p><a name='Literature'></a></p>
 <h2>Literature</h2>
-<h3>Other</h3>
 <ul>
 <li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Topic">Topic</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
-<li><a href="#Blog">Blog</a> http://www.w3.org/2000/01/rdf-schema#subClassOf ～</li>
-<li><a href="#Newsletter">Newsletter</a> http://www.w3.org/2000/01/rdf-schema#subClassOf ～</li>
+<li><a href="#BlogNewsletter">Blogs and newsletters</a> http://www.w3.org/2000/01/rdf-schema#subClassOf ～</li>
 <li><a href="#PodcastSeries">Podcast Series</a> http://www.w3.org/2000/01/rdf-schema#subClassOf ～</li>
 </ul>
 <p><a name='LondonBookFair'></a></p>
@@ -1298,33 +1190,24 @@
 <p><a name='MAG'></a></p>
 <h2>Microsoft Academic Graph</h2>
 <ul>
-<li>Type of <a href="#Defunct">Defunct Organization or Service</a> </li>
+<li>Type of <a href="#Defunct">Defunct Organization or Service</a>. </li>
 </ul>
 <p><a name='MARC'></a></p>
 <h2>Machine-readable Cataloging (MARC)</h2>
-<p>See: <a href="https://en.wikipedia.org/wiki/MARC_standards">https://en.wikipedia.org/wiki/MARC_standards</a> </p>
-<h3>Other</h3>
 <ul>
+<li>Link <a href="https://en.wikipedia.org/wiki/MARC_standards">https://en.wikipedia.org/wiki/MARC_standards</a> </li>
 <li>Related <a href="#BIBFRAME">BIBFRAME</a> </li>
 </ul>
 <p><a name='MEDRA'></a></p>
 <h2>multilingual European DOI Registration Agency (mEDRA)</h2>
-<p>See: <a href="https://www.medra.org/">https://www.medra.org/</a> </p>
 <ul>
-<li>Type of <a href="#DoiRegistrationAgency">DOI Registration Agency</a> </li>
-</ul>
-<p><a name='MaintainedBy'></a></p>
-<h2>Maintained By</h2>
-<ul>
-<li>Type of <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate</a> </li>
+<li>Type of <a href="#DoiRegistrationAgency">DOI Registration Agency</a>. </li>
+<li>Link <a href="https://www.medra.org/">https://www.medra.org/</a> </li>
 </ul>
 <p><a name='MakeDataCount'></a></p>
 <h2>MakeDataCount</h2>
 <ul>
-<li>Type of <a href="#Initative">Initative</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#Initative">Initative</a>. </li>
 <li>Related <a href="#DataCite">DataCite</a> </li>
 </ul>
 <p><a name='Medrxiv'></a></p>
@@ -1332,19 +1215,18 @@
 <blockquote>
 <p>The Preprint Server for Health Sciences </p>
 </blockquote>
-<p>See: <a href="https://www.medrxiv.org/">https://www.medrxiv.org/</a> </p>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://www.medrxiv.org/">https://www.medrxiv.org/</a> </li>
+<li>Link <a href="https://www.medrxiv.org/">https://www.medrxiv.org/</a> </li>
 </ul>
 <p><a name='Memento'></a></p>
 <h2>Memento</h2>
-<p>See: <a href="https://www.rfc-editor.org/rfc/rfc7089.txt">https://www.rfc-editor.org/rfc/rfc7089.txt</a> </p>
+<ul>
+<li>Link <a href="https://www.rfc-editor.org/rfc/rfc7089.txt">https://www.rfc-editor.org/rfc/rfc7089.txt</a> </li>
+</ul>
 <p><a name='Mendeley'></a></p>
 <h2>Mendeley</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://www.mendeley.com/">https://www.mendeley.com/</a> </li>
+<li>Link <a href="https://www.mendeley.com/">https://www.mendeley.com/</a> </li>
 </ul>
 <p><a name='Metadata'></a></p>
 <h2>Metadata</h2>
@@ -1352,7 +1234,7 @@
 <p>Scholarly metadata. Information about content. </p>
 </blockquote>
 <ul>
-<li>Type of <a href="#ScholCommTopic">Scholarly Communication Topic</a> </li>
+<li>Type of <a href="#ScholCommTopic">Scholarly Communication Topic</a>. </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -1361,10 +1243,7 @@
 <p><a name='MetadataConverter'></a></p>
 <h2>MetadataConverter</h2>
 <ul>
-<li>Type of <a href="#Tool">Tool</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#Tool">Tool</a>. </li>
 <li>Related to <a href="#Metadata">Metadata</a> </li>
 </ul>
 <p><a name='Metric'></a></p>
@@ -1372,36 +1251,35 @@
 <h3>Instances</h3>
 <ul>
 <li><a href="#HIndex">h-index</a> </li>
+<li><a href="#Altmetric">Altmetric.com</a> </li>
 <li><a href="#Altmetrics">Alt Metrics</a> </li>
+<li><a href="#PlumX">PlumX</a> </li>
 <li><a href="#ImpactFactor">ImpactFactor</a> </li>
+<li><a href="#ALM">Article-Level Metrics (ALM)</a> </li>
 </ul>
 <p><a name='MidnightAtTheCassablanca'></a></p>
 <h2>Midnight At The Cassablanca</h2>
 <ul>
-<li>Type of <a href="#PodcastSeries">Podcast Series</a> </li>
+<li>Type of <a href="#PodcastSeries">Podcast Series</a>. </li>
 </ul>
 <p><a name='MolecularConnections'></a></p>
 <h2>Molecular Connections</h2>
 <p><a name='MultipleResolution'></a></p>
 <h2>Multiple Resolution</h2>
 <ul>
-<li>Type of <a href="#ScholCommTopic">Scholarly Communication Topic</a> </li>
+<li>Type of <a href="#ScholCommTopic">Scholarly Communication Topic</a>. </li>
 </ul>
 <p><a name='N2T'></a></p>
 <h2>Name-to-Thing (N2T) Resolver</h2>
 <ul>
-<li>Type of <a href="#Resolver">Resolver</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#Resolver">Resolver</a>. </li>
 <li>Supports <a href="#ARK">Archival Resource Key (ARK)</a> </li>
-<li>Homepage <a href="https://n2t.net/">https://n2t.net/</a> </li>
+<li>Link <a href="https://n2t.net/">https://n2t.net/</a> </li>
 </ul>
 <p><a name='NISO'></a></p>
 <h2>NISO</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://www.niso.org/">https://www.niso.org/</a> </li>
+<li>Link <a href="https://www.niso.org/">https://www.niso.org/</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -1409,24 +1287,18 @@
 </ul>
 <p><a name='NLNet'></a></p>
 <h2>NLnet Foundation</h2>
-<p>See: <a href="https://nlnet.nl/">https://nlnet.nl/</a> </p>
+<ul>
+<li>Link <a href="https://nlnet.nl/">https://nlnet.nl/</a> </li>
+</ul>
 <h3>References</h3>
 <ul>
 <li><a href="#Wax">Wax</a> CreatedBy ～</li>
 </ul>
-<p><a name='Newsletter'></a></p>
-<h2>Newsletter</h2>
-<h3>Instances</h3>
-<ul>
-<li><a href="#Journalology">Journalology</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Literature">Literature</a> </li>
-</ul>
 <p><a name='Nikau'></a></p>
 <h2>Nikau Consulting</h2>
-<p>See: <a href="https://nikau.consulting/">https://nikau.consulting/</a> </p>
+<ul>
+<li>Link <a href="https://nikau.consulting/">https://nikau.consulting/</a> </li>
+</ul>
 <h3>References</h3>
 <ul>
 <li><a href="#Wax">Wax</a> CreatedBy ～</li>
@@ -1439,46 +1311,41 @@
 </ul>
 <p><a name='OAPEN'></a></p>
 <h2>OAPEN</h2>
-<h3>Other</h3>
 <ul>
 <li>Signatory <a href="#POSI">POSI</a> </li>
 <li>Topic <a href="#OpenAccess">Open Access</a> </li>
 </ul>
 <p><a name='OASPA'></a></p>
 <h2>OASPA</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://www.oaspa.org/">https://www.oaspa.org/</a> </li>
+<li>Link <a href="https://www.oaspa.org/">https://www.oaspa.org/</a> </li>
 </ul>
 <p><a name='OASwitchboard'></a></p>
 <h2>OASwitchboard</h2>
-<h3>Other</h3>
 <ul>
 <li>Signatory <a href="#POSI">POSI</a> </li>
 <li>Topic <a href="#OpenAccess">Open Access</a> </li>
 </ul>
 <p><a name='OCLC'></a></p>
 <h2>OCLC</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://www.oclc.org/">https://www.oclc.org/</a> </li>
+<li>Link <a href="https://www.oclc.org/">https://www.oclc.org/</a> </li>
 </ul>
 <p><a name='OJS'></a></p>
 <h2>OJS</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://pkp.sfu.ca/software/ojs/">https://pkp.sfu.ca/software/ojs/</a> </li>
+<li>Link <a href="https://pkp.sfu.ca/software/ojs/">https://pkp.sfu.ca/software/ojs/</a> </li>
 <li>Maintained By <a href="#PKP">PKP</a> </li>
+<li>Source License <a href="#OpenSource">Open Source Code</a> </li>
 </ul>
 <p><a name='OP'></a></p>
 <h2>The Publications Office of the European Union (OP)</h2>
-<p>See: <a href="https://op.europa.eu/en/home">https://op.europa.eu/en/home</a> </p>
 <ul>
-<li>Type of <a href="#DoiRegistrationAgency">DOI Registration Agency</a> </li>
+<li>Type of <a href="#DoiRegistrationAgency">DOI Registration Agency</a>. </li>
+<li>Link <a href="https://op.europa.eu/en/home">https://op.europa.eu/en/home</a> </li>
 </ul>
 <p><a name='OPERAS'></a></p>
 <h2>OPERAS</h2>
-<h3>Other</h3>
 <ul>
 <li>Signatory <a href="#POSI">POSI</a> </li>
 </ul>
@@ -1488,25 +1355,28 @@
 <p>Open Identifier for authors </p>
 </blockquote>
 <ul>
-<li>Type of <a href="#PID">Persistent Identifier (PID)</a> </li>
+<li>Type of <a href="#PID">Persistent Identifier (PID)</a>. </li>
+<li>Link <a href="https://orcid.org/">https://orcid.org/</a> </li>
+<li>Source License <a href="#OpenSource">Open Source Code</a> </li>
 </ul>
-<h3>Other</h3>
+<h3>References</h3>
 <ul>
-<li>Homepage <a href="https://orcid.org/">https://orcid.org/</a> </li>
+<li><a href="#Affiliation">Affiliation</a> Related to ～</li>
 </ul>
 <p><a name='OSF'></a></p>
 <h2>Open Science Framework (OSF)</h2>
-<p>See: <a href="https://osf.io/">https://osf.io/</a> </p>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://osf.io/">https://osf.io/</a> </li>
+<li>Link <a href="https://osf.io/">https://osf.io/</a> </li>
 </ul>
 <p><a name='Ontology'></a></p>
 <h2>Ontology or Taxonomy</h2>
 <blockquote>
 <p>An Ontology is a formal method for organizing information. Usually with RDF. Taxonomies talk about types of things, and ontologies talk about specific things. But there's no reason to differentiate here. </p>
 </blockquote>
-<p>See: <a href="https://lov.linkeddata.es/dataset/lov">https://lov.linkeddata.es/dataset/lov</a> </p>
+<ul>
+<li>Type of <a href="#Intro">Introductory Topic</a>. </li>
+<li>Link <a href="https://lov.linkeddata.es/dataset/lov">https://lov.linkeddata.es/dataset/lov</a> </li>
+</ul>
 <h3>Instances</h3>
 <ul>
 <li><a href="#CREDIT">Contributor Role Taxonomy (CRediT)</a> </li>
@@ -1518,12 +1388,7 @@
 <li><a href="#DublinCore">Dublin Core</a> </li>
 <li><a href="#SchemaOrg">Schema.org</a> </li>
 <li><a href="#Wikidata">Wikidata Ontology</a> </li>
-<li>
-<p><a href="#BIBFRAME">BIBFRAME</a> </p>
-</li>
-<li>
-<p>Type of <a href="#Intro">Introductory Topic</a> </p>
-</li>
+<li><a href="#BIBFRAME">BIBFRAME</a> </li>
 </ul>
 <p><a name='OpenAccess'></a></p>
 <h2>Open Access</h2>
@@ -1547,35 +1412,29 @@
 <h2>OpenAIRE</h2>
 <p><a name='OpenAlex'></a></p>
 <h2>OpenAlex</h2>
-<h3>Other</h3>
 <ul>
 <li>Signatory <a href="#POSI">POSI</a> </li>
-<li>Homepage <a href="https://openalex.org/">https://openalex.org/</a> </li>
+<li>Link <a href="https://openalex.org/">https://openalex.org/</a> </li>
 </ul>
 <p><a name='OpenAlexIds'></a></p>
 <h2>OpenAlex IDs</h2>
 <p><a name='OpenApi'></a></p>
 <h2>OpenApi</h2>
-<h3>Other</h3>
 <ul>
 <li>Related <a href="#JsonSchema">JsonSchema</a> </li>
 </ul>
 <p><a name='OpenCitations'></a></p>
 <h2>OpenCitations</h2>
-<h3>Other</h3>
 <ul>
 <li>Signatory <a href="#POSI">POSI</a> </li>
-<li>Homepage <a href="https://opencitations.net/">https://opencitations.net/</a> </li>
+<li>Link <a href="https://opencitations.net/">https://opencitations.net/</a> </li>
 </ul>
 <p><a name='OpenData'></a></p>
 <h2>Open Data</h2>
 <p><a name='OpenFunderRegistry'></a></p>
 <h2>Open Funder Registry AKA Fundref</h2>
 <ul>
-<li>Type of <a href="#Ontology">Ontology or Taxonomy</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#Ontology">Ontology or Taxonomy</a>. </li>
 <li>PublishedBy <a href="#Crossref">Crossref</a> </li>
 <li>Maintained By <a href="#Elsevier">Elsevier</a> </li>
 <li>Related <a href="#ROR">ROR</a> </li>
@@ -1583,9 +1442,8 @@
 </ul>
 <p><a name='OpenLibHums'></a></p>
 <h2>Open Library of Humanities (OLH)</h2>
-<p>See: <a href="https://www.openlibhums.org/">https://www.openlibhums.org/</a> </p>
-<h3>Other</h3>
 <ul>
+<li>Link <a href="https://www.openlibhums.org/">https://www.openlibhums.org/</a> </li>
 <li>Access <a href="#DiamondOA">Diamond Open Access</a> </li>
 </ul>
 <h3>References</h3>
@@ -1594,35 +1452,36 @@
 </ul>
 <p><a name='OpenScienceMontioring'></a></p>
 <h2>OpenScienceMontioring</h2>
-<p>See: <a href="https://doi.org/10.5281/zenodo.15807480">https://doi.org/10.5281/zenodo.15807480</a> </p>
-<p>See: <a href="https://open-science-monitoring.org/">https://open-science-monitoring.org/</a> </p>
+<ul>
+<li>Link <a href="https://doi.org/10.5281/zenodo.15807480">https://doi.org/10.5281/zenodo.15807480</a> </li>
+<li>Link <a href="https://open-science-monitoring.org/">https://open-science-monitoring.org/</a> </li>
+</ul>
 <p><a name='OpenSource'></a></p>
 <h2>Open Source Code</h2>
 <h3>References</h3>
 <ul>
 <li><a href="#Crossref">Crossref</a> Source License ～</li>
+<li><a href="#DataCite">DataCite</a> Source License ～</li>
+<li><a href="#ROR">ROR</a> Source License ～</li>
+<li><a href="#ORCID">ORCID</a> Source License ～</li>
+<li><a href="#OJS">OJS</a> Source License ～</li>
 <li><a href="#Zotero">Zotero</a> Source License ～</li>
 </ul>
 <p><a name='OpenUrl'></a></p>
 <h2>OpenURL</h2>
 <ul>
-<li>Type of <a href="#Standard">Standard</a> </li>
+<li>Type of <a href="#Standard">Standard</a>. </li>
 </ul>
 <p><a name='Organization'></a></p>
 <h2>Organization</h2>
+<ul>
+<li>Type of <a href="#Intro">Introductory Topic</a>. </li>
+<li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Entity">Entity</a> </li>
+</ul>
 <h3>Instances</h3>
 <ul>
 <li><a href="#CERN">CERN</a> </li>
-<li>
-<p><a href="#CDL">CDL</a> </p>
-</li>
-<li>
-<p>Type of <a href="#Intro">Introductory Topic</a> </p>
-</li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Entity">Entity</a> </li>
+<li><a href="#CDL">CDL</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -1636,19 +1495,22 @@
 <blockquote>
 <p>Authoring and collaboration platform. LaTeX </p>
 </blockquote>
-<h3>Other</h3>
 <ul>
 <li>https://schema.org/parentOrganization <a href="#DigitalScience">DigitalScience</a> </li>
-<li>Homepage <a href="https://www.overleaf.com/">https://www.overleaf.com/</a> </li>
+<li>Link <a href="https://www.overleaf.com/">https://www.overleaf.com/</a> </li>
 </ul>
 <p><a name='Overton'></a></p>
 <h2>Overton</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://www.overton.io/">https://www.overton.io/</a> </li>
+<li>Link <a href="https://www.overton.io/">https://www.overton.io/</a> </li>
 </ul>
 <p><a name='PID'></a></p>
 <h2>Persistent Identifier (PID)</h2>
+<ul>
+<li>Type of <a href="#Intro">Introductory Topic</a>. </li>
+<li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Topic">Topic</a> </li>
+<li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Identifier">Identifier</a> </li>
+</ul>
 <h3>Instances</h3>
 <ul>
 <li><a href="#DOI">DOI</a> </li>
@@ -1661,17 +1523,7 @@
 <li><a href="#ISBN">ISBN</a> </li>
 <li><a href="#ISSN">ISSN</a> </li>
 <li><a href="#WikiDataId">Wikidata Q ID</a> </li>
-<li>
-<p><a href="#ISTEX">ISTEX</a> </p>
-</li>
-<li>
-<p>Type of <a href="#Intro">Introductory Topic</a> </p>
-</li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Topic">Topic</a> </li>
-<li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Identifier">Identifier</a> </li>
+<li><a href="#ISTEX">ISTEX</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -1682,10 +1534,9 @@
 <blockquote>
 <p>Public Knowledge Project maintain Open Journal System </p>
 </blockquote>
-<h3>Other</h3>
 <ul>
 <li>Signatory <a href="#POSI">POSI</a> </li>
-<li>Homepage <a href="https://pkp.sfu.ca/">https://pkp.sfu.ca/</a> </li>
+<li>Link <a href="https://pkp.sfu.ca/">https://pkp.sfu.ca/</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -1694,14 +1545,11 @@
 <p><a name='PLOS'></a></p>
 <h2>PLOS</h2>
 <ul>
-<li>Type of <a href="#Publisher">Publisher</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#Publisher">Publisher</a>. </li>
 <li>Uses <a href="#EditorialManager">Editorial Manager</a> </li>
 <li>Uses <a href="#Aperta">Aperta</a> </li>
 <li>Access <a href="#OpenAccess">Open Access</a> </li>
-<li>Homepage <a href="https://plos.org/">https://plos.org/</a> </li>
+<li>Link <a href="https://plos.org/">https://plos.org/</a> </li>
 </ul>
 <p><a name='POSI'></a></p>
 <h2>POSI</h2>
@@ -1709,11 +1557,8 @@
 <p>Principles of Open Scholarly Infrastructure </p>
 </blockquote>
 <ul>
-<li>Type of <a href="#Initiative">Initative or Topic</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://openinfrastructure.org">https://openinfrastructure.org</a> </li>
+<li>Type of <a href="#Initiative">Initative or Topic</a>. </li>
+<li>Link <a href="https://openinfrastructure.org">https://openinfrastructure.org</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -1742,23 +1587,26 @@
 </ul>
 <p><a name='PURL'></a></p>
 <h2>Persistent uniform resource locator (PURL)</h2>
-<p>See: <a href="https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator">https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator</a> </p>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://purl.archive.org/">https://purl.archive.org/</a> </li>
+<li>Link <a href="https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator">https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator</a> </li>
+<li>Link <a href="https://purl.archive.org/">https://purl.archive.org/</a> </li>
 </ul>
 <p><a name='Papers'></a></p>
 <h2>Papers (reference manager)</h2>
-<h3>Other</h3>
 <ul>
 <li>https://schema.org/parentOrganization <a href="#DigitalScience">DigitalScience</a> </li>
 </ul>
+<p><a name='Pardalotus'></a></p>
+<h2>Pardalotus Blog</h2>
+<ul>
+<li>Type of <a href="#BlogNewsletter">Blogs and newsletters</a>. </li>
+<li>Link <a href="https://pardalotus.tech/posts/">https://pardalotus.tech/posts/</a> </li>
+</ul>
 <p><a name='PeerCommunityIn'></a></p>
 <h2>PeerCommunityIn</h2>
-<h3>Other</h3>
 <ul>
 <li>Signatory <a href="#POSI">POSI</a> </li>
-<li>Homepage <a href="https://peercommunityin.org/">https://peercommunityin.org/</a> </li>
+<li>Link <a href="https://peercommunityin.org/">https://peercommunityin.org/</a> </li>
 </ul>
 <p><a name='PeerRef'></a></p>
 <h2>Peer Ref</h2>
@@ -1767,45 +1615,41 @@
 <p><a name='PlanS'></a></p>
 <h2>Plan S</h2>
 <ul>
-<li>Type of <a href="#Initiative">Initative or Topic</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://www.coalition-s.org/">https://www.coalition-s.org/</a> </li>
+<li>Type of <a href="#Initiative">Initative or Topic</a>. </li>
+<li>Link <a href="https://www.coalition-s.org/">https://www.coalition-s.org/</a> </li>
 </ul>
 <p><a name='PlumX'></a></p>
 <h2>PlumX</h2>
-<p>See: <a href="https://www.elsevier.com/insights/metrics/plumx">https://www.elsevier.com/insights/metrics/plumx</a> </p>
 <ul>
-<li>Type of <a href="#MetricsPlatform">MetricsPlatform</a> </li>
+<li>Type of <a href="#MetricsPlatform">MetricsPlatform</a>. </li>
+<li>Type of <a href="#Metric">Metric</a>. </li>
+<li>Type of <a href="#Altmetrics">Alt Metrics</a>. </li>
+<li>Link <a href="https://www.elsevier.com/insights/metrics/plumx">https://www.elsevier.com/insights/metrics/plumx</a> </li>
+<li>Related <a href="#Altmetrics">Alt Metrics</a> </li>
 </ul>
 <p><a name='PodcastSeries'></a></p>
 <h2>Podcast Series</h2>
+<ul>
+<li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Literature">Literature</a> </li>
+<li>http://www.w3.org/2000/01/rdf-schema#sameAs <a href="#s:PodcastSeries">s:PodcastSeries</a> </li>
+</ul>
 <h3>Instances</h3>
 <ul>
 <li><a href="#MidnightAtTheCassablanca">Midnight At The Cassablanca</a> </li>
 <li><a href="#EverythingHertz">Everything Hertz</a> </li>
 <li><a href="#PublisherSpeakPodcast">PublisherSpeakPodcast</a> </li>
 </ul>
-<h3>Other</h3>
-<ul>
-<li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Literature">Literature</a> </li>
-<li>http://www.w3.org/2000/01/rdf-schema#sameAs <a href="#s:PodcastSeries">s:PodcastSeries</a> </li>
-</ul>
 <p><a name='PreReview'></a></p>
 <h2>PreReview</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://prereview.org/">https://prereview.org/</a> </li>
+<li>Link <a href="https://prereview.org/">https://prereview.org/</a> </li>
 </ul>
 <p><a name='PreprintServer'></a></p>
 <h2>PreprintServer</h2>
 <p><a name='ProQuest'></a></p>
 <h2>ProQuest</h2>
-<p>See: <a href="https://www.proquest.com/">https://www.proquest.com/</a> </p>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://www.proquest.com/">https://www.proquest.com/</a> </li>
+<li>Link <a href="https://www.proquest.com/">https://www.proquest.com/</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -1813,15 +1657,8 @@
 </ul>
 <p><a name='ProjectMuse'></a></p>
 <h2>ProjectMuse</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://muse.jhu.edu/">https://muse.jhu.edu/</a> </li>
-</ul>
-<p><a name='Proprietory'></a></p>
-<h2>Proprietory Code</h2>
-<h3>References</h3>
-<ul>
-<li><a href="#Crossref">Crossref</a> Source License ～</li>
+<li>Link <a href="https://muse.jhu.edu/">https://muse.jhu.edu/</a> </li>
 </ul>
 <p><a name='Protocol'></a></p>
 <h2>Research Protocol</h2>
@@ -1830,31 +1667,37 @@
 <blockquote>
 <p>Ontology for provenance of metadata and other information </p>
 </blockquote>
-<p>See: <a href="https://www.w3.org/TR/prov-o/">https://www.w3.org/TR/prov-o/</a> </p>
 <ul>
-<li>Type of <a href="#Ontology">Ontology or Taxonomy</a> </li>
+<li>Type of <a href="#Ontology">Ontology or Taxonomy</a>. </li>
+<li>Link <a href="https://www.w3.org/TR/prov-o/">https://www.w3.org/TR/prov-o/</a> </li>
 </ul>
 <p><a name='PubPeer'></a></p>
 <h2>PubPeer</h2>
 <blockquote>
 <p>Allow users to make public comments on articles. Post-publication peer review. </p>
 </blockquote>
-<p>See: <a href="https://pubpeer.com/static/faq">https://pubpeer.com/static/faq</a> </p>
 <ul>
-<li>Type of <a href="#PeerReviewPlatform">PeerReviewPlatform</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#PeerReviewPlatform">PeerReviewPlatform</a>. </li>
 <li>Topic <a href="#PostPublicationPeerReview">PostPublicationPeerReview</a> </li>
 <li>Topic <a href="#OpenPeerReview">OpenPeerReview</a> </li>
+<li>Link <a href="https://pubpeer.com/static/faq">https://pubpeer.com/static/faq</a> </li>
+<li>Link <a href="https://pubpeer.com/">https://pubpeer.com/</a> </li>
 <li>Source Code <a href="https://github.com/PubPeerFoundation">https://github.com/PubPeerFoundation</a> </li>
-<li>Homepage <a href="https://pubpeer.com/">https://pubpeer.com/</a> </li>
 </ul>
 <p><a name='PubPub'></a></p>
 <h2>PubPub</h2>
-<p>See: <a href="https://www.knowledgefutures.org/updates/2025-06-update/">https://www.knowledgefutures.org/updates/2025-06-update/</a> </p>
 <ul>
-<li>Type of <a href="#Defunct">Defunct Organization or Service</a> </li>
+<li>Type of <a href="#Defunct">Defunct Organization or Service</a>. </li>
+<li>Link <a href="https://www.knowledgefutures.org/updates/2025-06-update/">https://www.knowledgefutures.org/updates/2025-06-update/</a> </li>
+</ul>
+<p><a name='PubTechRadar'></a></p>
+<h2>PubTechRadar</h2>
+<blockquote>
+<p>Helen King's newsletter about publishing technology. </p>
+</blockquote>
+<ul>
+<li>Type of <a href="#BlogNewsletter">Blogs and newsletters</a>. </li>
+<li>Link <a href="https://pubtechradar.substack.com/">https://pubtechradar.substack.com/</a> </li>
 </ul>
 <p><a name='Publisher'></a></p>
 <h2>Publisher</h2>
@@ -1873,49 +1716,39 @@
 <p><a name='PublisherSpeakPodcast'></a></p>
 <h2>PublisherSpeakPodcast</h2>
 <ul>
-<li>Type of <a href="#PodcastSeries">Podcast Series</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://www.youtube.com/@ThePublisherspeakPodcast">https://www.youtube.com/@ThePublisherspeakPodcast</a> </li>
+<li>Type of <a href="#PodcastSeries">Podcast Series</a>. </li>
+<li>Link <a href="https://www.youtube.com/@ThePublisherspeakPodcast">https://www.youtube.com/@ThePublisherspeakPodcast</a> </li>
 </ul>
 <p><a name='PublishingPlatform'></a></p>
 <h2>Publishing Platform (manuscript tracking, peer review, etc)</h2>
+<ul>
+<li>Type of <a href="#Intro">Introductory Topic</a>. </li>
+<li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Service">Service</a> </li>
+</ul>
 <h3>Instances</h3>
 <ul>
 <li><a href="#EditorialManager">Editorial Manager</a> </li>
-<li>
-<p><a href="#Janeway">Janeway</a> </p>
-</li>
-<li>
-<p>Type of <a href="#Intro">Introductory Topic</a> </p>
-</li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Service">Service</a> </li>
+<li><a href="#Janeway">Janeway</a> </li>
 </ul>
 <p><a name='Publons'></a></p>
 <h2>Publons</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://publons.com/">https://publons.com/</a> </li>
+<li>Link <a href="https://publons.com/">https://publons.com/</a> </li>
 </ul>
 <p><a name='RAID'></a></p>
 <h2>RAiD (Research Activity Identifier)</h2>
 <ul>
-<li>Type of <a href="#PID">Persistent Identifier (PID)</a> </li>
+<li>Type of <a href="#PID">Persistent Identifier (PID)</a>. </li>
 </ul>
 <p><a name='RDA'></a></p>
 <h2>Research Data Alliance (RDA)</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://www.rd-alliance.org/">https://www.rd-alliance.org/</a> </li>
+<li>Link <a href="https://www.rd-alliance.org/">https://www.rd-alliance.org/</a> </li>
 </ul>
 <p><a name='RDF'></a></p>
 <h2>RDF</h2>
 <ul>
-<li>Type of <a href="#DataModel">DataModel</a> </li>
+<li>Type of <a href="#DataModel">DataModel</a>. </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -1926,7 +1759,6 @@
 </ul>
 <p><a name='RDFXML'></a></p>
 <h2>RDFXML</h2>
-<h3>Other</h3>
 <ul>
 <li>SerializationFormat <a href="#RDF">RDF</a> </li>
 </ul>
@@ -1937,14 +1769,11 @@
 </ul>
 <p><a name='RI2'></a></p>
 <h2>RI2 Research Integrity Risk Index</h2>
-<p>See: <a href="https://en.wikipedia.org/wiki/Research_Integrity_Risk_Index">https://en.wikipedia.org/wiki/Research_Integrity_Risk_Index</a> </p>
-<p>See: <a href="https://sites.aub.edu.lb/lmeho/ri2/">https://sites.aub.edu.lb/lmeho/ri2/</a> </p>
 <ul>
-<li>Type of <a href="#Initiative">Initative or Topic</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#Initiative">Initative or Topic</a>. </li>
 <li>About <a href="#Integrity">Integrity</a> </li>
+<li>Link <a href="https://en.wikipedia.org/wiki/Research_Integrity_Risk_Index">https://en.wikipedia.org/wiki/Research_Integrity_Risk_Index</a> </li>
+<li>Link <a href="https://sites.aub.edu.lb/lmeho/ri2/">https://sites.aub.edu.lb/lmeho/ri2/</a> </li>
 </ul>
 <p><a name='ROR'></a></p>
 <h2>ROR</h2>
@@ -1952,43 +1781,35 @@
 <p>Open Identifier for organizations </p>
 </blockquote>
 <ul>
-<li>Type of <a href="#PID">Persistent Identifier (PID)</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://ror.org/">https://ror.org/</a> </li>
+<li>Type of <a href="#PID">Persistent Identifier (PID)</a>. </li>
+<li>Link <a href="https://ror.org/">https://ror.org/</a> </li>
+<li>Source License <a href="#OpenSource">Open Source Code</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
+<li><a href="#Affiliation">Affiliation</a> Related to ～</li>
 <li><a href="#OpenFunderRegistry">Open Funder Registry AKA Fundref</a> Related ～</li>
 </ul>
 <p><a name='RRID'></a></p>
 <h2>RRIDs (Research Resource Identifiers)</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://www.rrids.org/">https://www.rrids.org/</a> </li>
+<li>Link <a href="https://www.rrids.org/">https://www.rrids.org/</a> </li>
 </ul>
 <p><a name='ReadCube'></a></p>
 <h2>ReadCube</h2>
-<h3>Other</h3>
 <ul>
 <li>https://schema.org/parentOrganization <a href="#DigitalScience">DigitalScience</a> </li>
-<li>Homepage <a href="https://www.readcube.com/">https://www.readcube.com/</a> </li>
+<li>Link <a href="https://www.readcube.com/">https://www.readcube.com/</a> </li>
 </ul>
 <p><a name='ReadingPlatform'></a></p>
 <h2>Reading, commenting, sharing platform</h2>
+<ul>
+<li>Type of <a href="#Intro">Introductory Topic</a>. </li>
+<li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Service">Service</a> </li>
+</ul>
 <h3>Instances</h3>
 <ul>
-<li>
-<p><a href="#Hypothesis">Hypothesis</a> </p>
-</li>
-<li>
-<p>Type of <a href="#Intro">Introductory Topic</a> </p>
-</li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Service">Service</a> </li>
+<li><a href="#Hypothesis">Hypothesis</a> </li>
 </ul>
 <p><a name='References'></a></p>
 <h2>References</h2>
@@ -1996,7 +1817,7 @@
 <p>References between scholarly works (aka citations) </p>
 </blockquote>
 <ul>
-<li>Type of <a href="#ScholCommTopic">Scholarly Communication Topic</a> </li>
+<li>Type of <a href="#ScholCommTopic">Scholarly Communication Topic</a>. </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -2004,22 +1825,15 @@
 </ul>
 <p><a name='Refworks'></a></p>
 <h2>RefWorks</h2>
-<p>See: <a href="https://refworks.proquest.com/learn-more/">https://refworks.proquest.com/learn-more/</a> </p>
-<h3>Other</h3>
 <ul>
+<li>Link <a href="https://refworks.proquest.com/learn-more/">https://refworks.proquest.com/learn-more/</a> </li>
 <li>Parent <a href="#ProQuest">ProQuest</a> </li>
 <li>Related to <a href="#References">References</a> </li>
 </ul>
-<p><a name='RelatedTo'></a></p>
-<h2>Related to</h2>
-<ul>
-<li>Type of <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate</a> </li>
-</ul>
 <p><a name='ResearchGate'></a></p>
 <h2>ResearchGate</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://www.researchgate.net/">https://www.researchgate.net/</a> </li>
+<li>Link <a href="https://www.researchgate.net/">https://www.researchgate.net/</a> </li>
 </ul>
 <p><a name='ResearchSquare'></a></p>
 <h2>Research Square</h2>
@@ -2027,40 +1841,33 @@
 <h2>ResourceSync</h2>
 <p><a name='RetractionWatch'></a></p>
 <h2>Retraction Watch</h2>
-<h3>Other</h3>
 <ul>
 <li>indexedBy <a href="#Crossref">Crossref</a> </li>
-<li>Homepage <a href="https://retractionwatch.com/">https://retractionwatch.com/</a> </li>
+<li>Link <a href="https://retractionwatch.com/">https://retractionwatch.com/</a> </li>
 </ul>
 <p><a name='RobotsCooking'></a></p>
 <h2>Robots Cooking</h2>
-<p>See: <a href="https://www.robotscooking.com/">https://www.robotscooking.com/</a> </p>
 <ul>
-<li>Type of <a href="#Blog">Blog</a> </li>
+<li>Type of <a href="#BlogNewsletter">Blogs and newsletters</a>. </li>
+<li>Link <a href="https://www.robotscooking.com/">https://www.robotscooking.com/</a> </li>
 </ul>
 <p><a name='RogueScholar'></a></p>
 <h2>Rogue Scholar</h2>
 <ul>
-<li>Type of <a href="#Platform">Platform</a> </li>
+<li>Type of <a href="#Platform">Platform</a>. </li>
 </ul>
 <p><a name='RubricPeerReview'></a></p>
 <h2>Rubric-based Peer Review</h2>
 <p><a name='SCOPUS'></a></p>
 <h2>SCOPUS</h2>
 <ul>
-<li>Type of <a href="#MetaDataSource">MetaDataSource</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://www.scopus.com/">https://www.scopus.com/</a> </li>
+<li>Type of <a href="#MetaDataSource">MetaDataSource</a>. </li>
+<li>Link <a href="https://www.scopus.com/">https://www.scopus.com/</a> </li>
 </ul>
 <p><a name='SKOS'></a></p>
 <h2>SKOS: Simple Knowledge Organization Format</h2>
 <ul>
-<li>Type of <a href="#Ontology">Ontology or Taxonomy</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#Ontology">Ontology or Taxonomy</a>. </li>
 <li>Related <a href="#RDF">RDF</a> </li>
 </ul>
 <h3>References</h3>
@@ -2069,9 +1876,8 @@
 </ul>
 <p><a name='SSP'></a></p>
 <h2>SSP</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://www.sspnet.org/">https://www.sspnet.org/</a> </li>
+<li>Link <a href="https://www.sspnet.org/">https://www.sspnet.org/</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -2080,11 +1886,8 @@
 <p><a name='STM'></a></p>
 <h2>STM</h2>
 <ul>
-<li>Type of <a href="#Society">Society or Association</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://stm-assoc.org/">https://stm-assoc.org/</a> </li>
+<li>Type of <a href="#Society">Society or Association</a>. </li>
+<li>Link <a href="https://stm-assoc.org/">https://stm-assoc.org/</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -2102,104 +1905,88 @@
 <p><a name='SchemaOrg'></a></p>
 <h2>Schema.org</h2>
 <ul>
-<li>Type of <a href="#Ontology">Ontology or Taxonomy</a> </li>
+<li>Type of <a href="#Ontology">Ontology or Taxonomy</a>. </li>
 </ul>
 <p><a name='ScholCommTopic'></a></p>
 <h2>Scholarly Communication Topic</h2>
+<ul>
+<li>Type of <a href="#Intro">Introductory Topic</a>. </li>
+<li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Topic">Topic</a> </li>
+</ul>
 <h3>Instances</h3>
 <ul>
 <li><a href="#Integrity">Integrity</a> </li>
 <li><a href="#JournalTransfers">Journal Transfers</a> </li>
 <li><a href="#CoAccess">Co-Access</a> </li>
 <li><a href="#MultipleResolution">Multiple Resolution</a> </li>
-<li><a href="#Afiliation">Afiliation</a> </li>
+<li><a href="#Affiliation">Affiliation</a> </li>
 <li><a href="#Content">Content</a> </li>
 <li><a href="#Metadata">Metadata</a> </li>
 <li><a href="#Contributor">Contributor</a> </li>
-<li>
-<p><a href="#References">References</a> </p>
-</li>
-<li>
-<p>Type of <a href="#Intro">Introductory Topic</a> </p>
-</li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Topic">Topic</a> </li>
+<li><a href="#References">References</a> </li>
 </ul>
 <p><a name='ScholarOne'></a></p>
 <h2>ScholarOne</h2>
-<h3>Other</h3>
 <ul>
 <li>acquiredBy <a href="#Silverchair">Silverchair</a> </li>
-<li>Homepage <a href="https://clarivate.com/products/scientific-and-academic-research/research-publishing-solutions/scholarone/">https://clarivate.com/products/scientific-and-academic-research/research-publishing-solutions/scholarone/</a> </li>
+<li>Link <a href="https://clarivate.com/products/scientific-and-academic-research/research-publishing-solutions/scholarone/">https://clarivate.com/products/scientific-and-academic-research/research-publishing-solutions/scholarone/</a> </li>
+<li>Source License <a href="#ClosedSource">Closed Source Code</a> </li>
 </ul>
 <p><a name='ScholarlyAngels'></a></p>
 <h2>Scholarly Angels</h2>
+<ul>
+<li>Link <a href="https://scholarly-angels.com/">https://scholarly-angels.com/</a> </li>
+</ul>
 <p><a name='ScholarlyKitchen'></a></p>
 <h2>ScholarlyKitchen</h2>
-<p>See: <a href="https://scholarlykitchen.sspnet.org/">https://scholarlykitchen.sspnet.org/</a> </p>
 <ul>
-<li>Type of <a href="https://schema.org/Blog">https://schema.org/Blog</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#BlogNewsletter">Blogs and newsletters</a>. </li>
+<li>Link <a href="https://scholarlykitchen.sspnet.org/">https://scholarlykitchen.sspnet.org/</a> </li>
 <li>PublishedBy <a href="#SSP">SSP</a> </li>
 </ul>
 <p><a name='Scholastica'></a></p>
 <h2>Scholastica</h2>
 <ul>
-<li>Type of <a href="#ServiceProvider">ServiceProvider</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://scholasticahq.com/">https://scholasticahq.com/</a> </li>
+<li>Type of <a href="#ServiceProvider">ServiceProvider</a>. </li>
+<li>Link <a href="https://scholasticahq.com/">https://scholasticahq.com/</a> </li>
 </ul>
 <p><a name='Sci-Rep'></a></p>
 <h2>Scientific Reports</h2>
 <p><a name='SciPost'></a></p>
 <h2>SciPost</h2>
-<h3>Other</h3>
 <ul>
 <li>Signatory <a href="#POSI">POSI</a> </li>
-<li>Homepage <a href="https://scipost.org/">https://scipost.org/</a> </li>
+<li>Link <a href="https://scipost.org/">https://scipost.org/</a> </li>
 </ul>
 <p><a name='ScienceInsider'></a></p>
 <h2>ScienceInsider</h2>
-<p>See: <a href="https://www.science.org/news/scienceinsider">https://www.science.org/news/scienceinsider</a> </p>
 <ul>
-<li>Type of <a href="https://schema.org/Blog">https://schema.org/Blog</a> </li>
+<li>Type of <a href="#BlogNewsletter">Blogs and newsletters</a>. </li>
+<li>Link <a href="https://www.science.org/news/scienceinsider">https://www.science.org/news/scienceinsider</a> </li>
 </ul>
 <p><a name='ScientificReports'></a></p>
 <h2>Scientific Reports</h2>
 <p><a name='Sciety'></a></p>
 <h2>Sciety</h2>
-<h3>Other</h3>
 <ul>
 <li>Signatory <a href="#POSI">POSI</a> </li>
-<li>Homepage <a href="https://sciety.org/">https://sciety.org/</a> </li>
+<li>Link <a href="https://sciety.org/">https://sciety.org/</a> </li>
 </ul>
 <p><a name='SciteAi'></a></p>
 <h2>Scite.ai</h2>
 <ul>
-<li>Type of <a href="#ServiceProvider">ServiceProvider</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://scite.ai/">https://scite.ai/</a> </li>
+<li>Type of <a href="#ServiceProvider">ServiceProvider</a>. </li>
+<li>Link <a href="https://scite.ai/">https://scite.ai/</a> </li>
 </ul>
 <p><a name='Scitility'></a></p>
 <h2>Scitility</h2>
 <ul>
-<li>Type of <a href="#ServiceProvider">ServiceProvider</a> </li>
+<li>Type of <a href="#ServiceProvider">ServiceProvider</a>. </li>
 </ul>
 <p><a name='Service'></a></p>
 <h2>Service</h2>
 <ul>
-<li>Type of <a href="#Intro">Introductory Topic</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#Intro">Introductory Topic</a>. </li>
 <li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Topic">Topic</a> </li>
 </ul>
 <h3>References</h3>
@@ -2213,28 +2000,19 @@
 <p><a name='Signals'></a></p>
 <h2>Research Signals</h2>
 <ul>
-<li>Type of <a href="#ServiceProvider">ServiceProvider</a> </li>
-</ul>
-<p><a name='Signatory'></a></p>
-<h2>Signatory</h2>
-<ul>
-<li>Type of <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate</a> </li>
+<li>Type of <a href="#ServiceProvider">ServiceProvider</a>. </li>
 </ul>
 <p><a name='Signposting'></a></p>
 <h2>Signposting the scholarly web</h2>
-<p>See: <a href="https://signposting.org/FAIR/">https://signposting.org/FAIR/</a> </p>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://signposting.org/">https://signposting.org/</a> </li>
+<li>Link <a href="https://signposting.org/FAIR/">https://signposting.org/FAIR/</a> </li>
+<li>Link <a href="https://signposting.org/">https://signposting.org/</a> </li>
 </ul>
 <p><a name='Silverchair'></a></p>
 <h2>Silverchair</h2>
 <ul>
-<li>Type of <a href="#ServiceProvider">ServiceProvider</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://www.silverchair.com/">https://www.silverchair.com/</a> </li>
+<li>Type of <a href="#ServiceProvider">ServiceProvider</a>. </li>
+<li>Link <a href="https://www.silverchair.com/">https://www.silverchair.com/</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -2242,15 +2020,20 @@
 </ul>
 <p><a name='SingaporeStatement'></a></p>
 <h2>Singapore Statement on Research Integrity</h2>
-<h3>Other</h3>
 <ul>
 <li>About <a href="#Integrity">Integrity</a> </li>
-<li>Homepage <a href="https://www.wcrif.org/statement">https://www.wcrif.org/statement</a> </li>
+<li>Link <a href="https://www.wcrif.org/statement">https://www.wcrif.org/statement</a> </li>
 </ul>
 <p><a name='SiteMap'></a></p>
 <h2>Site Map</h2>
 <p><a name='Sleuth'></a></p>
 <h2>Research Integrity Sleuth</h2>
+<ul>
+<li>http://www.w3.org/2000/01/rdf-schema#subclassOf <a href="#Individual">Individual</a> </li>
+<li>About <a href="#Integrity">Integrity</a> </li>
+<li>Background Reading <a href="https://www.nature.com/articles/d41586-025-02163-z">https://www.nature.com/articles/d41586-025-02163-z</a> </li>
+<li>Background Reading <a href="https://retractionwatch.com/2018/06/17/meet-the-scientific-sleuths-ten-whove-had-an-impact-on-the-scientific-literature/">https://retractionwatch.com/2018/06/17/meet-the-scientific-sleuths-ten-whove-had-an-impact-on-the-scientific-literature/</a> </li>
+</ul>
 <h3>Instances</h3>
 <ul>
 <li><a href="#Cheshire">Cheshire (research integrity sleuth)</a> </li>
@@ -2258,33 +2041,15 @@
 <li><a href="#KevinPatrick">Kevin Patrick</a> </li>
 <li><a href="#AnnaAbalkina">Anna Abalkina</a> </li>
 </ul>
-<h3>Other</h3>
-<ul>
-<li>http://www.w3.org/2000/01/rdf-schema#subclassOf <a href="#Individual">Individual</a> </li>
-<li>About <a href="#Integrity">Integrity</a> </li>
-<li>Background Reading <a href="https://www.nature.com/articles/d41586-025-02163-z">https://www.nature.com/articles/d41586-025-02163-z</a> </li>
-<li>Background Reading <a href="https://retractionwatch.com/2018/06/17/meet-the-scientific-sleuths-ten-whove-had-an-impact-on-the-scientific-literature/">https://retractionwatch.com/2018/06/17/meet-the-scientific-sleuths-ten-whove-had-an-impact-on-the-scientific-literature/</a> </li>
-</ul>
 <p><a name='Society'></a></p>
 <h2>Society or Association</h2>
+<ul>
+<li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Organization">Organization</a> </li>
+</ul>
 <h3>Instances</h3>
 <ul>
 <li><a href="#STM">STM</a> </li>
 <li><a href="#ALPSP">Association of Learned and Professional Society Publishers (ALPSPS)</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Organization">Organization</a> </li>
-</ul>
-<p><a name='SourceCode'></a></p>
-<h2>Source Code</h2>
-<ul>
-<li>Type of <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate</a> </li>
-</ul>
-<p><a name='SourceLicense'></a></p>
-<h2>Source License</h2>
-<ul>
-<li>Type of <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate</a> </li>
 </ul>
 <p><a name='SpecialIssue'></a></p>
 <h2>SpecialIssue</h2>
@@ -2294,36 +2059,33 @@
 <p><a name='SpringerNature'></a></p>
 <h2>SpringerNature</h2>
 <ul>
-<li>Type of <a href="#Publisher">Publisher</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://www.springernature.com/">https://www.springernature.com/</a> </li>
+<li>Type of <a href="#Publisher">Publisher</a>. </li>
+<li>Link <a href="https://www.springernature.com/">https://www.springernature.com/</a> </li>
 </ul>
 <p><a name='Standard'></a></p>
 <h2>Standard</h2>
+<ul>
+<li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Topic">Topic</a> </li>
+</ul>
 <h3>Instances</h3>
 <ul>
 <li><a href="#OpenUrl">OpenURL</a> </li>
 </ul>
-<h3>Other</h3>
-<ul>
-<li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Topic">Topic</a> </li>
-</ul>
 <p><a name='SubscribeToOpen'></a></p>
 <h2>SubscribeToOpen</h2>
 <ul>
-<li>Type of <a href="#Initiative">Initative or Topic</a> </li>
+<li>Type of <a href="#Initiative">Initative or Topic</a>. </li>
 </ul>
 <p><a name='SymplecticElements'></a></p>
 <h2>Symplectic Elements</h2>
-<h3>Other</h3>
 <ul>
 <li>https://schema.org/parentOrganization <a href="#DigitalScience">DigitalScience</a> </li>
 </ul>
 <p><a name='TEI'></a></p>
 <h2>Text Encoding Initiative (TEI)</h2>
-<p>See: <a href="https://tei-c.org/">https://tei-c.org/</a> </p>
+<ul>
+<li>Link <a href="https://tei-c.org/">https://tei-c.org/</a> </li>
+</ul>
 <h3>References</h3>
 <ul>
 <li><a href="#GROBID">GROBID</a> Implements ～</li>
@@ -2331,11 +2093,8 @@
 <p><a name='TaylorAndFrancis'></a></p>
 <h2>Taylor and Francis</h2>
 <ul>
-<li>Type of <a href="#Publisher">Publisher</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://taylorandfrancis.com/">https://taylorandfrancis.com/</a> </li>
+<li>Type of <a href="#Publisher">Publisher</a>. </li>
+<li>Link <a href="https://taylorandfrancis.com/">https://taylorandfrancis.com/</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -2345,27 +2104,21 @@
 <h2>Thomson Reuters</h2>
 <p><a name='Thoth'></a></p>
 <h2>Thoth</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://thoth.pub/">https://thoth.pub/</a> </li>
+<li>Link <a href="https://thoth.pub/">https://thoth.pub/</a> </li>
 </ul>
 <p><a name='Tool'></a></p>
 <h2>Tool</h2>
+<ul>
+<li>Type of <a href="#Intro">Introductory Topic</a>. </li>
+<li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Topic">Topic</a> </li>
+</ul>
 <h3>Instances</h3>
 <ul>
 <li><a href="#MetadataConverter">MetadataConverter</a> </li>
 <li><a href="#Alchemist">Alchemist Review</a> </li>
 <li><a href="#Zotero">Zotero</a> </li>
-<li>
-<p><a href="#BiblioGlutton">biblio-glutton</a> </p>
-</li>
-<li>
-<p>Type of <a href="#Intro">Introductory Topic</a> </p>
-</li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>http://www.w3.org/2000/01/rdf-schema#subClassOf <a href="#Topic">Topic</a> </li>
+<li><a href="#BiblioGlutton">biblio-glutton</a> </li>
 </ul>
 <p><a name='Topic'></a></p>
 <h2>Topic</h2>
@@ -2382,13 +2135,11 @@
 </ul>
 <p><a name='TurnItIn'></a></p>
 <h2>Turnitin</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://www.turnitin.com/">https://www.turnitin.com/</a> </li>
+<li>Link <a href="https://www.turnitin.com/">https://www.turnitin.com/</a> </li>
 </ul>
 <p><a name='Turtle'></a></p>
 <h2>Turtle</h2>
-<h3>Other</h3>
 <ul>
 <li>SerializationFormat <a href="#RDF">RDF</a> </li>
 </ul>
@@ -2402,75 +2153,57 @@
 <blockquote>
 <p>VIVO is member-supported, open source software and an ontology for representing scholarship </p>
 </blockquote>
-<p>See: <a href="https://wiki.lyrasis.org/display/VIVODOC/All+Documentation">https://wiki.lyrasis.org/display/VIVODOC/All+Documentation</a> </p>
 <ul>
-<li>Type of <a href="#Ontology">Ontology or Taxonomy</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://vivoweb.org/">https://vivoweb.org/</a> </li>
+<li>Type of <a href="#Ontology">Ontology or Taxonomy</a>. </li>
+<li>Link <a href="https://wiki.lyrasis.org/display/VIVODOC/All+Documentation">https://wiki.lyrasis.org/display/VIVODOC/All+Documentation</a> </li>
+<li>Link <a href="https://vivoweb.org/">https://vivoweb.org/</a> </li>
 </ul>
 <p><a name='Wax'></a></p>
 <h2>Wax</h2>
-<h3>Other</h3>
 <ul>
 <li>CreatedBy <a href="#NLNet">NLnet Foundation</a> </li>
 <li>CreatedBy <a href="#Nikau">Nikau Consulting</a> </li>
 </ul>
 <p><a name='WebOfScience'></a></p>
 <h2>Web of Science</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/">https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/</a> </li>
+<li>Link <a href="https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/">https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/</a> </li>
 </ul>
 <p><a name='Wellcome'></a></p>
 <h2>Wellcome Trust</h2>
 <ul>
-<li>Type of <a href="#Funder">Funder</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#Funder">Funder</a>. </li>
 <li>Signatory <a href="#Barcelona">Barcelona Declaration on Open Research Information</a> </li>
-<li>Homepage <a href="https://wellcome.org/">https://wellcome.org/</a> </li>
+<li>Link <a href="https://wellcome.org/">https://wellcome.org/</a> </li>
 </ul>
 <p><a name='WikiCite'></a></p>
 <h2>WikiCite</h2>
-<p>See: <a href="http://wikicite.org/">http://wikicite.org/</a> </p>
 <ul>
-<li>Type of <a href="#Initative">Initative</a> </li>
+<li>Type of <a href="#Initative">Initative</a>. </li>
+<li>Link <a href="http://wikicite.org/">http://wikicite.org/</a> </li>
 </ul>
 <p><a name='WikiDataId'></a></p>
 <h2>Wikidata Q ID</h2>
 <ul>
-<li>Type of <a href="#PID">Persistent Identifier (PID)</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#PID">Persistent Identifier (PID)</a>. </li>
 <li>ProductOf <a href="#WikiData">WikiData</a> </li>
 </ul>
 <p><a name='Wikidata'></a></p>
 <h2>Wikidata Ontology</h2>
 <ul>
-<li>Type of <a href="#Ontology">Ontology or Taxonomy</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://www.wikidata.org/">https://www.wikidata.org/</a> </li>
+<li>Type of <a href="#Ontology">Ontology or Taxonomy</a>. </li>
+<li>Link <a href="https://www.wikidata.org/">https://www.wikidata.org/</a> </li>
 </ul>
 <p><a name='Wikipedia'></a></p>
 <h2>Wikipedia</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://www.wikipedia.org/">https://www.wikipedia.org/</a> </li>
+<li>Link <a href="https://www.wikipedia.org/">https://www.wikipedia.org/</a> </li>
 </ul>
 <p><a name='Wiley'></a></p>
 <h2>Wiley</h2>
 <ul>
-<li>Type of <a href="#Publisher">Publisher</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>Homepage <a href="https://www.wiley.com/">https://www.wiley.com/</a> </li>
+<li>Type of <a href="#Publisher">Publisher</a>. </li>
+<li>Link <a href="https://www.wiley.com/">https://www.wiley.com/</a> </li>
 </ul>
 <h3>References</h3>
 <ul>
@@ -2478,39 +2211,32 @@
 </ul>
 <p><a name='WorldCat'></a></p>
 <h2>WorldCat</h2>
-<h3>Other</h3>
 <ul>
-<li>Homepage <a href="https://search.worldcat.org/">https://search.worldcat.org/</a> </li>
+<li>Link <a href="https://search.worldcat.org/">https://search.worldcat.org/</a> </li>
 </ul>
 <p><a name='WriteFull'></a></p>
 <h2>WriteFull</h2>
-<h3>Other</h3>
 <ul>
 <li>https://schema.org/parentOrganization <a href="#DigitalScience">DigitalScience</a> </li>
 </ul>
 <p><a name='Zenodo'></a></p>
 <h2>Zenodo</h2>
-<p>See: <a href="https://about.zenodo.org/">https://about.zenodo.org/</a> </p>
-<h3>Other</h3>
 <ul>
+<li>Link <a href="https://about.zenodo.org/">https://about.zenodo.org/</a> </li>
+<li>Link <a href="https://zenodo.org/">https://zenodo.org/</a> </li>
 <li>https://schema.org/parentOrganization <a href="#CERN">CERN</a> </li>
-<li>Homepage <a href="https://zenodo.org/">https://zenodo.org/</a> </li>
 </ul>
 <p><a name='Zotero'></a></p>
 <h2>Zotero</h2>
 <ul>
-<li>Type of <a href="#Tool">Tool</a> </li>
-</ul>
-<h3>Other</h3>
-<ul>
+<li>Type of <a href="#Tool">Tool</a>. </li>
 <li>Built By <a href="#DigitalScience">DigitalScience</a> </li>
 <li>Source License <a href="#OpenSource">Open Source Code</a> </li>
 <li>Background Reading <a href="https://www.zotero.org/support/plugins">https://www.zotero.org/support/plugins</a> </li>
-<li>Homepage <a href="https://www.zotero.org/">https://www.zotero.org/</a> </li>
+<li>Link <a href="https://www.zotero.org/">https://www.zotero.org/</a> </li>
 </ul>
 <p><a name='dARK'></a></p>
 <h2>dARK</h2>
-<h3>Other</h3>
 <ul>
 <li>BasedOn <a href="#ARK">Archival Resource Key (ARK)</a> </li>
 </ul>
@@ -2531,7 +2257,7 @@
     <script type="module">
         import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 
-        const graph = [{"source": "JsonSchema", "target": "Schema", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "SKOS: Simple Knowledge Organization Format", "target": "RDF", "type": "https://map.pardalotus.tech/Related"}, {"source": "Coko", "target": "https://coko.foundation/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Wikipedia", "target": "https://www.wikipedia.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "ROR", "target": "Persistent Identifier (PID)", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Open Innovation Data Index", "target": "https://iiindex.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Turtle", "target": "RDF", "type": "https://map.pardalotus.tech/SerializationFormat"}, {"source": "Blackwell", "target": "Publisher", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "JOSS", "target": "Journal", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "PubPub", "target": "Defunct Organization or Service", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Sciety", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "Aperta", "target": "Platform", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "BioArxiv", "target": "https://www.biorxiv.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "ELife", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "RDF", "target": "DataModel", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "ORCID", "target": "https://orcid.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "InvenioRDM", "target": "https://inveniosoftware.org/products/rdm/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Figshare", "target": "DigitalScience", "type": "https://schema.org/parentOrganization"}, {"source": "Digital Object Numbering Authority (DONA)", "target": "DOI", "type": "http://www.w3.org/2000/01/rdf-schema#related"}, {"source": "DOI.org Content Negotiation", "target": "BibTex", "type": "https://map.pardalotus.tech/Implements"}, {"source": "Wikidata Q ID", "target": "Persistent Identifier (PID)", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "WriteFull", "target": "DigitalScience", "type": "https://schema.org/parentOrganization"}, {"source": "Signposting the scholarly web", "target": "https://signposting.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Crossref", "target": "RDFXML", "type": "https://map.pardalotus.tech/Implements"}, {"source": "ImpactFactor", "target": "Metric", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "JOSS", "target": "https://joss.theoj.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Archival Resource Key (ARK)", "target": "Persistent Identifier (PID)", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "CiteprocJson", "target": "Schema", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "CreativeCommons", "target": "https://creativecommons.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "CORE", "target": "https://core.ac.uk/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "OASwitchboard", "target": "Open Access", "type": "https://map.pardalotus.tech/Topic"}, {"source": "DOI", "target": "Persistent Identifier (PID)", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Open Science Framework (OSF)", "target": "https://osf.io/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "PROV-O", "target": "Ontology or Taxonomy", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Green Open Access", "target": "Open Access", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Wiley", "target": "Publisher", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "OAPEN", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "OpenURL", "target": "Standard", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "DOAJ", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "WorldCat", "target": "https://search.worldcat.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "ActivityPub", "target": "JSON-LD", "type": "https://map.pardalotus.tech/Uses"}, {"source": "Open Library of Humanities (OLH)", "target": "Diamond Open Access", "type": "https://map.pardalotus.tech/Access"}, {"source": "ELife", "target": "OpenPeerReview", "type": "https://map.pardalotus.tech/Topic"}, {"source": "STM", "target": "Society or Association", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "DeltaThink", "target": "ServiceProvider", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "CORE", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "Open Funder Registry AKA Fundref", "target": "ROR", "type": "https://map.pardalotus.tech/Related"}, {"source": "Everything Hertz", "target": "Podcast Series", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Human Digital", "target": "DOI Registration Agency", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "CLOCKSS", "target": "https://clockss.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Overton", "target": "https://www.overton.io/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Crossref", "target": "https://www.crossref.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Ingenta", "target": "https://www.ingenta.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Publons", "target": "https://publons.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "PeerCommunityIn", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "Midnight At The Cassablanca", "target": "Podcast Series", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "biblio-glutton", "target": "https://github.com/kermitt2/biblio-glutton", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "dARK", "target": "Archival Resource Key (ARK)", "type": "https://map.pardalotus.tech/BasedOn"}, {"source": "Background Reading", "target": "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "CrossMark", "target": "Crossref", "type": "https://map.pardalotus.tech/CreatedBy"}, {"source": "Kevin Patrick", "target": "Research Integrity Sleuth", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "PubPeer", "target": "OpenPeerReview", "type": "https://map.pardalotus.tech/Topic"}, {"source": "BioOne", "target": "https://bioone.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Blog", "target": "Introductory Topic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "ScienceInsider", "target": "https://schema.org/Blog", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Reading, commenting, sharing platform", "target": "Service", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "SciPost", "target": "https://scipost.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Clear Skies", "target": "ServiceProvider", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "POSI", "target": "https://openinfrastructure.org", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Wellcome Trust", "target": "Funder", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "VIVO", "target": "https://vivoweb.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Standard", "target": "Topic", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "ISTEX", "target": "https://github.com/istex/istex-ark", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Ithaka S+R", "target": "https://sr.ithaka.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Editorial Manager", "target": "https://www.editorialmanager.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Cheshire (research integrity sleuth)", "target": "Research Integrity Sleuth", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Crossref", "target": "Proprietory Code", "type": "https://map.pardalotus.tech/SourceLicense"}, {"source": "HighWire Press", "target": "https://www.highwirepress.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Related to", "target": "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "POSI", "target": "Initative or Topic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Hindawi", "target": "https://hindawi.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Alt Metrics", "target": "Altmetric.com", "type": "https://www.w3.org/TR/owl-ref/#differentFrom"}, {"source": "Maintained By", "target": "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "multilingual European DOI Registration Agency (mEDRA)", "target": "DOI Registration Agency", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "ScholarOne", "target": "Silverchair", "type": "https://map.pardalotus.tech/acquiredBy"}, {"source": "RDFXML", "target": "RDF", "type": "https://map.pardalotus.tech/SerializationFormat"}, {"source": "PLOS", "target": "Aperta", "type": "https://map.pardalotus.tech/Uses"}, {"source": "Identifier", "target": "Introductory Topic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Article-Level Metrics (ALM)", "target": "Alt Metrics", "type": "http://www.w3.org/2000/01/rdf-schema#related"}, {"source": "Afiliation", "target": "Scholarly Communication Topic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Janeway", "target": "Open Library of Humanities (OLH)", "type": "https://schema.org/parentOrganization"}, {"source": "Hum", "target": "https://hum.works/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Research Integrity Sleuth", "target": "https://www.nature.com/articles/d41586-025-02163-z", "type": "https://map.pardalotus.tech/BackgroundReading"}, {"source": "The Publications Office of the European Union (OP)", "target": "DOI Registration Agency", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Altmetric.com", "target": "Alt Metrics", "type": "https://www.w3.org/TR/owl-ref/#differentFrom"}, {"source": "Newsletter", "target": "Literature", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "ReadCube", "target": "DigitalScience", "type": "https://schema.org/parentOrganization"}, {"source": "China National Knowledge Infrastructure (CNKI)", "target": "DOI Registration Agency", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "EuropePMC", "target": "Publisher", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "DOI Registration Agency", "target": "Organization", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "Dimensions", "target": "DigitalScience", "type": "https://schema.org/parentOrganization"}, {"source": "Alchemist Review", "target": "Tool", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Association of Learned and Professional Society Publishers (ALPSPS)", "target": "Society or Association", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "RRIDs (Research Resource Identifiers)", "target": "https://www.rrids.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "STM", "target": "https://stm-assoc.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "medRxiv", "target": "https://www.medrxiv.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Taylor and Francis", "target": "https://taylorandfrancis.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "DeltaThink", "target": "https://www.deltathink.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "ISBN", "target": "Persistent Identifier (PID)", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Open Funder Registry AKA Fundref", "target": "Elsevier", "type": "https://map.pardalotus.tech/MaintainedBy"}, {"source": "Blog", "target": "Literature", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "SCOPUS", "target": "https://www.scopus.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Japan Link Center (JaLC)", "target": "DOI Registration Agency", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Plan S", "target": "https://www.coalition-s.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "ScholarlyKitchen", "target": "SSP", "type": "https://map.pardalotus.tech/PublishedBy"}, {"source": "ISTEX", "target": "Persistent Identifier (PID)", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "CrossrefXmlDeposit", "target": "Schema", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Schema.org", "target": "Ontology or Taxonomy", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "PeerCommunityIn", "target": "https://peercommunityin.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Ex Ordo", "target": "https://www.exordo.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "DOAJ", "target": "https://doaj.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "DOI Registration Agency", "target": "DOI", "type": "https://map.pardalotus.tech/RelatedTo"}, {"source": "Dimensions", "target": "https://www.dimensions.ai/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Crossref", "target": "CiteprocJson", "type": "https://map.pardalotus.tech/Implements"}, {"source": "Scholarly Communication Topic", "target": "Topic", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "SciPost", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "Research Integrity Sleuth", "target": "Individual", "type": "http://www.w3.org/2000/01/rdf-schema#subclassOf"}, {"source": "Name-to-Thing (N2T) Resolver", "target": "https://n2t.net/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Overleaf", "target": "https://www.overleaf.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Contributor", "target": "Scholarly Communication Topic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "PubPeer", "target": "https://github.com/PubPeerFoundation", "type": "https://map.pardalotus.tech/SourceCode"}, {"source": "Open Funder Registry AKA Fundref", "target": "SKOS: Simple Knowledge Organization Format", "type": "https://map.pardalotus.tech/Uses"}, {"source": "Scholastica", "target": "https://scholasticahq.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Contributor Role Taxonomy (CRediT)", "target": "Ontology or Taxonomy", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "DOAB", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "Contributor Role Taxonomy (CRediT)", "target": "NISO", "type": "https://map.pardalotus.tech/CreatedBy"}, {"source": "Diamond Open Access", "target": "Open Access", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "PubPeer", "target": "https://pubpeer.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "GROBID", "target": "Text Encoding Initiative (TEI)", "type": "https://map.pardalotus.tech/Implements"}, {"source": "HAL+", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "Contributor Role Taxonomy (CRediT)", "target": "Crossref", "type": "https://map.pardalotus.tech/ImplementedBy"}, {"source": "DataCite", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "Crossref", "target": "BibTex", "type": "https://map.pardalotus.tech/Implements"}, {"source": "ISSN", "target": "Persistent Identifier (PID)", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Hypothesis", "target": "Reading, commenting, sharing platform", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Crossref", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "RAiD (Research Activity Identifier)", "target": "Persistent Identifier (PID)", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "ISNI", "target": "Persistent Identifier (PID)", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Dublin Core", "target": "Ontology or Taxonomy", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "ScholarOne", "target": "https://clarivate.com/products/scientific-and-academic-research/research-publishing-solutions/scholarone/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Archival Resource Key (ARK)", "target": "https://arks.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "SpringerNature", "target": "Publisher", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "ReadCube", "target": "https://www.readcube.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Sciety", "target": "https://sciety.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Ingenta Connect", "target": "https://www.ingenta.com/products/content-management/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "h-index", "target": "Metric", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Scite.ai", "target": "ServiceProvider", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "PlumX", "target": "MetricsPlatform", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Wikidata Ontology", "target": "https://www.wikidata.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "CLOCKSS", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "COARVocab", "target": "Confederation of Open Access Repositories", "type": "https://map.pardalotus.tech/CuratedBy"}, {"source": "CrossMark", "target": "Dublin Core", "type": "https://map.pardalotus.tech/Uses"}, {"source": "SSP", "target": "https://www.sspnet.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Silverchair", "target": "ServiceProvider", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Zotero", "target": "https://www.zotero.org/support/plugins", "type": "https://map.pardalotus.tech/BackgroundReading"}, {"source": "Symplectic Elements", "target": "DigitalScience", "type": "https://schema.org/parentOrganization"}, {"source": "MetadataConverter", "target": "Tool", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Silverchair", "target": "https://www.silverchair.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Article-Level Metrics (ALM)", "target": "Journal Level Metrics (JLM)", "type": "http://www.w3.org/2000/01/rdf-schema#related"}, {"source": "ProQuest", "target": "https://www.proquest.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Altmetric.com", "target": "DigitalScience", "type": "https://schema.org/parentOrganization"}, {"source": "acquired by", "target": "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "COUNTER", "target": "https://www.countermetrics.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Guillaume Cabanac", "target": "Research Integrity Sleuth", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "OCLC", "target": "https://www.oclc.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Retraction Watch", "target": "Crossref", "type": "https://map.pardalotus.tech/indexedBy"}, {"source": "Atypon", "target": "https://www.atypon.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "JOSS", "target": "Open Access", "type": "https://map.pardalotus.tech/Access"}, {"source": "CERN", "target": "Organization", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Aperta", "target": "Defunct Organization or Service", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Wikidata Ontology", "target": "Ontology or Taxonomy", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Anna Abalkina", "target": "Research Integrity Sleuth", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Name-to-Thing (N2T) Resolver", "target": "Resolver", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "EuropePMC", "target": "https://europepmc.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "OJS", "target": "https://pkp.sfu.ca/software/ojs/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Society or Association", "target": "Organization", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "Ontology or Taxonomy", "target": "Introductory Topic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Integrity", "target": "Scholarly Communication Topic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Scite.ai", "target": "https://scite.ai/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "JSON-LD", "target": "RDF", "type": "https://map.pardalotus.tech/SerializationFormat"}, {"source": "OAPEN", "target": "Open Access", "type": "https://map.pardalotus.tech/Topic"}, {"source": "Functional Requirements for Bibliographic Records (FRBR)", "target": "Ontology or Taxonomy", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Crossref", "target": "https://gitlab.com/crossref", "type": "https://map.pardalotus.tech/SourceCode"}, {"source": "ELife", "target": "Publisher", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Co-Access", "target": "Scholarly Communication Topic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "DataCite", "target": "DOI Registration Agency", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "DOI.org Content Negotiation", "target": "Turtle", "type": "https://map.pardalotus.tech/Implements"}, {"source": "PLOS", "target": "Publisher", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "bsi.identify", "target": "DOI Registration Agency", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "OpenAlex", "target": "https://openalex.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Knowledge Works Global", "target": "https://schema.org/ServiceProvider", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Data Dryad", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "OpenCitations", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "References", "target": "Scholarly Communication Topic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Persistent Identifier (PID)", "target": "Topic", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "ProjectMuse", "target": "https://muse.jhu.edu/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Clear Skies", "target": "Integrity", "type": "https://map.pardalotus.tech/About"}, {"source": "Content Version (VOR, Preprint)", "target": "Concept", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "OpenCitations", "target": "https://opencitations.net/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Individual", "target": "Entity", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "Source License", "target": "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Crossref", "target": "CrossrefXmlDeposit", "type": "https://map.pardalotus.tech/Implements"}, {"source": "InvenioRDM", "target": "CERN", "type": "https://map.pardalotus.tech/MaintainedBy"}, {"source": "Overleaf", "target": "DigitalScience", "type": "https://schema.org/parentOrganization"}, {"source": "PLOS", "target": "Editorial Manager", "type": "https://map.pardalotus.tech/Uses"}, {"source": "DataCite", "target": "https://datacite.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Force11", "target": "https://force11.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Publishing Platform (manuscript tracking, peer review, etc)", "target": "Introductory Topic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "MakeDataCount", "target": "DataCite", "type": "http://www.w3.org/2000/01/rdf-schema#related"}, {"source": "ELife", "target": "Open Access", "type": "https://map.pardalotus.tech/Access"}, {"source": "CNRI", "target": "DOI", "type": "http://www.w3.org/2000/01/rdf-schema#related"}, {"source": "Clarivate", "target": "https://clarivate.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "JabRef", "target": "https://www.jabref.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Crossref", "target": "DOI Registration Agency", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Alchemist Review", "target": "Hum", "type": "https://map.pardalotus.tech/CreatedBy"}, {"source": "PLOS", "target": "Open Access", "type": "https://map.pardalotus.tech/Access"}, {"source": "LiberateScience", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "Microsoft Academic Graph", "target": "Defunct Organization or Service", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Data Dryad", "target": "https://datadryad.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Publishing Platform (manuscript tracking, peer review, etc)", "target": "Service", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "Built By", "target": "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Organization", "target": "Introductory Topic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "RefWorks", "target": "References", "type": "https://map.pardalotus.tech/RelatedTo"}, {"source": "ELife", "target": "https://elifesciences.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Thoth", "target": "https://thoth.pub/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "OASwitchboard", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "Podcast Series", "target": "Literature", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "Name-to-Thing (N2T) Resolver", "target": "Archival Resource Key (ARK)", "type": "https://map.pardalotus.tech/Supports"}, {"source": "Association of Learned and Professional Society Publishers (ALPSPS)", "target": "https://www.alpsp.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "SKOS: Simple Knowledge Organization Format", "target": "Ontology or Taxonomy", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Taylor and Francis", "target": "Publisher", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "DOI", "target": "Handle System", "type": "https://map.pardalotus.tech/BuiltOn"}, {"source": "COUNTER", "target": "Metrics", "type": "https://map.pardalotus.tech/Topic"}, {"source": "Distributed Usage Logging (DUL)", "target": "STM", "type": "https://map.pardalotus.tech/acquiredBy"}, {"source": "Korean DOI Center", "target": "DOI Registration Agency", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "COARVocab", "target": "Taxonomy", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "SCOPUS", "target": "MetaDataSource", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Service", "target": "Topic", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "Literature", "target": "Topic", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "WikiCite", "target": "Initative", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Editorial Manager", "target": "Publishing Platform (manuscript tracking, peer review, etc)", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Altmetric.com", "target": "https://www.altmetric.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Source Code", "target": "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Arxiv", "target": "https://arxiv.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Clarivate", "target": "ServiceProvider", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Scholarly Communication Topic", "target": "Introductory Topic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "ResearchGate", "target": "https://www.researchgate.net/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "PreReview", "target": "https://prereview.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Persistent uniform resource locator (PURL)", "target": "https://purl.archive.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Service", "target": "Introductory Topic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Kudos", "target": "https://www.growkudos.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "BIBFRAME", "target": "Ontology or Taxonomy", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Wiley", "target": "https://www.wiley.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Airiti DOI", "target": "DOI Registration Agency", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Center for Open Science", "target": "https://www.cos.io/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Retraction Watch", "target": "https://retractionwatch.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "JabRef", "target": "https://schema.org/tool", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Machine-readable Cataloging (MARC)", "target": "BIBFRAME", "type": "https://map.pardalotus.tech/Related"}, {"source": "Singapore Statement on Research Integrity", "target": "https://www.wcrif.org/statement", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Elsevier", "target": "https://www.elsevier.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "PLOS", "target": "https://plos.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "ActivityPub", "target": "Schema", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "PublisherSpeakPodcast", "target": "Podcast Series", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Research Integrity Sleuth", "target": "https://retractionwatch.com/2018/06/17/meet-the-scientific-sleuths-ten-whove-had-an-impact-on-the-scientific-literature/", "type": "https://map.pardalotus.tech/BackgroundReading"}, {"source": "Alt Metrics", "target": "Metric", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Mendeley", "target": "https://www.mendeley.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Individual", "target": "Introductory Topic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "biblio-glutton", "target": "Tool", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "MetadataConverter", "target": "Metadata", "type": "https://map.pardalotus.tech/RelatedTo"}, {"source": "Frontiers", "target": "https://www.frontiersin.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Research Signals", "target": "ServiceProvider", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Signatory", "target": "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Journalology", "target": "Newsletter", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "CERN", "target": "https://home.cern/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Multiple Resolution", "target": "Scholarly Communication Topic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Plan S", "target": "Initative or Topic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "OpenApi", "target": "JsonSchema", "type": "https://map.pardalotus.tech/Related"}, {"source": "Get Fulltext Research", "target": "Content", "type": "https://map.pardalotus.tech/RelatedTo"}, {"source": "VIVO", "target": "Ontology or Taxonomy", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Scholastica", "target": "ServiceProvider", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Organization", "target": "Entity", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "DOI.org Content Negotiation", "target": "RDFXML", "type": "https://map.pardalotus.tech/Implements"}, {"source": "Hypothesis", "target": "https://web.hypothes.is/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Persistent Identifier (PID)", "target": "Identifier", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "Papers (reference manager)", "target": "DigitalScience", "type": "https://schema.org/parentOrganization"}, {"source": "EuropePMC", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "Research Data Alliance (RDA)", "target": "https://www.rd-alliance.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Open Innovation Data Index", "target": "Index", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Abstracting and Indexing Service", "target": "Service", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "Aperta", "target": "PLoS", "type": "https://map.pardalotus.tech/CreatedBy"}, {"source": "SubscribeToOpen", "target": "Initative or Topic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Zotero", "target": "Tool", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Rogue Scholar", "target": "Platform", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "PublisherSpeakPodcast", "target": "https://www.youtube.com/@ThePublisherspeakPodcast", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Wellcome Trust", "target": "https://wellcome.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Crossref", "target": "Turtle", "type": "https://map.pardalotus.tech/Implements"}, {"source": "Reading, commenting, sharing platform", "target": "Introductory Topic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "COUNTER", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "Zenodo", "target": "https://zenodo.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Wikidata Q ID", "target": "WikiData", "type": "https://map.pardalotus.tech/ProductOf"}, {"source": "Zotero", "target": "https://www.zotero.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "PubPeer", "target": "PostPublicationPeerReview", "type": "https://map.pardalotus.tech/Topic"}, {"source": "Persistent Identifier (PID)", "target": "Introductory Topic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Confederation of Open Access Repositories", "target": "https://coar-repositories.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "OASPA", "target": "https://www.oaspa.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Web of Science", "target": "https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Knowledge Futures", "target": "https://www.knowledgefutures.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Handle System", "target": "Persistent Identifier (PID)", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Podcast Series", "target": "s:PodcastSeries", "type": "http://www.w3.org/2000/01/rdf-schema#sameAs"}, {"source": "Scitility", "target": "ServiceProvider", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Entertainment Identifier Registry (EIDR)", "target": "DOI Registration Agency", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Crossref", "target": "OAI-PMH", "type": "https://map.pardalotus.tech/Implements"}, {"source": "Data Dryad", "target": "https://schema.org/Organization", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Journal Article Tag Suite (JATS)", "target": "Content", "type": "https://map.pardalotus.tech/RelatedTo"}, {"source": "ROR", "target": "https://ror.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "PubPeer", "target": "PeerReviewPlatform", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "OpenAlex", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "JSTOR", "target": "https://www.jstor.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Gold Open Access", "target": "Open Access", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "ORCID", "target": "Persistent Identifier (PID)", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "F1000", "target": "Taylor and Francis", "type": "https://map.pardalotus.tech/Parent"}, {"source": "Figshare", "target": "https://figshare.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Hindawi", "target": "Wiley", "type": "https://map.pardalotus.tech/acquiredBy"}, {"source": "Bronze Open Access", "target": "Open Access", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "GROBID", "target": "https://grobid.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "CNRI", "target": "Digital Object Numbering Authority (DONA)", "type": "http://www.w3.org/2000/01/rdf-schema#related"}, {"source": "SpringerNature", "target": "https://www.springernature.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Wax", "target": "NLnet Foundation", "type": "https://map.pardalotus.tech/CreatedBy"}, {"source": "Journal Transfers", "target": "Scholarly Communication Topic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Chinese DOI", "target": "DOI Registration Agency", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Tool", "target": "Introductory Topic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Hum", "target": "ServiceProvider", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Wax", "target": "Nikau Consulting", "type": "https://map.pardalotus.tech/CreatedBy"}, {"source": "OJS", "target": "PKP", "type": "https://map.pardalotus.tech/MaintainedBy"}, {"source": "Research Integrity Sleuth", "target": "Integrity", "type": "https://map.pardalotus.tech/About"}, {"source": "Article-Level Metrics (ALM)", "target": "Initative or Topic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Hindawi", "target": "Publisher", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Singapore Statement on Research Integrity", "target": "Integrity", "type": "https://map.pardalotus.tech/About"}, {"source": "Crossref", "target": "Open Source Code", "type": "https://map.pardalotus.tech/SourceLicense"}, {"source": "ScholarlyKitchen", "target": "https://schema.org/Blog", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Google Scholar", "target": "https://scholar.google.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "MakeDataCount", "target": "Initative", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "CDL", "target": "Organization", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "DOI.org Content Negotiation", "target": "DOI", "type": "https://map.pardalotus.tech/RelatedTo"}, {"source": "Open Funder Registry AKA Fundref", "target": "Ontology or Taxonomy", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "RefWorks", "target": "ProQuest", "type": "https://map.pardalotus.tech/Parent"}, {"source": "Altmetric.com", "target": "ServiceProvider", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "RI2 Research Integrity Risk Index", "target": "Integrity", "type": "https://map.pardalotus.tech/About"}, {"source": "Tool", "target": "Topic", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "PKP", "target": "https://pkp.sfu.ca/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "DigitalScience", "target": "Holtzbrinck", "type": "https://schema.org/parentOrganization"}, {"source": "Homepage", "target": "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Hindawi", "target": "Defunct Organization or Service", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Open Funder Registry AKA Fundref", "target": "Crossref", "type": "https://map.pardalotus.tech/PublishedBy"}, {"source": "Identifier", "target": "Persistent Identifier (PID)", "type": "f:seeAlso"}, {"source": "Entity", "target": "Topic", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "Robots Cooking", "target": "Blog", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Journal Level Metrics (JLM)", "target": "Initative or Topic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Zotero", "target": "DigitalScience", "type": "https://map.pardalotus.tech/BuiltBy"}, {"source": "JOSS", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "Elsevier", "target": "Publisher", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "PKP", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "NISO", "target": "https://www.niso.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Zotero", "target": "Open Source Code", "type": "https://map.pardalotus.tech/SourceLicense"}, {"source": "Identifier", "target": "Topic", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "Janeway", "target": "Publishing Platform (manuscript tracking, peer review, etc)", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Hindawi", "target": "Open Access", "type": "https://map.pardalotus.tech/Access"}, {"source": "RI2 Research Integrity Risk Index", "target": "Initative or Topic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "BioMedCentral", "target": "https://www.biomedcentral.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Content", "target": "Scholarly Communication Topic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "GitHub", "target": "https://github.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Wellcome Trust", "target": "Barcelona Declaration on Open Research Information", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "Zenodo", "target": "CERN", "type": "https://schema.org/parentOrganization"}, {"source": "Metadata", "target": "Scholarly Communication Topic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Contributor Role Taxonomy (CRediT)", "target": "https://credit.niso.org/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Handle System", "target": "https://www.handle.net/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "Turnitin", "target": "https://www.turnitin.com/", "type": "https://map.pardalotus.tech/Homepage"}, {"source": "CLOCKSS", "target": "Preservation", "type": "https://map.pardalotus.tech/Topic"}, {"source": "Distributed Usage Logging (DUL)", "target": "Crossref", "type": "https://map.pardalotus.tech/CreatedBy"}, {"source": "OPERAS", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}];
+        const graph = [{"source": "Affiliation", "target": "ORCID", "type": "https://map.pardalotus.tech/RelatedTo"}, {"source": "PublishingPlatform", "target": "Service", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "SymplecticElements", "target": "DigitalScience", "type": "https://schema.org/parentOrganization"}, {"source": "ALM", "target": "Metric", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "IIIINdex", "target": "Index", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Altmetric", "target": "Altmetrics", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "PLOS", "target": "OpenAccess", "type": "https://map.pardalotus.tech/Access"}, {"source": "ScholarOne", "target": "Silverchair", "type": "https://map.pardalotus.tech/acquiredBy"}, {"source": "CrossrefXmlDeposit", "target": "Schema", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "DoiRegistrationAgency", "target": "DOI", "type": "https://map.pardalotus.tech/RelatedTo"}, {"source": "DUL", "target": "STM", "type": "https://map.pardalotus.tech/acquiredBy"}, {"source": "AaronTay", "target": "BlogNewsletter", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "OpenFunderRegistry", "target": "Ontology", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "CDL", "target": "Organization", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Altmetric", "target": "Metric", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "EuropePMC", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "ScholarlyKitchen", "target": "BlogNewsletter", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Alchemist", "target": "Tool", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "PLOS", "target": "EditorialManager", "type": "https://map.pardalotus.tech/Uses"}, {"source": "Wikidata", "target": "Ontology", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "SciteAi", "target": "ServiceProvider", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "ClearSkies", "target": "ServiceProvider", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Alchemist", "target": "Hum", "type": "https://map.pardalotus.tech/CreatedBy"}, {"source": "ReadCube", "target": "DigitalScience", "type": "https://schema.org/parentOrganization"}, {"source": "MetadataConverter", "target": "Metadata", "type": "https://map.pardalotus.tech/RelatedTo"}, {"source": "HAND", "target": "DoiRegistrationAgency", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "HAL+", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "Wellcome", "target": "Funder", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "ELife", "target": "PostPublicationPeerReview", "type": "https://map.pardalotus.tech/Topic"}, {"source": "ContentNegotiation", "target": "BibTex", "type": "https://map.pardalotus.tech/Implements"}, {"source": "N2T", "target": "ARK", "type": "https://map.pardalotus.tech/Supports"}, {"source": "CiteprocJson", "target": "Schema", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Individual", "target": "Intro", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "PlumX", "target": "Altmetrics", "type": "http://www.w3.org/2000/01/rdf-schema#related"}, {"source": "JOSS", "target": "Journal", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Janeway", "target": "PublishingPlatform", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "PID", "target": "Identifier", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "AiritiDoi", "target": "DoiRegistrationAgency", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "EditorialManager", "target": "PublishingPlatform", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "BIBFRAME", "target": "Ontology", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "ISNI", "target": "PID", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Society", "target": "Organization", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "GROBID", "target": "TEI", "type": "https://map.pardalotus.tech/Implements"}, {"source": "PubPeer", "target": "PostPublicationPeerReview", "type": "https://map.pardalotus.tech/Topic"}, {"source": "CrossMark", "target": "DublinCore", "type": "https://map.pardalotus.tech/Uses"}, {"source": "Pardalotus", "target": "BlogNewsletter", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "JATS", "target": "Content", "type": "https://map.pardalotus.tech/RelatedTo"}, {"source": "ReadingPlatform", "target": "Intro", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "GetFTR", "target": "Content", "type": "https://map.pardalotus.tech/RelatedTo"}, {"source": "PodcastSeries", "target": "Literature", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "CREDIT", "target": "NISO", "type": "https://map.pardalotus.tech/CreatedBy"}, {"source": "DataCite", "target": "DoiRegistrationAgency", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "SKOS", "target": "RDF", "type": "https://map.pardalotus.tech/Related"}, {"source": "WikiDataId", "target": "WikiData", "type": "https://map.pardalotus.tech/ProductOf"}, {"source": "ContentNegotiation", "target": "Turtle", "type": "https://map.pardalotus.tech/Implements"}, {"source": "SciPost", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "Figshare", "target": "DigitalScience", "type": "https://schema.org/parentOrganization"}, {"source": "Clarivate", "target": "ServiceProvider", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "EverythingHertz", "target": "PodcastSeries", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "OPERAS", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "Altmetrics", "target": "Altmetric", "type": "https://www.w3.org/TR/owl-ref/#differentFrom"}, {"source": "MidnightAtTheCassablanca", "target": "PodcastSeries", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Organization", "target": "Entity", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "COARVocab", "target": "COAR", "type": "https://map.pardalotus.tech/CuratedBy"}, {"source": "Overleaf", "target": "DigitalScience", "type": "https://schema.org/parentOrganization"}, {"source": "ImpactFactor", "target": "Metric", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Metadata", "target": "ScholCommTopic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "GoldOA", "target": "OpenAccess", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "ELife", "target": "OpenAccess", "type": "https://map.pardalotus.tech/Access"}, {"source": "BackgroundReading", "target": "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "STM", "target": "Society", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Sleuth", "target": "Integrity", "type": "https://map.pardalotus.tech/About"}, {"source": "ScienceInsider", "target": "BlogNewsletter", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "PlanS", "target": "Initiative", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "KISTI", "target": "DoiRegistrationAgency", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "PublisherSpeakPodcast", "target": "PodcastSeries", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Sciety", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "FRBR", "target": "Ontology", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Zotero", "target": "DigitalScience", "type": "https://map.pardalotus.tech/BuiltBy"}, {"source": "References", "target": "ScholCommTopic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Affiliation", "target": "ROR", "type": "https://map.pardalotus.tech/RelatedTo"}, {"source": "ISTEX", "target": "PID", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "AbstractingAndIndexing", "target": "Service", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "RelatedTo", "target": "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "DOI", "target": "PID", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Entity", "target": "Topic", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "ROR", "target": "OpenSource", "type": "https://map.pardalotus.tech/SourceLicense"}, {"source": "Integrity", "target": "ScholCommTopic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Zenodo", "target": "CERN", "type": "https://schema.org/parentOrganization"}, {"source": "OP", "target": "DoiRegistrationAgency", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "RogueScholar", "target": "Platform", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Vivo", "target": "Ontology", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "ActivityPub", "target": "JSONLD", "type": "https://map.pardalotus.tech/Uses"}, {"source": "PublishingPlatform", "target": "Intro", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "JOSS", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "Contributor", "target": "ScholCommTopic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Aperta", "target": "Platform", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "N2T", "target": "Resolver", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "ARK", "target": "PID", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "RI2", "target": "Initiative", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "ProvO", "target": "Ontology", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "DONA", "target": "DOI", "type": "http://www.w3.org/2000/01/rdf-schema#related"}, {"source": "Organization", "target": "Intro", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "ChineseDoi", "target": "DoiRegistrationAgency", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "RDFXML", "target": "RDF", "type": "https://map.pardalotus.tech/SerializationFormat"}, {"source": "Content", "target": "ScholCommTopic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "DigitalScience", "target": "Holtzbrinck", "type": "https://schema.org/parentOrganization"}, {"source": "WikiCite", "target": "Initative", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Altmetric", "target": "Altmetrics", "type": "https://www.w3.org/TR/owl-ref/#differentFrom"}, {"source": "JsonSchema", "target": "Schema", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "MakeDataCount", "target": "Initative", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Zotero", "target": "Tool", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "PlumX", "target": "Altmetrics", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Dimensions", "target": "DigitalScience", "type": "https://schema.org/parentOrganization"}, {"source": "CNRI", "target": "DOI", "type": "http://www.w3.org/2000/01/rdf-schema#related"}, {"source": "MultipleResolution", "target": "ScholCommTopic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "SchemaOrg", "target": "Ontology", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "BiblioGlutton", "target": "Tool", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "ActivityPub", "target": "Schema", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Hum", "target": "ServiceProvider", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "BronzeOA", "target": "OpenAccess", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "InvenioRDM", "target": "CERN", "type": "https://map.pardalotus.tech/MaintainedBy"}, {"source": "ContentNegotiation", "target": "RDFXML", "type": "https://map.pardalotus.tech/Implements"}, {"source": "Ontology", "target": "Intro", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Homepage", "target": "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "JALC", "target": "DoiRegistrationAgency", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "MAG", "target": "Defunct", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "SpringerNature", "target": "Publisher", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "ALPSP", "target": "Society", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "ORCID", "target": "OpenSource", "type": "https://map.pardalotus.tech/SourceLicense"}, {"source": "Sleuth", "target": "Individual", "type": "http://www.w3.org/2000/01/rdf-schema#subclassOf"}, {"source": "DoiRegistrationAgency", "target": "Organization", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "POSI", "target": "Initiative", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "OpenLibHums", "target": "DiamondOA", "type": "https://map.pardalotus.tech/Access"}, {"source": "Refworks", "target": "References", "type": "https://map.pardalotus.tech/RelatedTo"}, {"source": "Blackwell", "target": "Publisher", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "BsiIdentify", "target": "DoiRegistrationAgency", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "ScholarlyKitchen", "target": "SSP", "type": "https://map.pardalotus.tech/PublishedBy"}, {"source": "PubPub", "target": "Defunct", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "JOSS", "target": "OpenAccess", "type": "https://map.pardalotus.tech/Access"}, {"source": "MaintainedBy", "target": "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "CREDIT", "target": "Ontology", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "KevinPatrick", "target": "Sleuth", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Altmetrics", "target": "Metric", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Crossref", "target": "OpenSource", "type": "https://map.pardalotus.tech/SourceLicense"}, {"source": "PKP", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "PlumX", "target": "MetricsPlatform", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Wiley", "target": "Publisher", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "ReadingPlatform", "target": "Service", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "Literature", "target": "Topic", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "DataDryad", "target": "https://schema.org/Organization", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Altmetric", "target": "DigitalScience", "type": "https://schema.org/parentOrganization"}, {"source": "RetractionWatch", "target": "Crossref", "type": "https://map.pardalotus.tech/indexedBy"}, {"source": "COUNTER", "target": "Metrics", "type": "https://map.pardalotus.tech/Topic"}, {"source": "KGL", "target": "https://schema.org/ServiceProvider", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "COARVocab", "target": "Taxonomy", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "OpenFunderRegistry", "target": "SKOS", "type": "https://map.pardalotus.tech/Uses"}, {"source": "ALM", "target": "JLM", "type": "http://www.w3.org/2000/01/rdf-schema#related"}, {"source": "Crossref", "target": "BibTex", "type": "https://map.pardalotus.tech/Implements"}, {"source": "CLOCKSS", "target": "Preservation", "type": "https://map.pardalotus.tech/Topic"}, {"source": "Altmetric", "target": "ServiceProvider", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Aperta", "target": "Defunct", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "OAPEN", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "CREDIT", "target": "Crossref", "type": "https://map.pardalotus.tech/ImplementedBy"}, {"source": "OpenUrl", "target": "Standard", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Identifier", "target": "PID", "type": "f:seeAlso"}, {"source": "Elsevier", "target": "Publisher", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "DeltaThink", "target": "ServiceProvider", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Zotero", "target": "OpenSource", "type": "https://map.pardalotus.tech/SourceLicense"}, {"source": "SCOPUS", "target": "MetaDataSource", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "DOAJ", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "Crossref", "target": "ClosedSource", "type": "https://map.pardalotus.tech/SourceLicense"}, {"source": "Crossref", "target": "Turtle", "type": "https://map.pardalotus.tech/Implements"}, {"source": "RobotsCooking", "target": "BlogNewsletter", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "RDF", "target": "DataModel", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Service", "target": "Intro", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "BuiltBy", "target": "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "CNRI", "target": "DONA", "type": "http://www.w3.org/2000/01/rdf-schema#related"}, {"source": "SourceCode", "target": "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Papers", "target": "DigitalScience", "type": "https://schema.org/parentOrganization"}, {"source": "RAID", "target": "PID", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Hindawi", "target": "Publisher", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "ScholCommTopic", "target": "Intro", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "OASwitchboard", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "GreenOA", "target": "OpenAccess", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Hindawi", "target": "Defunct", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Crossref", "target": "OAIPMH", "type": "https://map.pardalotus.tech/Implements"}, {"source": "Crossref", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "Tool", "target": "Intro", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Wax", "target": "Nikau", "type": "https://map.pardalotus.tech/CreatedBy"}, {"source": "FF1000", "target": "TaylorAndFrancis", "type": "https://map.pardalotus.tech/Parent"}, {"source": "Signals", "target": "ServiceProvider", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "ALM", "target": "Altmetrics", "type": "http://www.w3.org/2000/01/rdf-schema#related"}, {"source": "Service", "target": "Topic", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "CERN", "target": "Organization", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "TaylorAndFrancis", "target": "Publisher", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "PlumX", "target": "Metric", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "JLM", "target": "Initiative", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "JabRef", "target": "https://schema.org/tool", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "DataDryad", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "GuillaumeCabanac", "target": "Sleuth", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "AnnaAbalkina", "target": "Sleuth", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "CoAccess", "target": "ScholCommTopic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "PID", "target": "Intro", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "AcquiredBy", "target": "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "PLOS", "target": "Aperta", "type": "https://map.pardalotus.tech/Uses"}, {"source": "Crossref", "target": "CiteprocJson", "type": "https://map.pardalotus.tech/Implements"}, {"source": "PodcastSeries", "target": "s:PodcastSeries", "type": "http://www.w3.org/2000/01/rdf-schema#sameAs"}, {"source": "DataCite", "target": "OpenSource", "type": "https://map.pardalotus.tech/SourceLicense"}, {"source": "OpenApi", "target": "JsonSchema", "type": "https://map.pardalotus.tech/Related"}, {"source": "SubscribeToOpen", "target": "Initiative", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "ORCID", "target": "PID", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "OpenFunderRegistry", "target": "ROR", "type": "https://map.pardalotus.tech/Related"}, {"source": "Journalology", "target": "BlogNewsletter", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "DublinCore", "target": "Ontology", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Altmetric", "target": "Altmetrics", "type": "http://www.w3.org/2000/01/rdf-schema#related"}, {"source": "ELife", "target": "OpenPeerReview", "type": "https://map.pardalotus.tech/Topic"}, {"source": "Signatory", "target": "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "DiamondOA", "target": "OpenAccess", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "ALM", "target": "Initiative", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "LiberateScience", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "DOI", "target": "Handle", "type": "https://map.pardalotus.tech/BuiltOn"}, {"source": "RI2", "target": "Integrity", "type": "https://map.pardalotus.tech/About"}, {"source": "Janeway", "target": "OpenLibHums", "type": "https://schema.org/parentOrganization"}, {"source": "ScholCommTopic", "target": "Topic", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "ELife", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "OAPEN", "target": "OpenAccess", "type": "https://map.pardalotus.tech/Topic"}, {"source": "PID", "target": "Topic", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "WikiDataId", "target": "PID", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "EuropePMC", "target": "Publisher", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Silverchair", "target": "ServiceProvider", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "CLOCKSS", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "OpenFunderRegistry", "target": "Elsevier", "type": "https://map.pardalotus.tech/MaintainedBy"}, {"source": "ISSN", "target": "PID", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Scitility", "target": "ServiceProvider", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "ClearSkies", "target": "Integrity", "type": "https://map.pardalotus.tech/About"}, {"source": "ContentVersion", "target": "Concept", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "PubPeer", "target": "OpenPeerReview", "type": "https://map.pardalotus.tech/Topic"}, {"source": "Wax", "target": "NLNet", "type": "https://map.pardalotus.tech/CreatedBy"}, {"source": "Tool", "target": "Topic", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "MARC", "target": "BIBFRAME", "type": "https://map.pardalotus.tech/Related"}, {"source": "MakeDataCount", "target": "DataCite", "type": "http://www.w3.org/2000/01/rdf-schema#related"}, {"source": "ScholarOne", "target": "ClosedSource", "type": "https://map.pardalotus.tech/SourceLicense"}, {"source": "PeerCommunityIn", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "CrossMark", "target": "Crossref", "type": "https://map.pardalotus.tech/CreatedBy"}, {"source": "SKOS", "target": "Ontology", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "JSONLD", "target": "RDF", "type": "https://map.pardalotus.tech/SerializationFormat"}, {"source": "Crossref", "target": "RDFXML", "type": "https://map.pardalotus.tech/Implements"}, {"source": "MEDRA", "target": "DoiRegistrationAgency", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "ContentNegotiation", "target": "DOI", "type": "https://map.pardalotus.tech/RelatedTo"}, {"source": "SingaporeStatement", "target": "Integrity", "type": "https://map.pardalotus.tech/About"}, {"source": "Wellcome", "target": "Barcelona", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "DUL", "target": "Crossref", "type": "https://map.pardalotus.tech/CreatedBy"}, {"source": "Identifier", "target": "Intro", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Hindawi", "target": "Wiley", "type": "https://map.pardalotus.tech/acquiredBy"}, {"source": "ROR", "target": "PID", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "PubPeer", "target": "PeerReviewPlatform", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Standard", "target": "Topic", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "CNKI", "target": "DoiRegistrationAgency", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Aperta", "target": "PLoS", "type": "https://map.pardalotus.tech/CreatedBy"}, {"source": "Handle", "target": "PID", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Affiliation", "target": "ScholCommTopic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "OJS", "target": "OpenSource", "type": "https://map.pardalotus.tech/SourceLicense"}, {"source": "Cheshire", "target": "Sleuth", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Turtle", "target": "RDF", "type": "https://map.pardalotus.tech/SerializationFormat"}, {"source": "Hypothesis", "target": "ReadingPlatform", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Crossref", "target": "DoiRegistrationAgency", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Crossref", "target": "CrossrefXmlDeposit", "type": "https://map.pardalotus.tech/Implements"}, {"source": "Refworks", "target": "ProQuest", "type": "https://map.pardalotus.tech/Parent"}, {"source": "ELife", "target": "Publisher", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "PubTechRadar", "target": "BlogNewsletter", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "OpenAlex", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "OpenFunderRegistry", "target": "Crossref", "type": "https://map.pardalotus.tech/PublishedBy"}, {"source": "OASwitchboard", "target": "OpenAccess", "type": "https://map.pardalotus.tech/Topic"}, {"source": "Identifier", "target": "Topic", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "MetadataConverter", "target": "Tool", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "SourceLicense", "target": "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Hindawi", "target": "OpenAccess", "type": "https://map.pardalotus.tech/Access"}, {"source": "HIndex", "target": "Metric", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "WriteFull", "target": "DigitalScience", "type": "https://schema.org/parentOrganization"}, {"source": "Scholastica", "target": "ServiceProvider", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "BlogNewsletter", "target": "Intro", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "dARK", "target": "ARK", "type": "https://map.pardalotus.tech/BasedOn"}, {"source": "ISBN", "target": "PID", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "CORE", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "JournalTransfers", "target": "ScholCommTopic", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "OpenCitations", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "OJS", "target": "PKP", "type": "https://map.pardalotus.tech/MaintainedBy"}, {"source": "EditorialManager", "target": "ClosedSource", "type": "https://map.pardalotus.tech/SourceLicense"}, {"source": "DOAB", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "DataCite", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "PLOS", "target": "Publisher", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "COUNTER", "target": "POSI", "type": "https://map.pardalotus.tech/Signatory"}, {"source": "EIDR", "target": "DoiRegistrationAgency", "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, {"source": "Individual", "target": "Entity", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}, {"source": "BlogNewsletter", "target": "Literature", "type": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}];
 
         let width = window.innerWidth / 2;
         let height = window.innerHeight;

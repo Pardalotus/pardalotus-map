@@ -16,14 +16,20 @@ label_uri = URIRef("http://www.w3.org/2000/01/rdf-schema#label")
 see_also_uri = URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso")
 type_uri = URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
 comment_uri = URIRef("http://www.w3.org/2000/01/rdf-schema#comment")
-homepage_uri = URIRef("https://map.pardalotus.tech/#Homepage")
-source_code_uri = URIRef("https://map.pardalotus.tech/#SourceCode")
+homepage_uri = URIRef("https://map.pardalotus.tech/Homepage")
+background_reading_uri = URIRef("https://map.pardalotus.tech/BackgroundReading")
+
+source_code_uri = URIRef("https://map.pardalotus.tech/SourceCode")
 
 
 ignore_list = {
     URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'),
     URIRef('http://www.w3.org/2000/01/rdf-schema#seeAlso'),
-    URIRef('http://www.w3.org/2000/01/rdf-schema#related')
+    URIRef('http://www.w3.org/2000/01/rdf-schema#related'),
+}
+
+ignore_instances = {
+    URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate')
 }
 
 
@@ -33,7 +39,7 @@ ignore = {
 }
 
 graph_ignore = {
-    label_uri, comment_uri, see_also_uri, homepage_uri, source_code_uri
+    label_uri, comment_uri, see_also_uri, homepage_uri, source_code_uri, background_reading_uri
 }
 
 
@@ -56,7 +62,16 @@ def get_label(g, subject):
     return label or get_path(g, subject).removeprefix("#")
 
 for subject in all_items:
+    skip = False
+
     if subject in ignore_list:
+        skip = True
+
+    for instance_type in ignore_instances:
+        if list(g.triples((subject,None, instance_type))):
+            skip = True
+
+    if skip:
         continue
 
     display_label = get_label(g, subject)
@@ -77,9 +92,27 @@ for subject in all_items:
     if comment:
         md.write(f"> {comment} \n\n")
 
+    if types:
+        for typ in types:
+            label = get_label(g, typ)
+            path = get_path(g, typ)
+
+            md.write(f"- Type of [{label}]({path}). \n")
+
     for x in see_also:
-        md.write(f"See: <{x}> \n")
+        md.write(f"- See: <{x}> \n")
+
+    if others:
+
+        for (s, v, o) in others:
+            v_label = get_label(g, v)
+            o_label = get_label(g, o)
+            o_path = get_path(g, o)
+
+            md.write(f"- {v_label} [{o_label}]({o_path}) \n")
         md.write("\n")
+
+    md.write("\n")
 
     if instances:
         md.write("### Instances \n")
@@ -88,25 +121,6 @@ for subject in all_items:
             path = get_path(g, instance)
             md.write(f"- [{label}]({path}) \n")
 
-        md.write("\n")
-
-    if types:
-        for typ in types:
-            label = get_label(g, typ)
-            path = get_path(g, typ)
-
-            md.write(f"- Type of [{label}]({path}) \n")
-
-    if others:
-        md.write("\n")
-        md.write("### Other \n")
-
-        for (s, v, o) in others:
-            v_label = get_label(g, v)
-            o_label = get_label(g, o)
-            o_path = get_path(g, o)
-
-            md.write(f"- {v_label} [{o_label}]({o_path}) \n")
         md.write("\n")
 
     if others_references:
@@ -133,8 +147,8 @@ html = markdown.markdown(md.getvalue())
 data = []
 for (s, v, o) in g:
     if v not in graph_ignore:
-        s_label = get_label(g, s)
-        o_label = get_label(g, o)
+        s_label = str(s).removeprefix(base_uri)
+        o_label = str(o).removeprefix(base_uri)
         data.append({'source': s_label, 'target': o_label, 'type': v})
 
 with open(join(BUILD_DIR, 'index.html'), 'w') as of:
@@ -153,4 +167,4 @@ g.bind("o", URIRef("https://www.w3.org/TR/owl-ref/#"));
 g.bind("k", URIRef("http://www.w3.org/2004/02/skos/core#"));
 
 
-g.serialize(destination=join(BUILD_DIR, 'formatted.ttl'), format="longturtle", base=base_uri)
+g.serialize(destination=join(BUILD_DIR, 'map.ttl'), format="longturtle", base=base_uri)

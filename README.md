@@ -2,7 +2,7 @@
 
 A map of concepts and organizations that may be useful to developers or techies in scholarly publishing, especially early-career. It's not (yet) complete, authoritative, or      objective!
 
-Browse at <./target/index.html>
+Browse at <https://pardalotus.github.io/pardalotus-map/>
 
 To build:
 

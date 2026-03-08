@@ -1,0 +1,1769 @@
+BASE <https://map.pardalotus.tech/>
+PREFIX ns1: <https://map.pardalotus.tech/>
+PREFIX ns2: <https://www.w3.org/TR/owl-ref/#>
+PREFIX ns3: <f:>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+
+rdf:type
+    rdfs:label "is a" ;
+.
+
+rdfs:related
+    rdfs:label "Related" ;
+.
+
+rdfs:seeAlso
+    rdfs:label "see also" ;
+.
+
+<ALM>
+    a
+        <Initiative> ,
+        <Metric> ;
+    rdfs:label "Article-Level Metrics (ALM)" ;
+    rdfs:comment "Article Level Metrics seek to shift evaluation from the whole-journal toward the individual article" ;
+    rdfs:related
+        <Altmetrics> ,
+        <JLM> ;
+.
+
+<ALPSP>
+    a <Society> ;
+    rdfs:label "Association of Learned and Professional Society Publishers (ALPSPS)" ;
+    <Homepage> <https://www.alpsp.org/> ;
+.
+
+<AaronTay>
+    a <BlogNewsletter> ;
+    rdfs:comment "Aaron Tay's newsletter about librarianship, authorship, very technology focussed. Focus on AI these days." ;
+    <Homepage> <https://aarontay.substack.com/> ;
+.
+
+<AbstractingAndIndexing>
+    rdfs:label "Abstracting and Indexing Service" ;
+    rdfs:subClassOf <Service> ;
+    <Homepage> <https://en.wikipedia.org/wiki/Indexing_and_abstracting_service> ;
+.
+
+<Access>
+    <Homepage> <https://www.niso.org/publications/rp-22-2021-ali> ;
+.
+
+<AcquiredBy>
+    a rdf:predicate ;
+    rdfs:label "acquired by" ;
+.
+
+<ActivityPub>
+    a <Schema> ;
+    rdfs:label "ActivityPub" ;
+    rdfs:comment "Open, decentralized social networking protocol based on ActivityStreams 2.0 and JSON-LD" ;
+    <Uses> <JSONLD> ;
+.
+
+<Affiliation>
+    a <ScholCommTopic> ;
+    rdfs:comment "Affiliation of an author, i.e. which instutition they're working for. Authors can change affiliations, so this can be recorded against the Work at the time of publication. Affiliation can be indicated by an organisation identifier, or linked via an author's ORCID ID" ;
+    <RelatedTo>
+        <ORCID> ,
+        <ROR> ;
+.
+
+<AiritiDoi>
+    a <DoiRegistrationAgency> ;
+    rdfs:label "Airiti DOI" ;
+    rdfs:comment "Taiwan" ;
+    <Homepage> <http://www.airiti.com/en/page_doi.html> ;
+.
+
+<Alchemist>
+    a <Tool> ;
+    rdfs:label "Alchemist Review" ;
+    <CreatedBy> <Hum> ;
+    <Homepage> <https://www.hum.works/review> ;
+.
+
+<Analytics>
+    rdfs:label "Analytics" ;
+.
+
+<AnnaAbalkina>
+    a <Sleuth> ;
+    rdfs:label "Anna Abalkina" ;
+.
+
+<Arxiv>
+    rdfs:label "Arxiv" ;
+    <Homepage> <https://arxiv.org/> ;
+.
+
+<Atypon>
+    rdfs:label "Atypon" ;
+    <Homepage> <https://www.atypon.com/> ;
+.
+
+<BackgroundReading>
+    a rdf:predicate ;
+    rdfs:label "Background Reading" ;
+.
+
+<BibTeX>
+    rdfs:label "BibTeX" ;
+.
+
+<BiblioGlutton>
+    a <Tool> ;
+    rdfs:label "biblio-glutton" ;
+    <Homepage> <https://github.com/kermitt2/biblio-glutton> ;
+.
+
+<BioArxiv>
+    rdfs:label "BioArxiv" ;
+    <Homepage> <https://www.biorxiv.org/> ;
+.
+
+<BioMedCentral>
+    rdfs:label "BioMedCentral" ;
+    <Homepage> <https://www.biomedcentral.com/> ;
+.
+
+<BioOne>
+    rdfs:label "BioOne" ;
+    <Homepage> <https://bioone.org/> ;
+.
+
+<Blackwell>
+    a <Publisher> ;
+    rdfs:label "Blackwell" ;
+.
+
+<BronzeOA>
+    a <OpenAccess> ;
+    rdfs:label "Bronze Open Access" ;
+.
+
+<BsiIdentify>
+    a <DoiRegistrationAgency> ;
+    rdfs:label "bsi.identify" ;
+    rdfs:comment "Product Information" ;
+    <Homepage> <https://identify.bsigroup.com/> ;
+.
+
+<BuiltBy>
+    a rdf:predicate ;
+    rdfs:label "Built By" ;
+.
+
+<CDL>
+    a <Organization> ;
+    rdfs:label "CDL" ;
+    rdfs:comment "California Digital Library, involved in a lot of open infrastructure" ;
+.
+
+<CLOCKSS>
+    rdfs:label "CLOCKSS" ;
+    <Homepage> <https://clockss.org/> ;
+    <Signatory> <POSI> ;
+    <Topic> <Preservation> ;
+.
+
+<CNKI>
+    a <DoiRegistrationAgency> ;
+    rdfs:label "China National Knowledge Infrastructure (CNKI)" ;
+    <Homepage> <https://oversea.cnki.net/index/> ;
+.
+
+<CNRI>
+    rdfs:label
+        "CNRI" ,
+        "Corporation for National Research Initiatives (CNRI)" ;
+    rdfs:related
+        <DOI> ,
+        <DONA> ;
+.
+
+<COARVocab>
+    a <Taxonomy> ;
+    <CuratedBy> <COAR> ;
+    <Homepage> <https://vocabularies.coar-repositories.org/> ;
+.
+
+<COMET>
+    rdfs:label "COMET Data" ;
+.
+
+<CORE>
+    rdfs:label "CORE" ;
+    <Homepage> <https://core.ac.uk/> ;
+    <Signatory> <POSI> ;
+.
+
+<COS>
+    rdfs:label "Center for Open Science" ;
+    <Homepage> <https://www.cos.io/> ;
+.
+
+<COUNTER>
+    rdfs:label "COUNTER" ;
+    <Homepage> <https://www.countermetrics.org/> ;
+    <Signatory> <POSI> ;
+    <Topic> <Metrics> ;
+.
+
+<CREDIT>
+    a <Ontology> ;
+    rdfs:label "Contributor Role Taxonomy (CRediT)" ;
+    <CreatedBy> <NISO> ;
+    <Homepage>
+        <https://credit.niso.org/> ,
+        <https://groups.niso.org/higherlogic/ws/public/download/31067/CRediT_Taxonomy_Terms_and_Definitions_list> ;
+    <ImplementedBy> <Crossref> ;
+.
+
+<CRIS>
+    rdfs:label "current research information system (CRIS)" ;
+.
+
+<Cactus>
+    rdfs:label "CACTUS" ;
+    <Homepage> <https://cactusglobal.com/> ;
+.
+
+<CadmoreMedia>
+    rdfs:label "Cadmore Media" ;
+.
+
+<CascadeJournal>
+    rdfs:label "Cascade Journal" ;
+.
+
+<Cassini>
+    rdfs:label "Cassini Publishing Platform" ;
+.
+
+<Cheshire>
+    a <Sleuth> ;
+    rdfs:label "Cheshire (research integrity sleuth)" ;
+.
+
+<ChineseDoi>
+    a <DoiRegistrationAgency> ;
+    rdfs:label "Chinese DOI" ;
+    <Homepage> <http://dx.chinadoi.cn/> ;
+.
+
+<CiteAs>
+    rdfs:label "CiteAs" ;
+    <Homepage> <https://en.wikipedia.org/wiki/Handle_System> ;
+.
+
+<Clarivate>
+    a <ServiceProvider> ;
+    rdfs:label "Clarivate" ;
+    <Homepage> <https://clarivate.com/> ;
+.
+
+<ClearSkies>
+    a <ServiceProvider> ;
+    rdfs:label "Clear Skies" ;
+    <About> <Integrity> ;
+.
+
+<CoAccess>
+    a <ScholCommTopic> ;
+    rdfs:label "Co-Access" ;
+.
+
+<Coko>
+    rdfs:label "Coko" ;
+    <Homepage> <https://coko.foundation/> ;
+.
+
+<CommercialData>
+    rdfs:label "Commercial Data" ;
+.
+
+<ContentNegotiation>
+    rdfs:label "DOI.org Content Negotiation" ;
+    rdfs:comment "AKA CrossCite" ;
+    <Homepage>
+        <https://citation.doi.org/> ,
+        <https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Content_negotiation> ;
+    <Implements>
+        <BibTex> ,
+        <RDFXML> ,
+        <Turtle> ;
+    <RelatedTo> <DOI> ;
+.
+
+<ContentVersion>
+    a <Concept> ;
+    rdfs:label "Content Version (VOR, Preprint)" ;
+    rdfs:comment "Version of Record (VOR) vs preprint etc" ;
+    <Homepage> <https://en.wikipedia.org/wiki/Version_of_record> ;
+.
+
+<Contributor>
+    a <ScholCommTopic> ;
+    rdfs:comment "Contribution to research and publication (e.g. authorship)" ;
+.
+
+<CreativeCommons>
+    rdfs:label "CreativeCommons" ;
+    <Homepage> <https://creativecommons.org/> ;
+.
+
+<CrossMark>
+    rdfs:label "CrossMark" ;
+    <CreatedBy> <Crossref> ;
+    <Uses> <DublinCore> ;
+.
+
+<DOAB>
+    rdfs:label "DOAB" ;
+    <Signatory> <POSI> ;
+.
+
+<DOAJ>
+    rdfs:label "DOAJ" ;
+    <Homepage> <https://doaj.org/> ;
+    <Signatory> <POSI> ;
+.
+
+<DUL>
+    rdfs:label "Distributed Usage Logging (DUL)" ;
+    <CreatedBy> <Crossref> ;
+    <Homepage> <https://stm-assoc.org/what-we-do/strategic-areas/standards-technology/access-identity-2/distributed-usage-logging-dul/> ;
+    <acquiredBy> <STM> ;
+.
+
+<DataDryad>
+    a schema:Organization ;
+    rdfs:label "Data Dryad" ;
+    <Homepage>
+        <https://blog.datadryad.org/> ,
+        <https://datadryad.org/> ;
+    <Signatory> <POSI> ;
+.
+
+<DataSeer>
+    rdfs:label "DataSeer" ;
+    rdfs:comment "developer of AI-powered research integrity solutions" ;
+    <Homepage> "https://dataseer.ai/" ;
+.
+
+<DeltaThink>
+    a <ServiceProvider> ;
+    rdfs:label "DeltaThink" ;
+    <Homepage> <https://www.deltathink.com/> ;
+.
+
+<Dimensions>
+    rdfs:label "Dimensions" ;
+    <Homepage> <https://www.dimensions.ai/> ;
+    schema:parentOrganization <DigitalScience> ;
+.
+
+<EIDR>
+    a <DoiRegistrationAgency> ;
+    rdfs:label "Entertainment Identifier Registry (EIDR)" ;
+    <Homepage> <https://www.eidr.org/> ;
+.
+
+<ELife>
+    a <Publisher> ;
+    rdfs:label "ELife" ;
+    <Access> <OpenAccess> ;
+    <Homepage> <https://elifesciences.org/> ;
+    <Signatory> <POSI> ;
+    <Topic>
+        <OpenPeerReview> ,
+        <PostPublicationPeerReview> ;
+.
+
+<ERROR>
+    rdfs:label "Estimating the Reliability & Robustness of Research" ;
+    <Homepage> <https://error.reviews/about/> ;
+.
+
+<EditorialOffice>
+    rdfs:label "Editorial Office" ;
+.
+
+<EuropePMC>
+    a <Publisher> ;
+    rdfs:label "EuropePMC" ;
+    <Homepage> <https://europepmc.org/> ;
+    <Signatory> <POSI> ;
+.
+
+<EverythingHertz>
+    a <PodcastSeries> ;
+    rdfs:label "Everything Hertz" ;
+.
+
+<ExOrdo>
+    rdfs:label "Ex Ordo" ;
+    <Homepage> <https://www.exordo.com/> ;
+.
+
+<FAIR>
+    rdfs:label "FAIR" ;
+.
+
+<FF1000>
+    rdfs:label "F1000" ;
+    <Parent> <TaylorAndFrancis> ;
+.
+
+<FRBR>
+    a <Ontology> ;
+    rdfs:label "Functional Requirements for Bibliographic Records (FRBR)" ;
+    <Homepage> <https://en.wikipedia.org/wiki/Functional_Requirements_for_Bibliographic_Records> ;
+.
+
+<Figshare>
+    rdfs:label "Figshare" ;
+    <Homepage> <https://figshare.com/> ;
+    schema:parentOrganization <DigitalScience> ;
+.
+
+<Force11>
+    rdfs:label "Force11" ;
+    <Homepage>
+        <https://force11.org/> ,
+        <https://www.youtube.com/@force1141> ;
+.
+
+<FrankfurtBookFair>
+    rdfs:label "Frankfurt Book Fair" ;
+.
+
+<Frontiers>
+    rdfs:label "Frontiers" ;
+    <Homepage> <https://www.frontiersin.org/> ;
+.
+
+<GROBID>
+    rdfs:label "GROBID" ;
+    rdfs:comment "Machine learning library for extracting bibliographic data from PDFs" ;
+    <Homepage> <https://grobid.org/> ;
+    <Implements> <TEI> ;
+.
+
+<GetFTR>
+    rdfs:label "Get Fulltext Research" ;
+    <Homepage> <https://www.getfulltextresearch.com/people-and-partners> ;
+    <RelatedTo> <Content> ;
+.
+
+<GitHub>
+    rdfs:label "GitHub" ;
+    <Homepage>
+        <https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content> ,
+        <https://github.com/> ;
+.
+
+<GoldOA>
+    a <OpenAccess> ;
+    rdfs:label "Gold Open Access" ;
+    rdfs:comment "Publisher makes content available immediately. APC." ;
+.
+
+<GoogleScholar>
+    rdfs:label "Google Scholar" ;
+    <Homepage> <https://scholar.google.com/> ;
+.
+
+<GreenOA>
+    a <OpenAccess> ;
+    rdfs:label "Green Open Access" ;
+    rdfs:comment "Author self-archives. Personal, institution or independent repository. Free of charge to author." ;
+.
+
+<GuillaumeCabanac>
+    a <Sleuth> ;
+    rdfs:label "Guillaume Cabanac" ;
+.
+
+<HAL+>
+    rdfs:label "HAL+" ;
+    <Signatory> <POSI> ;
+.
+
+<HAND>
+    a <DoiRegistrationAgency> ;
+    rdfs:label
+        "Human Digital" ,
+        "business requirements of Hollywood & sports" ;
+    <Homepage> <https://www.handidentity.com/> ;
+.
+
+<HHMI>
+    rdfs:label "Howard Hughes Medical Institute (HHMI)" ;
+.
+
+<HIndex>
+    a <Metric> ;
+    rdfs:label "h-index" ;
+.
+
+<HighWirePress>
+    rdfs:label "HighWire Press" ;
+    <Homepage> <https://www.highwirepress.com/> ;
+.
+
+<Hindawi>
+    a
+        <Defunct> ,
+        <Publisher> ;
+    <Access> <OpenAccess> ;
+    <Homepage> <https://hindawi.com/> ;
+    <acquiredBy> <Wiley> ;
+.
+
+<Homepage>
+    a rdf:predicate ;
+    rdfs:label "Link" ;
+.
+
+<Hypothesis>
+    a <ReadingPlatform> ;
+    <Homepage> <https://web.hypothes.is/> ;
+.
+
+<IIIINdex>
+    a <Index> ;
+    rdfs:label "Open Innovation Data Index" ;
+    <Homepage> <https://iiindex.org/> ;
+.
+
+<IOI>
+    rdfs:label "Invest in Open Infrastructure" ;
+.
+
+<IPRegistry>
+    rdfs:label "IP Registry" ;
+.
+
+<ISBN>
+    a <PID> ;
+    rdfs:label "ISBN" ;
+.
+
+<ISNI>
+    a <PID> ;
+    rdfs:label "ISNI" ;
+.
+
+<ISSN>
+    a <PID> ;
+    rdfs:label "ISSN" ;
+.
+
+<ISTEX>
+    a <PID> ;
+    <Homepage> <https://github.com/istex/istex-ark> ;
+.
+
+<ImgTwin>
+    rdfs:label "Imgtwin" ;
+.
+
+<ImpactFactor>
+    a <Metric> ;
+    rdfs:label "ImpactFactor" ;
+.
+
+<Ingenta>
+    rdfs:label "Ingenta" ;
+    <Homepage> <https://www.ingenta.com/> ;
+.
+
+<IngentaConnect>
+    rdfs:label "Ingenta Connect" ;
+    <Homepage> <https://www.ingenta.com/products/content-management/> ;
+.
+
+<InvenioRDM>
+    rdfs:label "InvenioRDM" ;
+    <Homepage> <https://inveniosoftware.org/products/rdm/> ;
+    <MaintainedBy> <CERN> ;
+.
+
+<Ithaka>
+    rdfs:label "Ithaka S+R" ;
+    <Homepage> <https://sr.ithaka.org/> ;
+.
+
+<JALC>
+    a <DoiRegistrationAgency> ;
+    rdfs:label "Japan Link Center (JaLC)" ;
+    rdfs:comment "Japan" ;
+    <Homepage> <https://japanlinkcenter.org/top/english.html> ;
+.
+
+<JATS>
+    rdfs:label "Journal Article Tag Suite (JATS)" ;
+    <Homepage> <https://jats4r.niso.org/> ;
+    <RelatedTo> <Content> ;
+.
+
+<JIF>
+    rdfs:label "Journal Impact Factor (JIF)" ;
+.
+
+<JOSS>
+    a <Journal> ;
+    rdfs:label "JOSS" ;
+    <Access> <OpenAccess> ;
+    <Homepage> <https://joss.theoj.org/> ;
+    <Signatory> <POSI> ;
+.
+
+<JSTOR>
+    rdfs:label "JSTOR" ;
+    <Homepage> <https://www.jstor.org/> ;
+.
+
+<JWT>
+    rdfs:label "JWT" ;
+.
+
+<JabRef>
+    a schema:tool ;
+    rdfs:label "JabRef" ;
+    rdfs:comment "Reference management software" ;
+    <Homepage> <https://www.jabref.org/> ;
+.
+
+<Janeway>
+    a <PublishingPlatform> ;
+    <Homepage> <https://www.openlibhums.org/site/janeway/> ;
+    schema:parentOrganization <OpenLibHums> ;
+.
+
+<JournalTransfers>
+    a <ScholCommTopic> ;
+    rdfs:label "Journal Transfers" ;
+    rdfs:comment "Transfer of journal between publishers. Often happens around the start of the year. Can mean big changes in metadata." ;
+.
+
+<Journalology>
+    a <BlogNewsletter> ;
+    rdfs:comment "What's going on with Scholarly Publishers" ;
+    <Homepage> <https://ck.journalology.com/posts> ;
+.
+
+<KGL>
+    a schema:ServiceProvider ;
+    rdfs:label "Knowledge Works Global" ;
+.
+
+<KISTI>
+    a <DoiRegistrationAgency> ;
+    rdfs:label "Korean DOI Center" ;
+    rdfs:comment "Korea" ;
+    <Homepage> <https://www.doi.or.kr/wordpress/#content> ;
+.
+
+<KevinPatrick>
+    a <Sleuth> ;
+    rdfs:label "Kevin Patrick" ;
+.
+
+<KnowledgeFutures>
+    rdfs:label "Knowledge Futures" ;
+    <Homepage> <https://www.knowledgefutures.org/> ;
+.
+
+<Kudos>
+    rdfs:label "Kudos" ;
+    <Homepage> <https://www.growkudos.com/> ;
+.
+
+<LaReferencia>
+    rdfs:label "La Referencia" ;
+    <Homepage> <https://25.scielo.org/en/seminars/la-referencia/> ;
+.
+
+<LiberateScience>
+    rdfs:label "LiberateScience" ;
+    <Signatory> <POSI> ;
+.
+
+<LibraryBase>
+    rdfs:label "LibraryBase" ;
+.
+
+<LibraryTechnologyGuides>
+    <Homepage> <https://librarytechnology.org/> ;
+.
+
+<LondonBookFair>
+    rdfs:label "London Book Fair" ;
+.
+
+<MAG>
+    a <Defunct> ;
+    rdfs:label "Microsoft Academic Graph" ;
+.
+
+<MARC>
+    rdfs:label "Machine-readable Cataloging (MARC)" ;
+    <Homepage> <https://en.wikipedia.org/wiki/MARC_standards> ;
+    <Related> <BIBFRAME> ;
+.
+
+<MEDRA>
+    a <DoiRegistrationAgency> ;
+    rdfs:label "multilingual European DOI Registration Agency (mEDRA)" ;
+    <Homepage> <https://www.medra.org/> ;
+.
+
+<MaintainedBy>
+    a rdf:predicate ;
+    rdfs:label "Maintained By" ;
+.
+
+<MakeDataCount>
+    a <Initative> ;
+    rdfs:label "MakeDataCount" ;
+    rdfs:related <DataCite> ;
+.
+
+<Medrxiv>
+    rdfs:label "medRxiv" ;
+    rdfs:comment "The Preprint Server for Health Sciences" ;
+    <Homepage> <https://www.medrxiv.org/> ;
+.
+
+<Memento>
+    rdfs:label "Memento" ;
+    <Homepage> <https://www.rfc-editor.org/rfc/rfc7089.txt> ;
+.
+
+<Mendeley>
+    rdfs:label "Mendeley" ;
+    <Homepage> <https://www.mendeley.com/> ;
+.
+
+<MetadataConverter>
+    a <Tool> ;
+    <RelatedTo> <Metadata> ;
+.
+
+<MidnightAtTheCassablanca>
+    a <PodcastSeries> ;
+    rdfs:label "Midnight At The Cassablanca" ;
+.
+
+<MolecularConnections>
+    rdfs:label "Molecular Connections" ;
+.
+
+<MultipleResolution>
+    a <ScholCommTopic> ;
+    rdfs:label "Multiple Resolution" ;
+.
+
+<N2T>
+    a <Resolver> ;
+    rdfs:label "Name-to-Thing (N2T) Resolver" ;
+    <Homepage> <https://n2t.net/> ;
+    <Supports> <ARK> ;
+.
+
+<OAPEN>
+    rdfs:label "OAPEN" ;
+    <Signatory> <POSI> ;
+    <Topic> <OpenAccess> ;
+.
+
+<OASPA>
+    rdfs:label "OASPA" ;
+    <Homepage> <https://www.oaspa.org/> ;
+.
+
+<OASwitchboard>
+    rdfs:label "OASwitchboard" ;
+    <Signatory> <POSI> ;
+    <Topic> <OpenAccess> ;
+.
+
+<OCLC>
+    rdfs:label "OCLC" ;
+    <Homepage> <https://www.oclc.org/> ;
+.
+
+<OJS>
+    rdfs:label "OJS" ;
+    <Homepage> <https://pkp.sfu.ca/software/ojs/> ;
+    <MaintainedBy> <PKP> ;
+    <SourceLicense> <OpenSource> ;
+.
+
+<OP>
+    a <DoiRegistrationAgency> ;
+    rdfs:label "The Publications Office of the European Union (OP)" ;
+    <Homepage> <https://op.europa.eu/en/home> ;
+.
+
+<OPERAS>
+    rdfs:label "OPERAS" ;
+    <Signatory> <POSI> ;
+.
+
+<OSF>
+    rdfs:label "Open Science Framework (OSF)" ;
+    <Homepage> <https://osf.io/> ;
+.
+
+<OpenAire>
+    rdfs:label "OpenAIRE" ;
+.
+
+<OpenAlex>
+    rdfs:label "OpenAlex" ;
+    <Homepage> <https://openalex.org/> ;
+    <Signatory> <POSI> ;
+.
+
+<OpenAlexIds>
+    rdfs:label "OpenAlex IDs" ;
+.
+
+<OpenApi>
+    <Related> <JsonSchema> ;
+.
+
+<OpenCitations>
+    rdfs:label "OpenCitations" ;
+    <Homepage> <https://opencitations.net/> ;
+    <Signatory> <POSI> ;
+.
+
+<OpenData>
+    rdfs:label "Open Data" ;
+.
+
+<OpenFunderRegistry>
+    a <Ontology> ;
+    rdfs:label "Open Funder Registry AKA Fundref" ;
+    <MaintainedBy> <Elsevier> ;
+    <PublishedBy> <Crossref> ;
+    <Related> <ROR> ;
+    <Uses> <SKOS> ;
+.
+
+<OpenScienceMontioring>
+    <Homepage>
+        <https://doi.org/10.5281/zenodo.15807480> ,
+        <https://open-science-monitoring.org/> ;
+.
+
+<OpenUrl>
+    a <Standard> ;
+    rdfs:label "OpenURL" ;
+.
+
+<OriginEditorial>
+    rdfs:label "Origin Editorial" ;
+.
+
+<Overleaf>
+    rdfs:label "Overleaf" ;
+    rdfs:comment "Authoring and collaboration platform. LaTeX" ;
+    <Homepage> <https://www.overleaf.com/> ;
+    schema:parentOrganization <DigitalScience> ;
+.
+
+<Overton>
+    rdfs:label "Overton" ;
+    <Homepage> <https://www.overton.io/> ;
+.
+
+<PLOS>
+    a <Publisher> ;
+    <Access> <OpenAccess> ;
+    <Homepage> <https://plos.org/> ;
+    <Uses>
+        <Aperta> ,
+        <EditorialManager> ;
+.
+
+<PURL>
+    rdfs:label "Persistent uniform resource locator (PURL)" ;
+    <Homepage>
+        <https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator> ,
+        <https://purl.archive.org/> ;
+.
+
+<Papers>
+    rdfs:label "Papers (reference manager)" ;
+    schema:parentOrganization <DigitalScience> ;
+.
+
+<Pardalotus>
+    a <BlogNewsletter> ;
+    rdfs:label "Pardalotus Blog" ;
+    <Homepage> <https://pardalotus.tech/posts/> ;
+.
+
+<PeerCommunityIn>
+    rdfs:label "PeerCommunityIn" ;
+    <Homepage> <https://peercommunityin.org/> ;
+    <Signatory> <POSI> ;
+.
+
+<PeerRef>
+    rdfs:label "Peer Ref" ;
+.
+
+<Phenom>
+    rdfs:label "Phenom" ;
+.
+
+<PlanS>
+    a <Initiative> ;
+    rdfs:label "Plan S" ;
+    <Homepage> <https://www.coalition-s.org/> ;
+.
+
+<PlumX>
+    a
+        <Altmetrics> ,
+        <Metric> ,
+        <MetricsPlatform> ;
+    rdfs:label "PlumX" ;
+    rdfs:related <Altmetrics> ;
+    <Homepage> <https://www.elsevier.com/insights/metrics/plumx> ;
+.
+
+<PreReview>
+    rdfs:label "PreReview" ;
+    <Homepage> <https://prereview.org/> ;
+.
+
+<PreprintServer>
+    rdfs:label "PreprintServer" ;
+.
+
+<ProjectMuse>
+    rdfs:label "ProjectMuse" ;
+    <Homepage> <https://muse.jhu.edu/> ;
+.
+
+<Protocol>
+    rdfs:label "Research Protocol" ;
+.
+
+<ProvO>
+    a <Ontology> ;
+    rdfs:label "PROV-O" ;
+    rdfs:comment "Ontology for provenance of metadata and other information" ;
+    <Homepage> <https://www.w3.org/TR/prov-o/> ;
+.
+
+<PubPeer>
+    a <PeerReviewPlatform> ;
+    rdfs:label "PubPeer" ;
+    rdfs:comment "Allow users to make public comments on articles. Post-publication peer review." ;
+    <Homepage>
+        <https://pubpeer.com/> ,
+        <https://pubpeer.com/static/faq> ;
+    <SourceCode> <https://github.com/PubPeerFoundation> ;
+    <Topic>
+        <OpenPeerReview> ,
+        <PostPublicationPeerReview> ;
+.
+
+<PubPub>
+    a <Defunct> ;
+    rdfs:label "PubPub" ;
+    <Homepage> <https://www.knowledgefutures.org/updates/2025-06-update/> ;
+.
+
+<PubTechRadar>
+    a <BlogNewsletter> ;
+    rdfs:comment "Helen King's newsletter about publishing technology." ;
+    <Homepage> <https://pubtechradar.substack.com/> ;
+.
+
+<PublisherSpeakPodcast>
+    a <PodcastSeries> ;
+    <Homepage> <https://www.youtube.com/@ThePublisherspeakPodcast> ;
+.
+
+<Publons>
+    rdfs:label "Publons" ;
+    <Homepage> <https://publons.com/> ;
+.
+
+<RAID>
+    a <PID> ;
+    rdfs:label "RAiD (Research Activity Identifier)" ;
+.
+
+<RDA>
+    rdfs:label "Research Data Alliance (RDA)" ;
+    <Homepage> <https://www.rd-alliance.org/> ;
+.
+
+<RI2>
+    a <Initiative> ;
+    rdfs:label "RI2 Research Integrity Risk Index" ;
+    <About> <Integrity> ;
+    <Homepage>
+        <https://en.wikipedia.org/wiki/Research_Integrity_Risk_Index> ,
+        <https://sites.aub.edu.lb/lmeho/ri2/> ;
+.
+
+<RRID>
+    rdfs:label "RRIDs (Research Resource Identifiers)" ;
+    <Homepage> <https://www.rrids.org/> ;
+.
+
+<ReadCube>
+    rdfs:label "ReadCube" ;
+    <Homepage> <https://www.readcube.com/> ;
+    schema:parentOrganization <DigitalScience> ;
+.
+
+<Refworks>
+    rdfs:label "RefWorks" ;
+    <Homepage> <https://refworks.proquest.com/learn-more/> ;
+    <Parent> <ProQuest> ;
+    <RelatedTo> <References> ;
+.
+
+<RelatedTo>
+    a rdf:predicate ;
+    rdfs:label "Related to" ;
+.
+
+<ResearchGate>
+    rdfs:label "ResearchGate" ;
+    <Homepage> <https://www.researchgate.net/> ;
+.
+
+<ResearchSquare>
+    rdfs:label "Research Square" ;
+.
+
+<ResourceSync>
+    rdfs:label "ResourceSync" ;
+.
+
+<RetractionWatch>
+    rdfs:label "Retraction Watch" ;
+    <Homepage> <https://retractionwatch.com/> ;
+    <indexedBy> <Crossref> ;
+.
+
+<RobotsCooking>
+    a <BlogNewsletter> ;
+    rdfs:label "Robots Cooking" ;
+    <Homepage> <https://www.robotscooking.com/> ;
+.
+
+<RogueScholar>
+    a <Platform> ;
+    rdfs:label "Rogue Scholar" ;
+.
+
+<RubricPeerReview>
+    rdfs:label "Rubric-based Peer Review" ;
+.
+
+<SCOPUS>
+    a <MetaDataSource> ;
+    rdfs:label "SCOPUS" ;
+    <Homepage> <https://www.scopus.com/> ;
+.
+
+<SchemaOrg>
+    a <Ontology> ;
+    rdfs:label "Schema.org" ;
+.
+
+<ScholarOne>
+    rdfs:label "ScholarOne" ;
+    <Homepage> <https://clarivate.com/products/scientific-and-academic-research/research-publishing-solutions/scholarone/> ;
+    <SourceLicense> <ClosedSource> ;
+    <acquiredBy> <Silverchair> ;
+.
+
+<ScholarlyAngels>
+    rdfs:label "Scholarly Angels" ;
+    <Homepage> <https://scholarly-angels.com/> ;
+.
+
+<ScholarlyKitchen>
+    a <BlogNewsletter> ;
+    rdfs:label "ScholarlyKitchen" ;
+    <Homepage> <https://scholarlykitchen.sspnet.org/> ;
+    <PublishedBy> <SSP> ;
+.
+
+<Scholastica>
+    a <ServiceProvider> ;
+    rdfs:label "Scholastica" ;
+    <Homepage> <https://scholasticahq.com/> ;
+.
+
+<Sci-Rep>
+    rdfs:label "Scientific Reports" ;
+.
+
+<SciPost>
+    rdfs:label "SciPost" ;
+    <Homepage> <https://scipost.org/> ;
+    <Signatory> <POSI> ;
+.
+
+<ScienceInsider>
+    a <BlogNewsletter> ;
+    <Homepage> <https://www.science.org/news/scienceinsider> ;
+.
+
+<ScientificReports>
+    rdfs:label "Scientific Reports" ;
+.
+
+<Sciety>
+    rdfs:label "Sciety" ;
+    <Homepage> <https://sciety.org/> ;
+    <Signatory> <POSI> ;
+.
+
+<SciteAi>
+    a <ServiceProvider> ;
+    rdfs:label "Scite.ai" ;
+    <Homepage> <https://scite.ai/> ;
+.
+
+<Scitility>
+    a <ServiceProvider> ;
+    rdfs:label "Scitility" ;
+.
+
+<Shibboleth>
+    rdfs:label "Shibboleth (authentication system)" ;
+.
+
+<Signals>
+    a <ServiceProvider> ;
+    rdfs:label "Research Signals" ;
+.
+
+<Signatory>
+    a rdf:predicate ;
+    rdfs:label "Signatory" ;
+.
+
+<Signposting>
+    rdfs:label "Signposting the scholarly web" ;
+    <Homepage>
+        <https://signposting.org/> ,
+        <https://signposting.org/FAIR/> ;
+.
+
+<SingaporeStatement>
+    rdfs:label "Singapore Statement on Research Integrity" ;
+    <About> <Integrity> ;
+    <Homepage> <https://www.wcrif.org/statement> ;
+.
+
+<SiteMap>
+    rdfs:label "Site Map" ;
+.
+
+<SourceCode>
+    a rdf:predicate ;
+    rdfs:label "Source Code" ;
+.
+
+<SourceLicense>
+    a rdf:predicate ;
+    rdfs:label "Source License" ;
+.
+
+<SpecialIssue>
+    rdfs:label "SpecialIssue" ;
+    rdfs:comment "An issue of a journal dedicated to a specific topic or theme" ;
+.
+
+<SpringerNature>
+    a <Publisher> ;
+    rdfs:label "SpringerNature" ;
+    <Homepage> <https://www.springernature.com/> ;
+.
+
+<SubscribeToOpen>
+    a <Initiative> ;
+    rdfs:label "SubscribeToOpen" ;
+.
+
+<SymplecticElements>
+    rdfs:label "Symplectic Elements" ;
+    schema:parentOrganization <DigitalScience> ;
+.
+
+<ThompsonReuters>
+    rdfs:label "Thomson Reuters" ;
+.
+
+<Thoth>
+    rdfs:label "Thoth" ;
+    <Homepage> <https://thoth.pub/> ;
+.
+
+<TurnItIn>
+    rdfs:label "Turnitin" ;
+    <Homepage> <https://www.turnitin.com/> ;
+.
+
+<Vivo>
+    a <Ontology> ;
+    rdfs:label "VIVO" ;
+    rdfs:comment "VIVO is member-supported, open source software and an ontology for representing scholarship" ;
+    <Homepage>
+        <https://vivoweb.org/> ,
+        <https://wiki.lyrasis.org/display/VIVODOC/All+Documentation> ;
+.
+
+<Wax>
+    rdfs:label "Wax" ;
+    <CreatedBy>
+        <NLNet> ,
+        <Nikau> ;
+.
+
+<WebOfScience>
+    rdfs:label "Web of Science" ;
+    <Homepage> <https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/> ;
+.
+
+<Wellcome>
+    a <Funder> ;
+    rdfs:label "Wellcome Trust" ;
+    <Homepage> <https://wellcome.org/> ;
+    <Signatory> <Barcelona> ;
+.
+
+<WikiCite>
+    a <Initative> ;
+    <Homepage> <http://wikicite.org/> ;
+.
+
+<WikiDataId>
+    a <PID> ;
+    rdfs:label "Wikidata Q ID" ;
+    <ProductOf> <WikiData> ;
+.
+
+<Wikidata>
+    a <Ontology> ;
+    rdfs:label
+        "Wikidata" ,
+        "Wikidata Ontology" ;
+    <Homepage> <https://www.wikidata.org/> ;
+.
+
+<Wikipedia>
+    rdfs:label "Wikipedia" ;
+    <Homepage> <https://www.wikipedia.org/> ;
+.
+
+<WorldCat>
+    rdfs:label "WorldCat" ;
+    <Homepage> <https://search.worldcat.org/> ;
+.
+
+<WriteFull>
+    rdfs:label "WriteFull" ;
+    schema:parentOrganization <DigitalScience> ;
+.
+
+<Zenodo>
+    <Homepage>
+        <https://about.zenodo.org/> ,
+        <https://zenodo.org/> ;
+    schema:parentOrganization <CERN> ;
+.
+
+<Zotero>
+    a <Tool> ;
+    rdfs:label "Zotero" ;
+    <BackgroundReading> <https://www.zotero.org/support/plugins> ;
+    <BuiltBy> <DigitalScience> ;
+    <Homepage> <https://www.zotero.org/> ;
+    <SourceLicense> <OpenSource> ;
+.
+
+<dARK>
+    rdfs:label "dARK" ;
+    <BasedOn> <ARK> ;
+.
+
+<Altmetric>
+    a
+        <Altmetrics> ,
+        <Metric> ,
+        <ServiceProvider> ;
+    rdfs:label "Altmetric.com" ;
+    rdfs:related <Altmetrics> ;
+    <Homepage> <https://www.altmetric.com/> ;
+    schema:parentOrganization <DigitalScience> ;
+    ns2:differentFrom <Altmetrics> ;
+.
+
+<Aperta>
+    a
+        <Defunct> ,
+        <Platform> ;
+    rdfs:label "Aperta" ;
+    <CreatedBy> <PLoS> ;
+    <Homepage> <https://scholarlykitchen.sspnet.org/2017/12/20/end-aperta-journal-submission-systems-remain-challenging/> ;
+.
+
+<BIBFRAME>
+    a <Ontology> ;
+    rdfs:label "BIBFRAME" ;
+    <Homepage> <https://en.wikipedia.org/wiki/BIBFRAME> ;
+.
+
+<Barcelona>
+    rdfs:label "Barcelona Declaration on Open Research Information" ;
+    <Homepage>
+        <https://barcelona-declaration.org> ,
+        <https://barcelona-declaration.org/news/20250625_bologna_meeting_report_now_available/> ,
+        <https://doi.org/10.5281/zenodo.15730917> ;
+.
+
+<COAR>
+    rdfs:label "Confederation of Open Access Repositories" ;
+    <Homepage> <https://coar-repositories.org/> ;
+.
+
+<CiteprocJson>
+    a <Schema> ;
+.
+
+<CrossrefXmlDeposit>
+    a <Schema> ;
+.
+
+<DONA>
+    rdfs:label "Digital Object Numbering Authority (DONA)" ;
+    rdfs:related <DOI> ;
+.
+
+<DataCite>
+    a <DoiRegistrationAgency> ;
+    rdfs:label "DataCite" ;
+    <Homepage>
+        <https://datacite.org> ,
+        <https://datacite.org/> ;
+    <Signatory> <POSI> ;
+    <SourceLicense> <OpenSource> ;
+.
+
+<DiamondOA>
+    a <OpenAccess> ;
+    rdfs:label "Diamond Open Access" ;
+.
+
+<DublinCore>
+    a <Ontology> ;
+    rdfs:label "Dublin Core" ;
+.
+
+<EditorialManager>
+    a <PublishingPlatform> ;
+    rdfs:label "Editorial Manager" ;
+    <Homepage> <https://www.editorialmanager.com/> ;
+    <SourceLicense> <ClosedSource> ;
+.
+
+<Elsevier>
+    a <Publisher> ;
+    rdfs:label "Elsevier" ;
+    <Homepage> <https://www.elsevier.com/> ;
+.
+
+<Funder>
+    rdfs:label "Funder" ;
+.
+
+<Handle>
+    a <PID> ;
+    rdfs:label "Handle System" ;
+    <Homepage>
+        <https://en.wikipedia.org/wiki/Handle_System> ,
+        <https://www.handle.net/> ;
+.
+
+<Hum>
+    a <ServiceProvider> ;
+    rdfs:label "Hum" ;
+    <Homepage>
+        <https://hum.works/> ,
+        <https://www.hum.works/> ;
+.
+
+<Identifier>
+    a <Intro> ;
+    ns3:seeAlso <PID> ;
+    rdfs:comment "You're probably more interested in Persistent Identifiers (PIDs), but not all identifiers are persistent" ;
+    rdfs:subClassOf <Topic> ;
+.
+
+<Individual>
+    a <Intro> ;
+    rdfs:label "Individual" ;
+    rdfs:subClassOf <Entity> ;
+.
+
+<JLM>
+    a <Initiative> ;
+    rdfs:label "Journal Level Metrics (JLM)" ;
+    <Homepage> <https://pmc.ncbi.nlm.nih.gov/articles/PMC10196720/> ;
+.
+
+<JSONLD>
+    rdfs:label "JSON-LD" ;
+    <SerializationFormat> <RDF> ;
+.
+
+<JsonSchema>
+    a <Schema> ;
+.
+
+<Metadata>
+    a <ScholCommTopic> ;
+    rdfs:comment "Scholarly metadata. Information about content." ;
+.
+
+<NISO>
+    rdfs:label "NISO" ;
+    <Homepage> <https://www.niso.org/> ;
+.
+
+<NLNet>
+    rdfs:label "NLnet Foundation" ;
+    <Homepage> <https://nlnet.nl/> ;
+.
+
+<Nikau>
+    rdfs:label "Nikau Consulting" ;
+    <Homepage> <https://nikau.consulting/> ;
+.
+
+<OAIPMH>
+    rdfs:label "OAI-PMH" ;
+.
+
+<ORCID>
+    a <PID> ;
+    rdfs:label "ORCID" ;
+    rdfs:comment "Open Identifier for authors" ;
+    <Homepage> <https://orcid.org/> ;
+    <SourceLicense> <OpenSource> ;
+.
+
+<OpenLibHums>
+    rdfs:label "Open Library of Humanities (OLH)" ;
+    <Access> <DiamondOA> ;
+    <Homepage> <https://www.openlibhums.org/> ;
+.
+
+<PKP>
+    rdfs:label "PKP" ;
+    rdfs:comment "Public Knowledge Project maintain Open Journal System" ;
+    <Homepage> <https://pkp.sfu.ca/> ;
+    <Signatory> <POSI> ;
+.
+
+<ProQuest>
+    rdfs:label "ProQuest" ;
+    <Homepage> <https://www.proquest.com/> ;
+.
+
+<ReadingPlatform>
+    a <Intro> ;
+    rdfs:label "Reading, commenting, sharing platform" ;
+    rdfs:subClassOf <Service> ;
+.
+
+<References>
+    a <ScholCommTopic> ;
+    rdfs:comment "References between scholarly works (aka citations)" ;
+.
+
+<SKOS>
+    a <Ontology> ;
+    rdfs:label "SKOS: Simple Knowledge Organization Format" ;
+    <Related> <RDF> ;
+.
+
+<SSP>
+    rdfs:label "SSP" ;
+    <Homepage> <https://www.sspnet.org/> ;
+.
+
+<STM>
+    a <Society> ;
+    rdfs:label "STM" ;
+    <Homepage> <https://stm-assoc.org/> ;
+.
+
+<Silverchair>
+    a <ServiceProvider> ;
+    rdfs:label "Silverchair" ;
+    <Homepage> <https://www.silverchair.com/> ;
+.
+
+<Standard>
+    rdfs:label "Standard" ;
+    rdfs:subClassOf <Topic> ;
+.
+
+<TEI>
+    rdfs:label "Text Encoding Initiative (TEI)" ;
+    <Homepage> <https://tei-c.org/> ;
+.
+
+<TaylorAndFrancis>
+    a <Publisher> ;
+    rdfs:label "Taylor and Francis" ;
+    <Homepage> <https://taylorandfrancis.com/> ;
+.
+
+<Wiley>
+    a <Publisher> ;
+    rdfs:label "Wiley" ;
+    <Homepage> <https://www.wiley.com/> ;
+.
+
+<ARK>
+    a <PID> ;
+    rdfs:label "Archival Resource Key (ARK)" ;
+    <Homepage>
+        <https://arks.org/> ,
+        <https://en.wikipedia.org/wiki/Archival_Resource_Key> ;
+.
+
+<CERN>
+    a <Organization> ;
+    rdfs:label "CERN" ;
+    <Homepage> <https://home.cern/> ;
+.
+
+<Content>
+    a <ScholCommTopic> ;
+    rdfs:comment "Scholarly Content (literature, datasets, video, etc)" ;
+.
+
+<Entity>
+    rdfs:label "Entity" ;
+    rdfs:subClassOf <Topic> ;
+.
+
+<Literature>
+    rdfs:label "Literature" ;
+    rdfs:subClassOf <Topic> ;
+.
+
+<PublishingPlatform>
+    a <Intro> ;
+    rdfs:label "Publishing Platform (manuscript tracking, peer review, etc)" ;
+    rdfs:subClassOf <Service> ;
+.
+
+<RDFXML>
+    <SerializationFormat> <RDF> ;
+.
+
+<ROR>
+    a <PID> ;
+    rdfs:label "ROR" ;
+    rdfs:comment "Open Identifier for organizations" ;
+    <Homepage> <https://ror.org/> ;
+    <SourceLicense> <OpenSource> ;
+.
+
+<Society>
+    rdfs:label "Society or Association" ;
+    rdfs:subClassOf <Organization> ;
+.
+
+<Turtle>
+    <SerializationFormat> <RDF> ;
+.
+
+<ClosedSource>
+    rdfs:label "Closed Source Code" ;
+.
+
+<PodcastSeries>
+    rdfs:label "Podcast Series" ;
+    rdfs:sameAs <s:PodcastSeries> ;
+    rdfs:subClassOf <Literature> ;
+.
+
+<Service>
+    a <Intro> ;
+    rdfs:label "Service" ;
+    rdfs:subClassOf <Topic> ;
+.
+
+<DOI>
+    a <PID> ;
+    <BuiltOn> <Handle> ;
+.
+
+<Defunct>
+    rdfs:label "Defunct Organization or Service" ;
+.
+
+<Integrity>
+    a <ScholCommTopic> ;
+    rdfs:label "Integrity" ;
+    rdfs:comment "Research integrity refers to all of the factors that underpin good research practice and promote trust and confidence in the research process - RIO" ;
+    <Homepage> <https://ukrio.org/research-integrity/what-is-research-integrity/> ;
+.
+
+<Organization>
+    a <Intro> ;
+    rdfs:label "Organization" ;
+    rdfs:subClassOf <Entity> ;
+.
+
+<RDF>
+    a <DataModel> ;
+.
+
+<Schema>
+    rdfs:label "Schema" ;
+.
+
+<Sleuth>
+    rdfs:label "Research Integrity Sleuth" ;
+    rdfs:subclassOf <Individual> ;
+    <About> <Integrity> ;
+    <BackgroundReading>
+        <https://retractionwatch.com/2018/06/17/meet-the-scientific-sleuths-ten-whove-had-an-impact-on-the-scientific-literature/> ,
+        <https://www.nature.com/articles/d41586-025-02163-z> ;
+.
+
+<Tool>
+    a <Intro> ;
+    rdfs:subClassOf <Topic> ;
+.
+
+<Crossref>
+    a <DoiRegistrationAgency> ;
+    rdfs:label "Crossref" ;
+    <Homepage>
+        <https://crossref.org> ,
+        <https://www.crossref.org/> ;
+    <Implements>
+        <BibTex> ,
+        <CiteprocJson> ,
+        <CrossrefXmlDeposit> ,
+        <OAIPMH> ,
+        <RDFXML> ,
+        <Turtle> ;
+    <Signatory> <POSI> ;
+    <SourceCode> <https://gitlab.com/crossref> ;
+    <SourceLicense>
+        <ClosedSource> ,
+        <OpenSource> ;
+.
+
+<Altmetrics>
+    a <Metric> ;
+    rdfs:label "Alt Metrics" ;
+    <Homepage> <https://doi.org/10.5281/zenodo.12684248> ;
+    ns2:differentFrom <Altmetric> ;
+.
+
+<Initiative>
+    rdfs:label "Initative or Topic" ;
+.
+
+<Metric>
+    rdfs:label "Metric" ;
+.
+
+<OpenSource>
+    rdfs:label "Open Source Code" ;
+.
+
+<BlogNewsletter>
+    a <Intro> ;
+    rdfs:label "Blogs and newsletters" ;
+    rdfs:subClassOf <Literature> ;
+.
+
+<Topic>
+    rdfs:label "Topic" ;
+.
+
+<DigitalScience>
+    rdfs:label "DigitalScience" ;
+    <Homepage> <https://www.digital-science.com/blog/2017/11/owns-digital-science-question/> ;
+    schema:parentOrganization <Holtzbrinck> ;
+.
+
+<Publisher>
+    rdfs:label "Publisher" ;
+.
+
+<ScholCommTopic>
+    a <Intro> ;
+    rdfs:label "Scholarly Communication Topic" ;
+    rdfs:subClassOf <Topic> ;
+.
+
+<Ontology>
+    a <Intro> ;
+    rdfs:label "Ontology or Taxonomy" ;
+    rdfs:comment "An Ontology is a formal method for organizing information. Usually with RDF. Taxonomies talk about types of things, and ontologies talk about specific things. But there's no reason to differentiate here." ;
+    <Homepage> <https://lov.linkeddata.es/dataset/lov> ;
+.
+
+<OpenAccess>
+    rdfs:label "Open Access" ;
+.
+
+<Intro>
+    rdfs:label "Introductory Topic" ;
+    rdfs:comment "Topics that are a good way into this map. These are unique or specific to scholarly infrastructure" ;
+.
+
+<DoiRegistrationAgency>
+    rdfs:label "DOI Registration Agency" ;
+    rdfs:subClassOf <Organization> ;
+    <Homepage> <https://www.doi.org/the-community/existing-registration-agencies/> ;
+    <RelatedTo> <DOI> ;
+.
+
+<PID>
+    a <Intro> ;
+    rdfs:label "Persistent Identifier (PID)" ;
+    rdfs:subClassOf
+        <Identifier> ,
+        <Topic> ;
+.
+
+<POSI>
+    a <Initiative> ;
+    rdfs:label "POSI" ;
+    rdfs:comment "Principles of Open Scholarly Infrastructure" ;
+    <Homepage> <https://openinfrastructure.org> ;
+.

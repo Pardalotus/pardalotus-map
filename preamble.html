@@ -34,10 +34,18 @@
             blockquote p {
                 padding: 0.2em 1em 0.2em 1em;
             }
+
+            #content-pane p,
+            #content-pane h1,
+            #content-pane h2,
+            #content-pane h3 {
+                padding-left: 1em;
+                padding-right: 1em;
+            }
         </style>
     </head>
     <body>
-        <div style="width: 50%; float: left; padding: 1em">
+        <div style="width: 50%; float: left" id="content-pane">
             <h1>Pardalotus Scholarly Publishing Technology Map</h1>
             <p>
                 Here is a list of concepts and organizations that may be useful
@@ -48,8 +56,8 @@
             </p>
 
             <p>
-                This file is available in <a href="file.ttl">Turtle</a> format
-                if you prefer. Yes, it's an <a href="#Ontology">ontology</a> but
+                This file is available in <a href="map.ttl">Turtle</a> format if
+                you prefer. Yes, it's an <a href="#Ontology">ontology</a> but
                 not on purpose.
             </p>
             <p>
@@ -57,7 +65,10 @@
                 and licensed
                 <a href="https://creativecommons.org/licenses/by-nc/4.0/"
                     >CC BY-NC 4.0</a
-                >. All contributions welcome, please submit a merge request!
+                >. All contributions welcome,
+                <a href="https://github.com/Pardalotus/pardalotus-map/"
+                    >please submit a merge request</a
+                >!
             </p>
             <p>
                 To get started,
