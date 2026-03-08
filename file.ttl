@@ -113,7 +113,8 @@ f:seeAlso "https://www.doi.org/the-community/existing-registration-agencies/";
 <JabRef>
 a s:tool;
 f:label "JabRef";
-f:comment "Reference management software"
+f:comment "Reference management software";
+<Homepage> <https://www.jabref.org/>
 .
 
 # PIDs
@@ -143,13 +144,13 @@ f:label "Everything Hertz";
 
 # Organizations
 
-s:Publisher f:label "Publisher".
+<Publisher> f:label "Publisher".
 
 <PLOS>
-a s:Publisher;
+a <Publisher>;
 <Uses> <EditorialManager>;
 <Uses> <Aperta>;
-a s:Publisher;
+a <Publisher>;
 <Access> <OpenAccess>;
 <Homepage> <https://plos.org/>
 .
@@ -164,7 +165,7 @@ a s:Publisher;
 
 <ProQuest> f:label "ProQuest"; f:seeAlso <https://www.proquest.com/>; <Homepage> <https://www.proquest.com/> .
 
-<EditorialManager> a <PublishingPlatform>; f:label "Editorial Manager".
+<EditorialManager> a <PublishingPlatform>; f:label "Editorial Manager"; <Homepage> <https://www.editorialmanager.com/> .
 
 <DataDryad>
 a s:Organization;
@@ -177,7 +178,7 @@ f:seeAlso <https://blog.datadryad.org/>;
 <HIndex> f:label "h-index"; a <Metric>.
 
 <Hindawi>
-a s:Publisher;
+a <Publisher>;
 <acquiredBy> <Wiley>;
 <Access> <OpenAccess>;
 a <Defunct>;
@@ -185,7 +186,7 @@ a <Defunct>;
 .
 
 <Wiley>
-a s:Publisher;
+a <Publisher>;
 f:label "Wiley";
 <Homepage> <https://www.wiley.com/>
 .
@@ -201,7 +202,7 @@ f:label "Clarivate"; <Homepage> <https://clarivate.com/>; a <ServiceProvider> .
 f:label "Imgtwin".
 
 <TaylorAndFrancis>
-a s:Publisher;
+a <Publisher>;
 f:label "Taylor and Francis";
 <Homepage> <https://taylorandfrancis.com/>
 .
@@ -218,7 +219,7 @@ f:label "Retraction Watch";
 <Homepage> <https://retractionwatch.com/>
 .
 
-<CREDIT> a <Ontology>; f:label "Contributor Role Taxonomy (CRediT)"; f:seeAlso <https://credit.niso.org/>; <CreatedBy> <NISO>; f:seeAlso <https://groups.niso.org/higherlogic/ws/public/download/31067/CRediT_Taxonomy_Terms_and_Definitions_list>; <ImplementedBy> <Crossref>.
+<CREDIT> a <Ontology>; f:label "Contributor Role Taxonomy (CRediT)"; f:seeAlso <https://credit.niso.org/>; <CreatedBy> <NISO>; f:seeAlso <https://groups.niso.org/higherlogic/ws/public/download/31067/CRediT_Taxonomy_Terms_and_Definitions_list>; <ImplementedBy> <Crossref>; <Homepage> <https://credit.niso.org/> .
 
 # Platforms
 #
@@ -241,13 +242,13 @@ f:seeAlso <https://scholarlykitchen.sspnet.org/2017/12/20/end-aperta-journal-sub
 
 <ProvO> f:label "PROV-O"; f:comment "Ontology for provenance of metadata and other information"; f:seeAlso <https://www.w3.org/TR/prov-o/>; a <Ontology>;.
 
-<Vivo> f:label "VIVO"; f:comment "VIVO is member-supported, open source software and an ontology for representing scholarship"; a <Ontology>; f:seeAlso <https://wiki.lyrasis.org/display/VIVODOC/All+Documentation>.
+<Vivo> f:label "VIVO"; f:comment "VIVO is member-supported, open source software and an ontology for representing scholarship"; a <Ontology>; f:seeAlso <https://wiki.lyrasis.org/display/VIVODOC/All+Documentation>; <Homepage> <https://vivoweb.org/> .
 
 
 
 <ExOrdo>
 f:label "Ex Ordo";
-f:seeAlso <https://www.exordo.com/>;
+<Homepage> <https://www.exordo.com/>
 .
 
 <PeerRef>
@@ -257,6 +258,7 @@ f:label "Peer Ref";
 <ScholarOne>
 f:label "ScholarOne";
 <acquiredBy> <Silverchair>;
+<Homepage> <https://clarivate.com/products/scientific-and-academic-research/research-publishing-solutions/scholarone/>
 .
 
 <Hypothesis>
@@ -378,6 +380,7 @@ f:label "Frankfurt Book Fair";
 <STM>
 f:label "STM";
 a <Society>;
+<Homepage> <https://stm-assoc.org/>
 .
 
 
@@ -396,10 +399,12 @@ a <Initiative>;
 <PlanS>
 f:label "Plan S";
 a <Initiative>;
+<Homepage> <https://www.coalition-s.org/>
 .
 
 <KnowledgeFutures>
 f:label "Knowledge Futures";
+<Homepage> <https://www.knowledgefutures.org/>
 .
 
 <PubPub>
@@ -415,6 +420,7 @@ f:label "Cadmore Media";
 
 <Thoth>
 f:label "Thoth";
+<Homepage> <https://thoth.pub/>
 .
 
 <COMET>
@@ -423,6 +429,7 @@ f:label "COMET Data";
 
 <Silverchair>
 f:label "Silverchair"; a <ServiceProvider> ;
+<Homepage> <https://www.silverchair.com/>
 .
 
 <OpenAccess>
@@ -484,6 +491,7 @@ f:label "Anna Abalkina"
 #
 <Publons>
 f:label "Publons";
+<Homepage> <https://publons.com/>
 .
 
 
@@ -495,7 +503,8 @@ f:label "DataSeer";
 <ALPSP>
 f:label "Association of Learned and Professional Society Publishers (ALPSPS)";
 f:seeAlso <https://www.alpsp.org/>;
-a <Society>
+a <Society>;
+<Homepage> <https://www.alpsp.org/>
 .
 
 
@@ -513,15 +522,15 @@ f:seeAlso <https://www.hum.works/review>;
 <Wax> f:label "Wax"; <CreatedBy> <NLNet>, <Nikau>.
 
 <FAIR> f:label "FAIR";.
-<Signposting> f:label "Signposting the scholarly web"; f:seeAlso <https://signposting.org/>; f:seeAlso <https://signposting.org/FAIR/>;.
+<Signposting> f:label "Signposting the scholarly web"; f:seeAlso <https://signposting.org/FAIR/>; <Homepage> <https://signposting.org/> .
 
-<N2T> f:label "Name-to-Thing (N2T) Resolver"; a <Resolver>; <Supports> <ARK>.
+<N2T> f:label "Name-to-Thing (N2T) Resolver"; a <Resolver>; <Supports> <ARK>; <Homepage> <https://n2t.net/> .
 
-<ARK> f:label "Archival Resource Key (ARK)"; a <PID>; f:seeAlso <https://en.wikipedia.org/wiki/Archival_Resource_Key>;.
+<ARK> f:label "Archival Resource Key (ARK)"; a <PID>; f:seeAlso <https://en.wikipedia.org/wiki/Archival_Resource_Key>; <Homepage> <https://arks.org/> .
 
-<PURL> f:label "Persistent uniform resource locator (PURL)"; f:seeAlso <https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator>.
+<PURL> f:label "Persistent uniform resource locator (PURL)"; f:seeAlso <https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator>; <Homepage> <https://purl.archive.org/> .
 
-<Handle> f:label "Handle System"; a <PID>; f:seeAlso <https://en.wikipedia.org/wiki/Handle_System>;  .
+<Handle> f:label "Handle System"; a <PID>; f:seeAlso <https://en.wikipedia.org/wiki/Handle_System>; <Homepage> <https://www.handle.net/> .
 
 <DOI> <BuiltOn> <Handle>;.
 
@@ -540,7 +549,7 @@ f:seeAlso <https://www.hum.works/review>;
 <Janeway> a <PublishingPlatform>; f:seeAlso <https://www.openlibhums.org/site/janeway/>; s:parentOrganization <OpenLibHums>.
 
 
-<Elsevier> f:label "Elsevier" ; <Homepage> <https://www.elsevier.com/>; a s:Publisher.
+<Elsevier> f:label "Elsevier" ; <Homepage> <https://www.elsevier.com/>; a <Publisher>.
 
 
 <ROR> f:label "ROR" ; f:comment "Open Identifier for organizations"; <Homepage> <https://ror.org/>; a <PID> .
@@ -590,10 +599,9 @@ f:seeAlso <https://pubpeer.com/static/faq>;
 <OpenApi> <Related> <JsonSchema>;.
 
 
-
 <Crossref> <Implements> <CrossrefXmlDeposit>, <CiteprocJson>, <BibTex>, <RDFXML>, <Turtle>;.
 
-<CERN> f:label "CERN"; a <Organization>.
+<CERN> f:label "CERN"; a <Organization>; <Homepage> <https://home.cern/> .
 
 <Ontology> f:label "Ontology or Taxonomy"; f:comment "An Ontology is a formal method for organizing information. Usually with RDF. Taxonomies talk about types of things, and ontologies talk about specific things. But there's no reason to differentiate here."; f:seeAlso <https://lov.linkeddata.es/dataset/lov>; a <Intro>.
 
@@ -601,7 +609,7 @@ f:seeAlso <https://pubpeer.com/static/faq>;
 
 <MARC> f:label "Machine-readable Cataloging (MARC)"; f:seeAlso <https://en.wikipedia.org/wiki/MARC_standards>; <Related> <BIBFRAME>;.
 
-<Kudos> f:label "Kudos";.
+<Kudos> f:label "Kudos"; <Homepage> <https://www.growkudos.com/> .
 
 <PlumX> f:label "PlumX"; a <MetricsPlatform>; f:seeAlso <https://www.elsevier.com/insights/metrics/plumx>.
 
@@ -635,10 +643,10 @@ f:seeAlso <https://pubpeer.com/static/faq>;
 <OpenCitations> f:label "OpenCitations" ; <Signatory> <POSI>; <Homepage> <https://opencitations.net/> .
 
 
-<Coko> f:label "Coko" ; .
+<Coko> f:label "Coko" ; <Homepage> <https://coko.foundation/> .
 
 <OpenAlex> f:label "OpenAlex" ; <Signatory> <POSI>; <Homepage> <https://openalex.org/> .
-<SciteAi> f:label "Scite.ai" ; a <ServiceProvider>  .
+<SciteAi> f:label "Scite.ai" ; a <ServiceProvider>; <Homepage> <https://scite.ai/> .
 <POSI> f:label "POSI";a <Initiative>; f:comment "Principles of Open Scholarly Infrastructure"; <Homepage> <https://openinfrastructure.org>.
 <MAG> f:label "Microsoft Academic Graph"; a <Defunct>.
 
@@ -660,11 +668,11 @@ f:seeAlso <https://pubpeer.com/static/faq>;
 <Turtle> <SerializationFormat> <RDF>;.
 
 
-<BioOne> f:label "BioOne"; ; .
+<BioOne> f:label "BioOne"; <Homepage> <https://bioone.org/> .
 
-<ProjectMuse> f:label "ProjectMuse"; ; .
+<ProjectMuse> f:label "ProjectMuse"; <Homepage> <https://muse.jhu.edu/> .
 
-<DeltaThink> f:label "DeltaThink";a <ServiceProvider> ; .
+<DeltaThink> f:label "DeltaThink";a <ServiceProvider> ; <Homepage> <https://www.deltathink.com/> .
 
 <SubscribeToOpen> f:label "SubscribeToOpen"; a <Initiative> ; .
 
@@ -676,9 +684,9 @@ f:seeAlso <https://pubpeer.com/static/faq>;
 
 <CRIS> f:label "current research information system (CRIS)".
 
-<Atypon> f:label "Atypon"; ; .
+<Atypon> f:label "Atypon"; <Homepage> <https://www.atypon.com/> .
 
-<PreReview> f:label "PreReview"; ; .
+<PreReview> f:label "PreReview"; <Homepage> <https://prereview.org/> .
 
 <LibraryTechnologyGuides> f:seeAlso <https://librarytechnology.org/>;.
 
@@ -696,7 +704,7 @@ f:seeAlso <https://pubpeer.com/static/faq>;
 
 <Phenom> f:label "Phenom".
 <OpenAire> f:label "OpenAIRE".
-<ELife> f:label "ELife"; <Signatory> <POSI>; <Topic> <OpenPeerReview>; a s:Publisher; <Access> <OpenAccess>; <Homepage> <https://elifesciences.org/>.
+<ELife> f:label "ELife"; <Signatory> <POSI>; <Topic> <OpenPeerReview>; a <Publisher>; <Access> <OpenAccess>; <Homepage> <https://elifesciences.org/>.
 
 <Aperta> f:label "Aperta"; a <Defunct>; .
 
@@ -779,9 +787,9 @@ f:seeAlso <https://pubpeer.com/static/faq>;
 
 <NISO> f:label "NISO"; <Homepage> <https://www.niso.org/> .
 
-<HighWirePress> f:label "HighWire Press".
+<HighWirePress> f:label "HighWire Press"; <Homepage> <https://www.highwirepress.com/> .
 
-<Ithaka> f:label "Ithaka S+R".
+<Ithaka> f:label "Ithaka S+R"; <Homepage> <https://sr.ithaka.org/> .
 
 <Scholastica> f:label "Scholastica"; <Homepage> <https://scholasticahq.com/>; a <ServiceProvider> .
 
@@ -812,7 +820,7 @@ f:seeAlso <https://doi.org/10.5281/zenodo.15730917>;
 
 <Wellcome> f:label "Wellcome Trust"; a <Funder>;
 <Signatory> <Barcelona>;
-
+<Homepage> <https://wellcome.org/>
 .
 
 
@@ -824,7 +832,7 @@ f:seeAlso <https://doi.org/10.5281/zenodo.15730917>;
 
 
 
-<CLOCKSS> f:label "CLOCKSS"; <Signatory> <POSI>; <Topic> <Preservation> .
+<CLOCKSS> f:label "CLOCKSS"; <Signatory> <POSI>; <Topic> <Preservation>; <Homepage> <https://clockss.org/> .
 
 <CORE> f:label "CORE"; <Signatory> <POSI>; <Homepage> <https://core.ac.uk/> .
 
@@ -832,11 +840,11 @@ f:seeAlso <https://doi.org/10.5281/zenodo.15730917>;
 
 <DOAJ> f:label "DOAJ"; <Signatory> <POSI>; <Homepage> <https://doaj.org/> .
 
-<EuropePMC> f:label "EuropePMC"; <Signatory> <POSI>; a s:Publisher; <Homepage> <https://europepmc.org/> .
+<EuropePMC> f:label "EuropePMC"; <Signatory> <POSI>; a <Publisher>; <Homepage> <https://europepmc.org/> .
 
 <HAL+> f:label "HAL+"; <Signatory> <POSI>; .
 
-<JOSS> f:label "JOSS"; <Signatory> <POSI>; a <Journal>; <Access> <OpenAccess> .
+<JOSS> f:label "JOSS"; <Signatory> <POSI>; a <Journal>; <Access> <OpenAccess>; <Homepage> <https://joss.theoj.org/> .
 
 <LiberateScience> f:label "LiberateScience"; <Signatory> <POSI>; .
 
@@ -854,7 +862,7 @@ f:seeAlso <https://doi.org/10.5281/zenodo.15730917>;
 
 <SciPost> f:label "SciPost"; <Signatory> <POSI>; <Homepage> <https://scipost.org/> .
 
-<Hum> f:label "Hum"; a <ServiceProvider>; f:seeAlso <https://www.hum.works/>.
+<Hum> f:label "Hum"; a <ServiceProvider>; f:seeAlso <https://www.hum.works/>; <Homepage> <https://hum.works/> .
 
 <ClearSkies> f:label "Clear Skies"; <About> <Integrity>; a <ServiceProvider>.
 
@@ -874,15 +882,15 @@ f:seeAlso <https://stm-assoc.org/what-we-do/strategic-areas/standards-technology
 <acquiredBy> <STM>;
 .
 
-<WorldCat> f:label "WorldCat".
+<WorldCat> f:label "WorldCat"; <Homepage> <https://search.worldcat.org/> .
 <LibraryBase> f:label "LibraryBase".
 <CNRI> f:label "Corporation for National Research Initiatives (CNRI)".
-<TurnItIn> f:label "Turnitin".
+<TurnItIn> f:label "Turnitin"; <Homepage> <https://www.turnitin.com/> .
 <CrossMark> f:label "CrossMark"; <CreatedBy> <Crossref>; <Uses> <DublinCore>.
 <DigitalScience> f:label "DigitalScience" ; s:parentOrganization <Holtzbrinck>; f:seeAlso <https://www.digital-science.com/blog/2017/11/owns-digital-science-question/>.
-<RDA> f:label "Research Data Alliance (RDA)".
-<Ingenta> f:label "Ingenta".
-<IngentaConnect> f:label "Ingenta Connect".
+<RDA> f:label "Research Data Alliance (RDA)"; <Homepage> <https://www.rd-alliance.org/> .
+<Ingenta> f:label "Ingenta"; <Homepage> <https://www.ingenta.com/> .
+<IngentaConnect> f:label "Ingenta Connect"; <Homepage> <https://www.ingenta.com/products/content-management/> .
 <Force11> f:label "Force11"; f:seeAlso <https://www.youtube.com/@force1141>; <Homepage> <https://force11.org/> .
 
 <Cactus> f:label "CACTUS"; f:seeAlso <https://cactusglobal.com/>
@@ -902,7 +910,7 @@ f:seeAlso <https://stm-assoc.org/what-we-do/strategic-areas/standards-technology
 
 <TEI> f:label "Text Encoding Initiative (TEI)"; f:seeAlso <https://tei-c.org/>.
 
-<GROBID> f:label "GROBID"; <Implements> <TEI>; f:comment "Machine learning library for extracting bibliographic data from PDFs".
+<GROBID> f:label "GROBID"; <Implements> <TEI>; f:comment "Machine learning library for extracting bibliographic data from PDFs"; <Homepage> <https://grobid.org/> .
 
 <PublisherSpeakPodcast> a <PodcastSeries>; <Homepage> <https://www.youtube.com/@ThePublisherspeakPodcast>.
 

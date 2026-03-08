@@ -15,18 +15,26 @@ See: <https://www.alpsp.org/>
 
 - Type of [Society or Association](#Society) 
 
+### Other 
+- Homepage [https://www.alpsp.org/](https://www.alpsp.org/) 
+
+
 <a name='ARK'></a>
-## ARK 
+## Archival Resource Key (ARK) 
 See: <https://en.wikipedia.org/wiki/Archival_Resource_Key> 
 
 - Type of [Persistent Identifier (PID)](#PID) 
+
+### Other 
+- Homepage [https://arks.org/](https://arks.org/) 
+
 ### References 
-- [N2T](#N2T) Supports ～
+- [Name-to-Thing (N2T) Resolver](#N2T) Supports ～
 - [dARK](#dARK) BasedOn ～
 
 
 <a name='AbstractingAndIndexing'></a>
-## AbstractingAndIndexing 
+## Abstracting and Indexing Service 
 See: <https://en.wikipedia.org/wiki/Indexing_and_abstracting_service> 
 
 
@@ -55,9 +63,13 @@ See: <https://www.niso.org/publications/rp-22-2021-ali>
 
 <a name='Afiliation'></a>
 ## Afiliation 
-> Afiliation of an author, i.e. which instutition they're working for. Authors can change afiliations, so this can be recorded against the Work at the time of publication 
+> Afiliation of an author, i.e. which instutition they're working for. Authors can change afiliations, so this can be recorded against the Work at the time of publication. Affiliation can be indicated by an organisation identifier, or linked via an author's ORCID ID 
 
-- Type of [ScholCommTopic](#ScholCommTopic) 
+See: <https://map.pardalotus.tech/ROR> 
+
+See: <https://map.pardalotus.tech/ORCID> 
+
+- Type of [Scholarly Communication Topic](#ScholCommTopic) 
 
 <a name='AiritiDoi'></a>
 ## Airiti DOI 
@@ -108,7 +120,7 @@ See: <https://doi.org/10.5281/zenodo.12684248>
 ## Analytics 
 
 <a name='AnnaAbalkina'></a>
-## AnnaAbalkina 
+## Anna Abalkina 
 - Type of [Research Integrity Sleuth](#Sleuth) 
 
 <a name='Aperta'></a>
@@ -134,6 +146,10 @@ See: <https://scholarlykitchen.sspnet.org/2017/12/20/end-aperta-journal-submissi
 
 <a name='Atypon'></a>
 ## Atypon 
+
+### Other 
+- Homepage [https://www.atypon.com/](https://www.atypon.com/) 
+
 
 <a name='BIBFRAME'></a>
 ## BIBFRAME 
@@ -188,13 +204,18 @@ See: <https://doi.org/10.5281/zenodo.15730917>
 <a name='BioOne'></a>
 ## BioOne 
 
+### Other 
+- Homepage [https://bioone.org/](https://bioone.org/) 
+
+
 <a name='Blackwell'></a>
 ## Blackwell 
+- Type of [Publisher](#Publisher) 
 
 <a name='Blog'></a>
 ## Blog 
 ### Instances 
-- [RobotsCooking](#RobotsCooking) 
+- [Robots Cooking](#RobotsCooking) 
 
 - Type of [Introductory Topic](#Intro) 
 
@@ -220,10 +241,17 @@ See: <https://identify.bsigroup.com/>
 
 <a name='CDL'></a>
 ## CDL 
+> California Digital Library, involved in a lot of open infrastructure 
+
+- Type of [Organization](#Organization) 
 
 <a name='CERN'></a>
 ## CERN 
 - Type of [Organization](#Organization) 
+
+### Other 
+- Homepage [https://home.cern/](https://home.cern/) 
+
 ### References 
 - [Zenodo](#Zenodo) https://schema.org/parentOrganization ～
 - [InvenioRDM](#InvenioRDM) Maintained By ～
@@ -235,6 +263,7 @@ See: <https://identify.bsigroup.com/>
 ### Other 
 - Signatory [POSI](#POSI) 
 - Topic [Preservation](#Preservation) 
+- Homepage [https://clockss.org/](https://clockss.org/) 
 
 
 <a name='CNKI'></a>
@@ -248,7 +277,7 @@ See: <https://oversea.cnki.net/index/>
 
 ### Other 
 - Related [DOI](#DOI) 
-- Related [DONA](#DONA) 
+- Related [Digital Object Numbering Authority (DONA)](#DONA) 
 
 
 <a name='COAR'></a>
@@ -315,6 +344,7 @@ See: <https://groups.niso.org/higherlogic/ws/public/download/31067/CRediT_Taxono
 ### Other 
 - CreatedBy [NISO](#NISO) 
 - ImplementedBy [Crossref](#Crossref) 
+- Homepage [https://credit.niso.org/](https://credit.niso.org/) 
 
 
 <a name='CRIS'></a>
@@ -329,13 +359,13 @@ See: <https://cactusglobal.com/>
 ## Cadmore Media 
 
 <a name='CascadeJournal'></a>
-## CascadeJournal 
+## Cascade Journal 
 
 <a name='Cassini'></a>
-## Cassini 
+## Cassini Publishing Platform 
 
 <a name='Cheshire'></a>
-## Cheshire 
+## Cheshire (research integrity sleuth) 
 - Type of [Research Integrity Sleuth](#Sleuth) 
 
 <a name='ChineseDoi'></a>
@@ -358,6 +388,7 @@ See: <https://en.wikipedia.org/wiki/Handle_System>
 
 <a name='Clarivate'></a>
 ## Clarivate 
+- Type of [ServiceProvider](#ServiceProvider) 
 
 ### Other 
 - Homepage [https://clarivate.com/](https://clarivate.com/) 
@@ -372,20 +403,24 @@ See: <https://en.wikipedia.org/wiki/Handle_System>
 
 
 <a name='CoAccess'></a>
-## CoAccess 
-- Type of [ScholCommTopic](#ScholCommTopic) 
+## Co-Access 
+- Type of [Scholarly Communication Topic](#ScholCommTopic) 
 
 <a name='Coko'></a>
 ## Coko 
 
+### Other 
+- Homepage [https://coko.foundation/](https://coko.foundation/) 
+
+
 <a name='CommercialData'></a>
-## CommercialData 
+## Commercial Data 
 
 <a name='Content'></a>
 ## Content 
 > Scholarly Content (literature, datasets, video, etc) 
 
-- Type of [ScholCommTopic](#ScholCommTopic) 
+- Type of [Scholarly Communication Topic](#ScholCommTopic) 
 ### References 
 - [Journal Article Tag Suite (JATS)](#JATS) Related to ～
 - [Get Fulltext Research](#GetFTR) Related to ～
@@ -419,7 +454,7 @@ See: <https://en.wikipedia.org/wiki/Version_of_record>
 ## Contributor 
 > Contribution to research and publication (e.g. authorship) 
 
-- Type of [ScholCommTopic](#ScholCommTopic) 
+- Type of [Scholarly Communication Topic](#ScholCommTopic) 
 
 <a name='CreativeCommons'></a>
 ## CreativeCommons 
@@ -456,7 +491,7 @@ See: <https://crossref.org>
 - Implements [OAI-PMH](#OAIPMH) 
 
 ### References 
-- [RetractionWatch](#RetractionWatch) indexedBy ～
+- [Retraction Watch](#RetractionWatch) indexedBy ～
 - [Contributor Role Taxonomy (CRediT)](#CREDIT) ImplementedBy ～
 - [Open Funder Registry AKA Fundref](#OpenFunderRegistry) PublishedBy ～
 - [Distributed Usage Logging (DUL)](#DUL) CreatedBy ～
@@ -490,17 +525,17 @@ See: <https://crossref.org>
 - Type of [Persistent Identifier (PID)](#PID) 
 
 ### Other 
-- BuiltOn [Handle](#Handle) 
+- BuiltOn [Handle System](#Handle) 
 
 ### References 
 - [DOI Registration Agency](#DoiRegistrationAgency) Related to ～
 - [DOI.org Content Negotiation](#ContentNegotiation) Related to ～
-- [DONA](#DONA) Related ～
+- [Digital Object Numbering Authority (DONA)](#DONA) Related ～
 - [CNRI](#CNRI) Related ～
 
 
 <a name='DONA'></a>
-## DONA 
+## Digital Object Numbering Authority (DONA) 
 
 ### Other 
 - Related [DOI](#DOI) 
@@ -558,6 +593,11 @@ See: <https://blog.datadryad.org/>
 
 <a name='DeltaThink'></a>
 ## DeltaThink 
+- Type of [ServiceProvider](#ServiceProvider) 
+
+### Other 
+- Homepage [https://www.deltathink.com/](https://www.deltathink.com/) 
+
 
 <a name='DiamondOA'></a>
 ## Diamond Open Access 
@@ -568,17 +608,18 @@ See: <https://blog.datadryad.org/>
 
 <a name='DigitalScience'></a>
 ## DigitalScience 
+See: <https://www.digital-science.com/blog/2017/11/owns-digital-science-question/> 
+
 
 ### Other 
 - https://schema.org/parentOrganization [Holtzbrinck](#Holtzbrinck) 
-- https://schema.org/seeAlso [https://www.digital-science.com/blog/2017/11/owns-digital-science-question/](https://www.digital-science.com/blog/2017/11/owns-digital-science-question/) 
 
 ### References 
 - [Altmetric.com](#Altmetric) https://schema.org/parentOrganization ～
 - [Dimensions](#Dimensions) https://schema.org/parentOrganization ～
 - [Figshare](#Figshare) https://schema.org/parentOrganization ～
 - [Overleaf](#Overleaf) https://schema.org/parentOrganization ～
-- [Papers](#Papers) https://schema.org/parentOrganization ～
+- [Papers (reference manager)](#Papers) https://schema.org/parentOrganization ～
 - [ReadCube](#ReadCube) https://schema.org/parentOrganization ～
 - [Symplectic Elements](#SymplecticElements) https://schema.org/parentOrganization ～
 - [WriteFull](#WriteFull) https://schema.org/parentOrganization ～
@@ -595,6 +636,8 @@ See: <https://blog.datadryad.org/>
 
 <a name='DoiRegistrationAgency'></a>
 ## DOI Registration Agency 
+See: <https://www.doi.org/the-community/existing-registration-agencies/> 
+
 ### Instances 
 - [Crossref](#Crossref) 
 - [Airiti DOI](#AiritiDoi) 
@@ -612,7 +655,6 @@ See: <https://blog.datadryad.org/>
 
 ### Other 
 - http://www.w3.org/2000/01/rdf-schema#subClassOf [Organization](#Organization) 
-- https://schema.org/seeAlso [https://www.doi.org/the-community/existing-registration-agencies/](https://www.doi.org/the-community/existing-registration-agencies/) 
 - Related to [DOI](#DOI) 
 
 
@@ -631,7 +673,7 @@ See: <https://www.eidr.org/>
 
 <a name='ELife'></a>
 ## ELife 
-- Type of [Publisher](https://schema.org/Publisher) 
+- Type of [Publisher](#Publisher) 
 
 ### Other 
 - Signatory [POSI](#POSI) 
@@ -646,8 +688,12 @@ See: <https://error.reviews/about/>
 
 
 <a name='EditorialManager'></a>
-## EditorialManager 
+## Editorial Manager 
 - Type of [Publishing Platform (manuscript tracking, peer review, etc)](#PublishingPlatform) 
+
+### Other 
+- Homepage [https://www.editorialmanager.com/](https://www.editorialmanager.com/) 
+
 ### References 
 - [PLOS](#PLOS) Uses ～
 
@@ -657,7 +703,7 @@ See: <https://error.reviews/about/>
 
 <a name='Elsevier'></a>
 ## Elsevier 
-- Type of [Publisher](https://schema.org/Publisher) 
+- Type of [Publisher](#Publisher) 
 
 ### Other 
 - Homepage [https://www.elsevier.com/](https://www.elsevier.com/) 
@@ -679,7 +725,7 @@ See: <https://error.reviews/about/>
 
 <a name='EuropePMC'></a>
 ## EuropePMC 
-- Type of [Publisher](https://schema.org/Publisher) 
+- Type of [Publisher](#Publisher) 
 
 ### Other 
 - Signatory [POSI](#POSI) 
@@ -688,20 +734,20 @@ See: <https://error.reviews/about/>
 
 <a name='EverythingHertz'></a>
 ## Everything Hertz 
-- Type of [PodcastSeries](#PodcastSeries) 
+- Type of [Podcast Series](#PodcastSeries) 
 
 <a name='ExOrdo'></a>
 ## Ex Ordo 
 
 ### Other 
-- https://schema.org/seeAlso [https://www.exordo.com/](https://www.exordo.com/) 
+- Homepage [https://www.exordo.com/](https://www.exordo.com/) 
 
 
 <a name='FAIR'></a>
 ## FAIR 
 
 <a name='FF1000'></a>
-## FF1000 
+## F1000 
 
 ### Other 
 - Parent [Taylor and Francis](#TaylorAndFrancis) 
@@ -748,9 +794,12 @@ See: <https://www.youtube.com/@force1141>
 
 <a name='GROBID'></a>
 ## GROBID 
+> Machine learning library for extracting bibliographic data from PDFs 
+
 
 ### Other 
-- Implements [TEI](#TEI) 
+- Implements [Text Encoding Initiative (TEI)](#TEI) 
+- Homepage [https://grobid.org/](https://grobid.org/) 
 
 
 <a name='GetFTR'></a>
@@ -791,7 +840,7 @@ See: <https://docs.github.com/en/repositories/archiving-a-github-repository/refe
 - Type of [Open Access](#OpenAccess) 
 
 <a name='GuillaumeCabanac'></a>
-## GuillaumeCabanac 
+## Guillaume Cabanac 
 - Type of [Research Integrity Sleuth](#Sleuth) 
 
 <a name='HAL+'></a>
@@ -808,26 +857,35 @@ See: <https://www.handidentity.com/>
 - Type of [DOI Registration Agency](#DoiRegistrationAgency) 
 
 <a name='HHMI'></a>
-## HHMI 
+## Howard Hughes Medical Institute (HHMI) 
 
 <a name='HIndex'></a>
 ## h-index 
 - Type of [Metric](#Metric) 
 
 <a name='Handle'></a>
-## Handle 
+## Handle System 
 See: <https://en.wikipedia.org/wiki/Handle_System> 
+
+- Type of [Persistent Identifier (PID)](#PID) 
+
+### Other 
+- Homepage [https://www.handle.net/](https://www.handle.net/) 
 
 ### References 
 - [DOI](#DOI) BuiltOn ～
 
 
 <a name='HighWirePress'></a>
-## HighWirePress 
+## HighWire Press 
+
+### Other 
+- Homepage [https://www.highwirepress.com/](https://www.highwirepress.com/) 
+
 
 <a name='Hindawi'></a>
 ## Hindawi 
-- Type of [Publisher](https://schema.org/Publisher) 
+- Type of [Publisher](#Publisher) 
 - Type of [Defunct Organization or Service](#Defunct) 
 
 ### Other 
@@ -845,6 +903,10 @@ See: <https://en.wikipedia.org/wiki/Handle_System>
 See: <https://www.hum.works/> 
 
 - Type of [ServiceProvider](#ServiceProvider) 
+
+### Other 
+- Homepage [https://hum.works/](https://hum.works/) 
+
 ### References 
 - [Alchemist Review](#Alchemist) CreatedBy ～
 
@@ -866,7 +928,7 @@ See: <https://www.hum.works/>
 
 
 <a name='IOI'></a>
-## Invest In Open 
+## Invest in Open Infrastructure 
 
 <a name='IPRegistry'></a>
 ## IP Registry 
@@ -885,7 +947,7 @@ See: <https://www.hum.works/>
 
 <a name='ISTEX'></a>
 ## ISTEX 
-- Type of [Identifier](#Identifier) 
+- Type of [Persistent Identifier (PID)](#PID) 
 
 ### Other 
 - Homepage [https://github.com/istex/istex-ark](https://github.com/istex/istex-ark) 
@@ -893,13 +955,16 @@ See: <https://www.hum.works/>
 
 <a name='Identifier'></a>
 ## Identifier 
-### Instances 
-- [ISTEX](#ISTEX) 
+> You're probably more interested in Persistent Identifiers (PIDs), but not all identifiers are persistent 
 
 - Type of [Introductory Topic](#Intro) 
 
 ### Other 
 - http://www.w3.org/2000/01/rdf-schema#subClassOf [Topic](#Topic) 
+- f:seeAlso [Persistent Identifier (PID)](#PID) 
+
+### References 
+- [Persistent Identifier (PID)](#PID) http://www.w3.org/2000/01/rdf-schema#subClassOf ～
 
 
 <a name='ImgTwin'></a>
@@ -923,14 +988,24 @@ See: <https://www.hum.works/>
 <a name='Ingenta'></a>
 ## Ingenta 
 
+### Other 
+- Homepage [https://www.ingenta.com/](https://www.ingenta.com/) 
+
+
 <a name='IngentaConnect'></a>
-## IngentaConnect 
+## Ingenta Connect 
+
+### Other 
+- Homepage [https://www.ingenta.com/products/content-management/](https://www.ingenta.com/products/content-management/) 
+
 
 <a name='Initiative'></a>
 ## Initative or Topic 
 ### Instances 
 - [RI2 Research Integrity Risk Index](#RI2) 
 - [Plan S](#PlanS) 
+- [POSI](#POSI) 
+- [SubscribeToOpen](#SubscribeToOpen) 
 - [Article-Level Metrics (ALM)](#ALM) 
 - [Journal Level Metrics (JLM)](#JLM) 
 
@@ -941,7 +1016,7 @@ See: <https://www.hum.works/>
 
 See: <https://ukrio.org/research-integrity/what-is-research-integrity/> 
 
-- Type of [ScholCommTopic](#ScholCommTopic) 
+- Type of [Scholarly Communication Topic](#ScholCommTopic) 
 ### References 
 - [Singapore Statement on Research Integrity](#SingaporeStatement) About ～
 - [Research Integrity Sleuth](#Sleuth) About ～
@@ -954,15 +1029,17 @@ See: <https://ukrio.org/research-integrity/what-is-research-integrity/>
 > Topics that are a good way into this map. These are unique or specific to scholarly infrastructure 
 
 ### Instances 
-- [ScholCommTopic](#ScholCommTopic) 
+- [Scholarly Communication Topic](#ScholCommTopic) 
 - [Service](#Service) 
 - [Individual](#Individual) 
 - [Organization](#Organization) 
 - [Publishing Platform (manuscript tracking, peer review, etc)](#PublishingPlatform) 
 - [Reading, commenting, sharing platform](#ReadingPlatform) 
 - [Identifier](#Identifier) 
+- [Persistent Identifier (PID)](#PID) 
 - [Blog](#Blog) 
 - [Tool](#Tool) 
+- [Ontology or Taxonomy](#Ontology) 
 
 
 <a name='InvenioRDM'></a>
@@ -974,7 +1051,11 @@ See: <https://ukrio.org/research-integrity/what-is-research-integrity/>
 
 
 <a name='Ithaka'></a>
-## Ithaka 
+## Ithaka S+R 
+
+### Other 
+- Homepage [https://sr.ithaka.org/](https://sr.ithaka.org/) 
+
 
 <a name='JALC'></a>
 ## Japan Link Center (JaLC) 
@@ -994,7 +1075,7 @@ See: <https://jats4r.niso.org/>
 
 
 <a name='JIF'></a>
-## JIF 
+## Journal Impact Factor (JIF) 
 
 <a name='JLM'></a>
 ## Journal Level Metrics (JLM) 
@@ -1012,6 +1093,7 @@ See: <https://pmc.ncbi.nlm.nih.gov/articles/PMC10196720/>
 ### Other 
 - Signatory [POSI](#POSI) 
 - Access [Open Access](#OpenAccess) 
+- Homepage [https://joss.theoj.org/](https://joss.theoj.org/) 
 
 
 <a name='JSONLD'></a>
@@ -1036,7 +1118,13 @@ See: <https://pmc.ncbi.nlm.nih.gov/articles/PMC10196720/>
 
 <a name='JabRef'></a>
 ## JabRef 
+> Reference management software 
+
 - Type of [https://schema.org/tool](https://schema.org/tool) 
+
+### Other 
+- Homepage [https://www.jabref.org/](https://www.jabref.org/) 
+
 
 <a name='Janeway'></a>
 ## Janeway 
@@ -1052,7 +1140,7 @@ See: <https://www.openlibhums.org/site/janeway/>
 ## Journal Transfers 
 > Transfer of journal between publishers. Often happens around the start of the year. Can mean big changes in metadata. 
 
-- Type of [ScholCommTopic](#ScholCommTopic) 
+- Type of [Scholarly Communication Topic](#ScholCommTopic) 
 
 <a name='Journalology'></a>
 ## Journalology 
@@ -1080,14 +1168,22 @@ See: <https://www.doi.or.kr/wordpress/#content>
 - Type of [DOI Registration Agency](#DoiRegistrationAgency) 
 
 <a name='KevinPatrick'></a>
-## KevinPatrick 
+## Kevin Patrick 
 - Type of [Research Integrity Sleuth](#Sleuth) 
 
 <a name='KnowledgeFutures'></a>
 ## Knowledge Futures 
 
+### Other 
+- Homepage [https://www.knowledgefutures.org/](https://www.knowledgefutures.org/) 
+
+
 <a name='Kudos'></a>
-## https://map.pardalotus.tech/Kudos 
+## Kudos 
+
+### Other 
+- Homepage [https://www.growkudos.com/](https://www.growkudos.com/) 
+
 
 <a name='LaReferencia'></a>
 ## La Referencia 
@@ -1118,7 +1214,7 @@ See: <https://librarytechnology.org/>
 ### References 
 - [Blog](#Blog) http://www.w3.org/2000/01/rdf-schema#subClassOf ～
 - [Newsletter](#Newsletter) http://www.w3.org/2000/01/rdf-schema#subClassOf ～
-- [PodcastSeries](#PodcastSeries) http://www.w3.org/2000/01/rdf-schema#subClassOf ～
+- [Podcast Series](#PodcastSeries) http://www.w3.org/2000/01/rdf-schema#subClassOf ～
 
 
 <a name='LondonBookFair'></a>
@@ -1182,7 +1278,7 @@ See: <https://www.rfc-editor.org/rfc/rfc7089.txt>
 ## Metadata 
 > Scholarly metadata. Information about content. 
 
-- Type of [ScholCommTopic](#ScholCommTopic) 
+- Type of [Scholarly Communication Topic](#ScholCommTopic) 
 ### References 
 - [MetadataConverter](#MetadataConverter) Related to ～
 
@@ -1205,21 +1301,22 @@ See: <https://www.rfc-editor.org/rfc/rfc7089.txt>
 
 <a name='MidnightAtTheCassablanca'></a>
 ## Midnight At The Cassablanca 
-- Type of [PodcastSeries](#PodcastSeries) 
+- Type of [Podcast Series](#PodcastSeries) 
 
 <a name='MolecularConnections'></a>
 ## Molecular Connections 
 
 <a name='MultipleResolution'></a>
-## MultipleResolution 
-- Type of [ScholCommTopic](#ScholCommTopic) 
+## Multiple Resolution 
+- Type of [Scholarly Communication Topic](#ScholCommTopic) 
 
 <a name='N2T'></a>
-## N2T 
+## Name-to-Thing (N2T) Resolver 
 - Type of [Resolver](#Resolver) 
 
 ### Other 
-- Supports [ARK](#ARK) 
+- Supports [Archival Resource Key (ARK)](#ARK) 
+- Homepage [https://n2t.net/](https://n2t.net/) 
 
 
 <a name='NISO'></a>
@@ -1233,7 +1330,7 @@ See: <https://www.rfc-editor.org/rfc/rfc7089.txt>
 
 
 <a name='NLNet'></a>
-## NLNet 
+## NLnet Foundation 
 See: <https://nlnet.nl/> 
 
 ### References 
@@ -1251,7 +1348,7 @@ See: <https://nlnet.nl/>
 
 
 <a name='Nikau'></a>
-## Nikau 
+## Nikau Consulting 
 See: <https://nikau.consulting/> 
 
 ### References 
@@ -1299,6 +1396,7 @@ See: <https://nikau.consulting/>
 
 ### Other 
 - Homepage [https://pkp.sfu.ca/software/ojs/](https://pkp.sfu.ca/software/ojs/) 
+- Maintained By [PKP](#PKP) 
 
 
 <a name='OP'></a>
@@ -1316,6 +1414,8 @@ See: <https://op.europa.eu/en/home>
 
 <a name='ORCID'></a>
 ## ORCID 
+> Open Identifier for authors 
+
 - Type of [Persistent Identifier (PID)](#PID) 
 
 ### Other 
@@ -1346,9 +1446,10 @@ See: <https://lov.linkeddata.es/dataset/lov>
 - [SKOS: Simple Knowledge Organization Format](#SKOS) 
 - [Dublin Core](#DublinCore) 
 - [Schema.org](#SchemaOrg) 
-- [Wikidata](#Wikidata) 
+- [Wikidata Ontology](#Wikidata) 
 - [BIBFRAME](#BIBFRAME) 
 
+- Type of [Introductory Topic](#Intro) 
 
 <a name='OpenAccess'></a>
 ## Open Access 
@@ -1368,7 +1469,7 @@ See: <https://lov.linkeddata.es/dataset/lov>
 
 
 <a name='OpenAire'></a>
-## OpenAire 
+## OpenAIRE 
 
 <a name='OpenAlex'></a>
 ## OpenAlex 
@@ -1379,7 +1480,7 @@ See: <https://lov.linkeddata.es/dataset/lov>
 
 
 <a name='OpenAlexIds'></a>
-## OpenAlexIds 
+## OpenAlex IDs 
 
 <a name='OpenApi'></a>
 ## OpenApi 
@@ -1397,7 +1498,7 @@ See: <https://lov.linkeddata.es/dataset/lov>
 
 
 <a name='OpenData'></a>
-## OpenData 
+## Open Data 
 
 <a name='OpenFunderRegistry'></a>
 ## Open Funder Registry AKA Fundref 
@@ -1437,13 +1538,14 @@ See: <https://open-science-monitoring.org/>
 
 
 <a name='OpenUrl'></a>
-## OpenUrl 
+## OpenURL 
 - Type of [Standard](#Standard) 
 
 <a name='Organization'></a>
 ## Organization 
 ### Instances 
 - [CERN](#CERN) 
+- [CDL](#CDL) 
 
 - Type of [Introductory Topic](#Intro) 
 
@@ -1479,28 +1581,46 @@ See: <https://open-science-monitoring.org/>
 ## Persistent Identifier (PID) 
 ### Instances 
 - [DOI](#DOI) 
-- [ARK](#ARK) 
+- [Archival Resource Key (ARK)](#ARK) 
+- [Handle System](#Handle) 
+- [ROR](#ROR) 
 - [ORCID](#ORCID) 
+- [RAiD (Research Activity Identifier)](#RAID) 
 - [ISNI](#ISNI) 
 - [ISBN](#ISBN) 
 - [ISSN](#ISSN) 
 - [Wikidata Q ID](#WikiDataId) 
+- [ISTEX](#ISTEX) 
+
+- Type of [Introductory Topic](#Intro) 
+
+### Other 
+- http://www.w3.org/2000/01/rdf-schema#subClassOf [Topic](#Topic) 
+- http://www.w3.org/2000/01/rdf-schema#subClassOf [Identifier](#Identifier) 
+
+### References 
+- [Identifier](#Identifier) f:seeAlso ～
 
 
 <a name='PKP'></a>
 ## PKP 
+> Public Knowledge Project maintain Open Journal System 
+
 
 ### Other 
 - Signatory [POSI](#POSI) 
 - Homepage [https://pkp.sfu.ca/](https://pkp.sfu.ca/) 
 
+### References 
+- [OJS](#OJS) Maintained By ～
+
 
 <a name='PLOS'></a>
 ## PLOS 
-- Type of [Publisher](https://schema.org/Publisher) 
+- Type of [Publisher](#Publisher) 
 
 ### Other 
-- Uses [EditorialManager](#EditorialManager) 
+- Uses [Editorial Manager](#EditorialManager) 
 - Uses [Aperta](#Aperta) 
 - Access [Open Access](#OpenAccess) 
 - Homepage [https://plos.org/](https://plos.org/) 
@@ -1508,6 +1628,13 @@ See: <https://open-science-monitoring.org/>
 
 <a name='POSI'></a>
 ## POSI 
+> Principles of Open Scholarly Infrastructure 
+
+- Type of [Initative or Topic](#Initiative) 
+
+### Other 
+- Homepage [https://openinfrastructure.org](https://openinfrastructure.org) 
+
 ### References 
 - [Data Dryad](#DataDryad) Signatory ～
 - [Crossref](#Crossref) Signatory ～
@@ -1538,8 +1665,12 @@ See: <https://open-science-monitoring.org/>
 See: <https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator> 
 
 
+### Other 
+- Homepage [https://purl.archive.org/](https://purl.archive.org/) 
+
+
 <a name='Papers'></a>
-## Papers 
+## Papers (reference manager) 
 
 ### Other 
 - https://schema.org/parentOrganization [DigitalScience](#DigitalScience) 
@@ -1550,6 +1681,7 @@ See: <https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator>
 
 ### Other 
 - Signatory [POSI](#POSI) 
+- Homepage [https://peercommunityin.org/](https://peercommunityin.org/) 
 
 
 <a name='PeerRef'></a>
@@ -1562,14 +1694,18 @@ See: <https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator>
 ## Plan S 
 - Type of [Initative or Topic](#Initiative) 
 
+### Other 
+- Homepage [https://www.coalition-s.org/](https://www.coalition-s.org/) 
+
+
 <a name='PlumX'></a>
-## https://map.pardalotus.tech/PlumX 
+## PlumX 
 See: <https://www.elsevier.com/insights/metrics/plumx> 
 
 - Type of [MetricsPlatform](#MetricsPlatform) 
 
 <a name='PodcastSeries'></a>
-## PodcastSeries 
+## Podcast Series 
 ### Instances 
 - [Midnight At The Cassablanca](#MidnightAtTheCassablanca) 
 - [Everything Hertz](#EverythingHertz) 
@@ -1584,6 +1720,10 @@ See: <https://www.elsevier.com/insights/metrics/plumx>
 <a name='PreReview'></a>
 ## PreReview 
 
+### Other 
+- Homepage [https://prereview.org/](https://prereview.org/) 
+
+
 <a name='PreprintServer'></a>
 ## PreprintServer 
 
@@ -1596,11 +1736,15 @@ See: <https://www.proquest.com/>
 - Homepage [https://www.proquest.com/](https://www.proquest.com/) 
 
 ### References 
-- [Refworks](#Refworks) Parent ～
+- [RefWorks](#Refworks) Parent ～
 
 
 <a name='ProjectMuse'></a>
 ## ProjectMuse 
+
+### Other 
+- Homepage [https://muse.jhu.edu/](https://muse.jhu.edu/) 
+
 
 <a name='Proprietory'></a>
 ## Proprietory Code 
@@ -1609,7 +1753,7 @@ See: <https://www.proquest.com/>
 
 
 <a name='Protocol'></a>
-## Protocol 
+## Research Protocol 
 
 <a name='ProvO'></a>
 ## PROV-O 
@@ -1640,9 +1784,23 @@ See: <https://www.knowledgefutures.org/updates/2025-06-update/>
 
 - Type of [Defunct Organization or Service](#Defunct) 
 
+<a name='Publisher'></a>
+## Publisher 
+### Instances 
+- [PLOS](#PLOS) 
+- [Hindawi](#Hindawi) 
+- [Wiley](#Wiley) 
+- [Taylor and Francis](#TaylorAndFrancis) 
+- [Elsevier](#Elsevier) 
+- [SpringerNature](#SpringerNature) 
+- [Blackwell](#Blackwell) 
+- [ELife](#ELife) 
+- [EuropePMC](#EuropePMC) 
+
+
 <a name='PublisherSpeakPodcast'></a>
 ## PublisherSpeakPodcast 
-- Type of [PodcastSeries](#PodcastSeries) 
+- Type of [Podcast Series](#PodcastSeries) 
 
 ### Other 
 - Homepage [https://www.youtube.com/@ThePublisherspeakPodcast](https://www.youtube.com/@ThePublisherspeakPodcast) 
@@ -1651,7 +1809,7 @@ See: <https://www.knowledgefutures.org/updates/2025-06-update/>
 <a name='PublishingPlatform'></a>
 ## Publishing Platform (manuscript tracking, peer review, etc) 
 ### Instances 
-- [EditorialManager](#EditorialManager) 
+- [Editorial Manager](#EditorialManager) 
 - [Janeway](#Janeway) 
 
 - Type of [Introductory Topic](#Intro) 
@@ -1663,11 +1821,20 @@ See: <https://www.knowledgefutures.org/updates/2025-06-update/>
 <a name='Publons'></a>
 ## Publons 
 
+### Other 
+- Homepage [https://publons.com/](https://publons.com/) 
+
+
 <a name='RAID'></a>
-## RAID 
+## RAiD (Research Activity Identifier) 
+- Type of [Persistent Identifier (PID)](#PID) 
 
 <a name='RDA'></a>
-## RDA 
+## Research Data Alliance (RDA) 
+
+### Other 
+- Homepage [https://www.rd-alliance.org/](https://www.rd-alliance.org/) 
+
 
 <a name='RDF'></a>
 ## RDF 
@@ -1704,12 +1871,22 @@ See: <https://sites.aub.edu.lb/lmeho/ri2/>
 
 <a name='ROR'></a>
 ## ROR 
+> Open Identifier for organizations 
+
+- Type of [Persistent Identifier (PID)](#PID) 
 
 ### Other 
 - Homepage [https://ror.org/](https://ror.org/) 
 
 ### References 
 - [Open Funder Registry AKA Fundref](#OpenFunderRegistry) Related ～
+
+
+<a name='RRID'></a>
+## RRIDs (Research Resource Identifiers) 
+
+### Other 
+- Homepage [https://www.rrids.org/](https://www.rrids.org/) 
 
 
 <a name='ReadCube'></a>
@@ -1735,13 +1912,13 @@ See: <https://sites.aub.edu.lb/lmeho/ri2/>
 ## References 
 > References between scholarly works (aka citations) 
 
-- Type of [ScholCommTopic](#ScholCommTopic) 
+- Type of [Scholarly Communication Topic](#ScholCommTopic) 
 ### References 
-- [Refworks](#Refworks) Related to ～
+- [RefWorks](#Refworks) Related to ～
 
 
 <a name='Refworks'></a>
-## Refworks 
+## RefWorks 
 See: <https://refworks.proquest.com/learn-more/> 
 
 
@@ -1762,13 +1939,13 @@ See: <https://refworks.proquest.com/learn-more/>
 
 
 <a name='ResearchSquare'></a>
-## ResearchSquare 
+## Research Square 
 
 <a name='ResourceSync'></a>
 ## ResourceSync 
 
 <a name='RetractionWatch'></a>
-## RetractionWatch 
+## Retraction Watch 
 
 ### Other 
 - indexedBy [Crossref](#Crossref) 
@@ -1776,7 +1953,7 @@ See: <https://refworks.proquest.com/learn-more/>
 
 
 <a name='RobotsCooking'></a>
-## RobotsCooking 
+## Robots Cooking 
 See: <https://www.robotscooking.com/> 
 
 - Type of [Blog](#Blog) 
@@ -1786,7 +1963,7 @@ See: <https://www.robotscooking.com/>
 - Type of [Platform](#Platform) 
 
 <a name='RubricPeerReview'></a>
-## RubricPeerReview 
+## Rubric-based Peer Review 
 
 <a name='SCOPUS'></a>
 ## SCOPUS 
@@ -1820,6 +1997,10 @@ See: <https://www.robotscooking.com/>
 <a name='STM'></a>
 ## STM 
 - Type of [Society or Association](#Society) 
+
+### Other 
+- Homepage [https://stm-assoc.org/](https://stm-assoc.org/) 
+
 ### References 
 - [Distributed Usage Logging (DUL)](#DUL) acquiredBy ～
 
@@ -1838,12 +2019,12 @@ See: <https://www.robotscooking.com/>
 - Type of [Ontology or Taxonomy](#Ontology) 
 
 <a name='ScholCommTopic'></a>
-## ScholCommTopic 
+## Scholarly Communication Topic 
 ### Instances 
 - [Integrity](#Integrity) 
 - [Journal Transfers](#JournalTransfers) 
-- [CoAccess](#CoAccess) 
-- [MultipleResolution](#MultipleResolution) 
+- [Co-Access](#CoAccess) 
+- [Multiple Resolution](#MultipleResolution) 
 - [Afiliation](#Afiliation) 
 - [Content](#Content) 
 - [Metadata](#Metadata) 
@@ -1861,6 +2042,7 @@ See: <https://www.robotscooking.com/>
 
 ### Other 
 - acquiredBy [Silverchair](#Silverchair) 
+- Homepage [https://clarivate.com/products/scientific-and-academic-research/research-publishing-solutions/scholarone/](https://clarivate.com/products/scientific-and-academic-research/research-publishing-solutions/scholarone/) 
 
 
 <a name='ScholarlyAngels'></a>
@@ -1878,13 +2060,14 @@ See: <https://scholarlykitchen.sspnet.org/>
 
 <a name='Scholastica'></a>
 ## Scholastica 
+- Type of [ServiceProvider](#ServiceProvider) 
 
 ### Other 
 - Homepage [https://scholasticahq.com/](https://scholasticahq.com/) 
 
 
 <a name='Sci-Rep'></a>
-## Sci-Rep 
+## Scientific Reports 
 
 <a name='SciPost'></a>
 ## SciPost 
@@ -1901,7 +2084,7 @@ See: <https://www.science.org/news/scienceinsider>
 - Type of [https://schema.org/Blog](https://schema.org/Blog) 
 
 <a name='ScientificReports'></a>
-## ScientificReports 
+## Scientific Reports 
 
 <a name='Sciety'></a>
 ## Sciety 
@@ -1913,9 +2096,15 @@ See: <https://www.science.org/news/scienceinsider>
 
 <a name='SciteAi'></a>
 ## Scite.ai 
+- Type of [ServiceProvider](#ServiceProvider) 
+
+### Other 
+- Homepage [https://scite.ai/](https://scite.ai/) 
+
 
 <a name='Scitility'></a>
 ## Scitility 
+- Type of [ServiceProvider](#ServiceProvider) 
 
 <a name='Service'></a>
 ## Service 
@@ -1927,14 +2116,15 @@ See: <https://www.science.org/news/scienceinsider>
 ### References 
 - [Publishing Platform (manuscript tracking, peer review, etc)](#PublishingPlatform) http://www.w3.org/2000/01/rdf-schema#subClassOf ～
 - [Reading, commenting, sharing platform](#ReadingPlatform) http://www.w3.org/2000/01/rdf-schema#subClassOf ～
-- [AbstractingAndIndexing](#AbstractingAndIndexing) http://www.w3.org/2000/01/rdf-schema#subClassOf ～
+- [Abstracting and Indexing Service](#AbstractingAndIndexing) http://www.w3.org/2000/01/rdf-schema#subClassOf ～
 
 
 <a name='Shibboleth'></a>
-## Shibboleth 
+## Shibboleth (authentication system) 
 
 <a name='Signals'></a>
 ## Research Signals 
+- Type of [ServiceProvider](#ServiceProvider) 
 
 <a name='Signatory'></a>
 ## Signatory 
@@ -1942,13 +2132,20 @@ See: <https://www.science.org/news/scienceinsider>
 
 <a name='Signposting'></a>
 ## Signposting the scholarly web 
-See: <https://signposting.org/> 
-
 See: <https://signposting.org/FAIR/> 
+
+
+### Other 
+- Homepage [https://signposting.org/](https://signposting.org/) 
 
 
 <a name='Silverchair'></a>
 ## Silverchair 
+- Type of [ServiceProvider](#ServiceProvider) 
+
+### Other 
+- Homepage [https://www.silverchair.com/](https://www.silverchair.com/) 
+
 ### References 
 - [ScholarOne](#ScholarOne) acquiredBy ～
 
@@ -1967,10 +2164,10 @@ See: <https://signposting.org/FAIR/>
 <a name='Sleuth'></a>
 ## Research Integrity Sleuth 
 ### Instances 
-- [Cheshire](#Cheshire) 
-- [GuillaumeCabanac](#GuillaumeCabanac) 
-- [KevinPatrick](#KevinPatrick) 
-- [AnnaAbalkina](#AnnaAbalkina) 
+- [Cheshire (research integrity sleuth)](#Cheshire) 
+- [Guillaume Cabanac](#GuillaumeCabanac) 
+- [Kevin Patrick](#KevinPatrick) 
+- [Anna Abalkina](#AnnaAbalkina) 
 
 
 ### Other 
@@ -2001,9 +2198,12 @@ See: <https://signposting.org/FAIR/>
 
 <a name='SpecialIssue'></a>
 ## SpecialIssue 
+> An issue of a journal dedicated to a specific topic or theme 
+
 
 <a name='SpringerNature'></a>
 ## SpringerNature 
+- Type of [Publisher](#Publisher) 
 
 ### Other 
 - Homepage [https://www.springernature.com/](https://www.springernature.com/) 
@@ -2012,7 +2212,7 @@ See: <https://signposting.org/FAIR/>
 <a name='Standard'></a>
 ## Standard 
 ### Instances 
-- [OpenUrl](#OpenUrl) 
+- [OpenURL](#OpenUrl) 
 
 
 ### Other 
@@ -2021,6 +2221,7 @@ See: <https://signposting.org/FAIR/>
 
 <a name='SubscribeToOpen'></a>
 ## SubscribeToOpen 
+- Type of [Initative or Topic](#Initiative) 
 
 <a name='SymplecticElements'></a>
 ## Symplectic Elements 
@@ -2030,7 +2231,7 @@ See: <https://signposting.org/FAIR/>
 
 
 <a name='TEI'></a>
-## TEI 
+## Text Encoding Initiative (TEI) 
 See: <https://tei-c.org/> 
 
 ### References 
@@ -2039,20 +2240,24 @@ See: <https://tei-c.org/>
 
 <a name='TaylorAndFrancis'></a>
 ## Taylor and Francis 
-- Type of [Publisher](https://schema.org/Publisher) 
+- Type of [Publisher](#Publisher) 
 
 ### Other 
 - Homepage [https://taylorandfrancis.com/](https://taylorandfrancis.com/) 
 
 ### References 
-- [FF1000](#FF1000) Parent ～
+- [F1000](#FF1000) Parent ～
 
 
 <a name='ThompsonReuters'></a>
-## ThompsonReuters 
+## Thomson Reuters 
 
 <a name='Thoth'></a>
 ## Thoth 
+
+### Other 
+- Homepage [https://thoth.pub/](https://thoth.pub/) 
+
 
 <a name='Tool'></a>
 ## Tool 
@@ -2074,14 +2279,19 @@ See: <https://tei-c.org/>
 - [Entity](#Entity) http://www.w3.org/2000/01/rdf-schema#subClassOf ～
 - [Standard](#Standard) http://www.w3.org/2000/01/rdf-schema#subClassOf ～
 - [Literature](#Literature) http://www.w3.org/2000/01/rdf-schema#subClassOf ～
-- [ScholCommTopic](#ScholCommTopic) http://www.w3.org/2000/01/rdf-schema#subClassOf ～
+- [Scholarly Communication Topic](#ScholCommTopic) http://www.w3.org/2000/01/rdf-schema#subClassOf ～
 - [Service](#Service) http://www.w3.org/2000/01/rdf-schema#subClassOf ～
 - [Identifier](#Identifier) http://www.w3.org/2000/01/rdf-schema#subClassOf ～
+- [Persistent Identifier (PID)](#PID) http://www.w3.org/2000/01/rdf-schema#subClassOf ～
 - [Tool](#Tool) http://www.w3.org/2000/01/rdf-schema#subClassOf ～
 
 
 <a name='TurnItIn'></a>
-## TurnItIn 
+## Turnitin 
+
+### Other 
+- Homepage [https://www.turnitin.com/](https://www.turnitin.com/) 
+
 
 <a name='Turtle'></a>
 ## Turtle 
@@ -2102,12 +2312,16 @@ See: <https://wiki.lyrasis.org/display/VIVODOC/All+Documentation>
 
 - Type of [Ontology or Taxonomy](#Ontology) 
 
+### Other 
+- Homepage [https://vivoweb.org/](https://vivoweb.org/) 
+
+
 <a name='Wax'></a>
 ## Wax 
 
 ### Other 
-- CreatedBy [NLNet](#NLNet) 
-- CreatedBy [Nikau](#Nikau) 
+- CreatedBy [NLnet Foundation](#NLNet) 
+- CreatedBy [Nikau Consulting](#Nikau) 
 
 
 <a name='WebOfScience'></a>
@@ -2123,6 +2337,7 @@ See: <https://wiki.lyrasis.org/display/VIVODOC/All+Documentation>
 
 ### Other 
 - Signatory [Barcelona Declaration on Open Research Information](#Barcelona) 
+- Homepage [https://wellcome.org/](https://wellcome.org/) 
 
 
 <a name='WikiCite'></a>
@@ -2140,7 +2355,7 @@ See: <http://wikicite.org/>
 
 
 <a name='Wikidata'></a>
-## Wikidata 
+## Wikidata Ontology 
 - Type of [Ontology or Taxonomy](#Ontology) 
 
 ### Other 
@@ -2156,7 +2371,7 @@ See: <http://wikicite.org/>
 
 <a name='Wiley'></a>
 ## Wiley 
-- Type of [Publisher](https://schema.org/Publisher) 
+- Type of [Publisher](#Publisher) 
 
 ### Other 
 - Homepage [https://www.wiley.com/](https://www.wiley.com/) 
@@ -2167,6 +2382,10 @@ See: <http://wikicite.org/>
 
 <a name='WorldCat'></a>
 ## WorldCat 
+
+### Other 
+- Homepage [https://search.worldcat.org/](https://search.worldcat.org/) 
+
 
 <a name='WriteFull'></a>
 ## WriteFull 
@@ -2200,18 +2419,6 @@ See: <https://about.zenodo.org/>
 ## dARK 
 
 ### Other 
-- BasedOn [ARK](#ARK) 
-
-
-<a name='https://schema.org/Publisher'></a>
-## Publisher 
-### Instances 
-- [PLOS](#PLOS) 
-- [Hindawi](#Hindawi) 
-- [Wiley](#Wiley) 
-- [Taylor and Francis](#TaylorAndFrancis) 
-- [Elsevier](#Elsevier) 
-- [ELife](#ELife) 
-- [EuropePMC](#EuropePMC) 
+- BasedOn [Archival Resource Key (ARK)](#ARK) 
 
 

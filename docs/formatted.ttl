@@ -1,6 +1,7 @@
 BASE <https://map.pardalotus.tech/>
 PREFIX ns1: <https://map.pardalotus.tech/>
 PREFIX ns2: <https://www.w3.org/TR/owl-ref/#>
+PREFIX ns3: <f:>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
@@ -30,9 +31,11 @@ rdfs:seeAlso
     a <Society> ;
     rdfs:label "Association of Learned and Professional Society Publishers (ALPSPS)" ;
     rdfs:seeAlso <https://www.alpsp.org/> ;
+    <Homepage> <https://www.alpsp.org/> ;
 .
 
 <AbstractingAndIndexing>
+    rdfs:label "Abstracting and Indexing Service" ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Indexing_and_abstracting_service> ;
     rdfs:subClassOf <Service> ;
 .
@@ -55,7 +58,10 @@ rdfs:seeAlso
 
 <Afiliation>
     a <ScholCommTopic> ;
-    rdfs:comment "Afiliation of an author, i.e. which instutition they're working for. Authors can change afiliations, so this can be recorded against the Work at the time of publication" ;
+    rdfs:comment "Afiliation of an author, i.e. which instutition they're working for. Authors can change afiliations, so this can be recorded against the Work at the time of publication. Affiliation can be indicated by an organisation identifier, or linked via an author's ORCID ID" ;
+    rdfs:seeAlso
+        <ORCID> ,
+        <ROR> ;
 .
 
 <AiritiDoi>
@@ -78,6 +84,7 @@ rdfs:seeAlso
 
 <AnnaAbalkina>
     a <Sleuth> ;
+    rdfs:label "Anna Abalkina" ;
 .
 
 <Arxiv>
@@ -87,6 +94,7 @@ rdfs:seeAlso
 
 <Atypon>
     rdfs:label "Atypon" ;
+    <Homepage> <https://www.atypon.com/> ;
 .
 
 <BackgroundReading>
@@ -116,9 +124,11 @@ rdfs:seeAlso
 
 <BioOne>
     rdfs:label "BioOne" ;
+    <Homepage> <https://bioone.org/> ;
 .
 
 <Blackwell>
+    a <Publisher> ;
     rdfs:label "Blackwell" ;
 .
 
@@ -140,11 +150,14 @@ rdfs:seeAlso
 .
 
 <CDL>
+    a <Organization> ;
     rdfs:label "CDL" ;
+    rdfs:comment "California Digital Library, involved in a lot of open infrastructure" ;
 .
 
 <CLOCKSS>
     rdfs:label "CLOCKSS" ;
+    <Homepage> <https://clockss.org/> ;
     <Signatory> <POSI> ;
     <Topic> <Preservation> ;
 .
@@ -156,7 +169,9 @@ rdfs:seeAlso
 .
 
 <CNRI>
-    rdfs:label "CNRI" ;
+    rdfs:label
+        "CNRI" ,
+        "Corporation for National Research Initiatives (CNRI)" ;
     rdfs:related
         <DOI> ,
         <DONA> ;
@@ -199,6 +214,7 @@ rdfs:seeAlso
         <https://credit.niso.org/> ,
         <https://groups.niso.org/higherlogic/ws/public/download/31067/CRediT_Taxonomy_Terms_and_Definitions_list> ;
     <CreatedBy> <NISO> ;
+    <Homepage> <https://credit.niso.org/> ;
     <ImplementedBy> <Crossref> ;
 .
 
@@ -216,15 +232,16 @@ rdfs:seeAlso
 .
 
 <CascadeJournal>
-    rdfs:label "CascadeJournal" ;
+    rdfs:label "Cascade Journal" ;
 .
 
 <Cassini>
-    rdfs:label "Cassini" ;
+    rdfs:label "Cassini Publishing Platform" ;
 .
 
 <Cheshire>
     a <Sleuth> ;
+    rdfs:label "Cheshire (research integrity sleuth)" ;
 .
 
 <ChineseDoi>
@@ -239,6 +256,7 @@ rdfs:seeAlso
 .
 
 <Clarivate>
+    a <ServiceProvider> ;
     rdfs:label "Clarivate" ;
     <Homepage> <https://clarivate.com/> ;
 .
@@ -251,14 +269,16 @@ rdfs:seeAlso
 
 <CoAccess>
     a <ScholCommTopic> ;
+    rdfs:label "Co-Access" ;
 .
 
 <Coko>
     rdfs:label "Coko" ;
+    <Homepage> <https://coko.foundation/> ;
 .
 
 <CommercialData>
-    rdfs:label "CommercialData" ;
+    rdfs:label "Commercial Data" ;
 .
 
 <ContentNegotiation>
@@ -328,7 +348,9 @@ rdfs:seeAlso
 .
 
 <DeltaThink>
+    a <ServiceProvider> ;
     rdfs:label "DeltaThink" ;
+    <Homepage> <https://www.deltathink.com/> ;
 .
 
 <Dimensions>
@@ -344,7 +366,7 @@ rdfs:seeAlso
 .
 
 <ELife>
-    a schema:Publisher ;
+    a <Publisher> ;
     rdfs:label "ELife" ;
     <Access> <OpenAccess> ;
     <Homepage> <https://elifesciences.org/> ;
@@ -362,7 +384,7 @@ rdfs:seeAlso
 .
 
 <EuropePMC>
-    a schema:Publisher ;
+    a <Publisher> ;
     rdfs:label "EuropePMC" ;
     <Homepage> <https://europepmc.org/> ;
     <Signatory> <POSI> ;
@@ -375,7 +397,7 @@ rdfs:seeAlso
 
 <ExOrdo>
     rdfs:label "Ex Ordo" ;
-    schema:seeAlso <https://www.exordo.com/> ;
+    <Homepage> <https://www.exordo.com/> ;
 .
 
 <FAIR>
@@ -383,6 +405,7 @@ rdfs:seeAlso
 .
 
 <FF1000>
+    rdfs:label "F1000" ;
     <Parent> <TaylorAndFrancis> ;
 .
 
@@ -414,6 +437,9 @@ rdfs:seeAlso
 .
 
 <GROBID>
+    rdfs:label "GROBID" ;
+    rdfs:comment "Machine learning library for extracting bibliographic data from PDFs" ;
+    <Homepage> <https://grobid.org/> ;
     <Implements> <TEI> ;
 .
 
@@ -448,6 +474,7 @@ rdfs:seeAlso
 
 <GuillaumeCabanac>
     a <Sleuth> ;
+    rdfs:label "Guillaume Cabanac" ;
 .
 
 <HAL+>
@@ -464,7 +491,7 @@ rdfs:seeAlso
 .
 
 <HHMI>
-    rdfs:label "HHMI" ;
+    rdfs:label "Howard Hughes Medical Institute (HHMI)" ;
 .
 
 <HIndex>
@@ -473,13 +500,14 @@ rdfs:seeAlso
 .
 
 <HighWirePress>
-    rdfs:label "HighWirePress" ;
+    rdfs:label "HighWire Press" ;
+    <Homepage> <https://www.highwirepress.com/> ;
 .
 
 <Hindawi>
     a
         <Defunct> ,
-        schema:Publisher ;
+        <Publisher> ;
     <Access> <OpenAccess> ;
     <Homepage> <https://hindawi.com/> ;
     <acquiredBy> <Wiley> ;
@@ -502,7 +530,7 @@ rdfs:seeAlso
 .
 
 <IOI>
-    rdfs:label "Invest In Open" ;
+    rdfs:label "Invest in Open Infrastructure" ;
 .
 
 <IPRegistry>
@@ -525,7 +553,7 @@ rdfs:seeAlso
 .
 
 <ISTEX>
-    a <Identifier> ;
+    a <PID> ;
     <Homepage> <https://github.com/istex/istex-ark> ;
 .
 
@@ -540,10 +568,12 @@ rdfs:seeAlso
 
 <Ingenta>
     rdfs:label "Ingenta" ;
+    <Homepage> <https://www.ingenta.com/> ;
 .
 
 <IngentaConnect>
-    rdfs:label "IngentaConnect" ;
+    rdfs:label "Ingenta Connect" ;
+    <Homepage> <https://www.ingenta.com/products/content-management/> ;
 .
 
 <InvenioRDM>
@@ -553,7 +583,8 @@ rdfs:seeAlso
 .
 
 <Ithaka>
-    rdfs:label "Ithaka" ;
+    rdfs:label "Ithaka S+R" ;
+    <Homepage> <https://sr.ithaka.org/> ;
 .
 
 <JALC>
@@ -570,13 +601,14 @@ rdfs:seeAlso
 .
 
 <JIF>
-    rdfs:label "JIF" ;
+    rdfs:label "Journal Impact Factor (JIF)" ;
 .
 
 <JOSS>
     a <Journal> ;
     rdfs:label "JOSS" ;
     <Access> <OpenAccess> ;
+    <Homepage> <https://joss.theoj.org/> ;
     <Signatory> <POSI> ;
 .
 
@@ -591,6 +623,9 @@ rdfs:seeAlso
 
 <JabRef>
     a schema:tool ;
+    rdfs:label "JabRef" ;
+    rdfs:comment "Reference management software" ;
+    <Homepage> <https://www.jabref.org/> ;
 .
 
 <Janeway>
@@ -624,10 +659,17 @@ rdfs:seeAlso
 
 <KevinPatrick>
     a <Sleuth> ;
+    rdfs:label "Kevin Patrick" ;
 .
 
 <KnowledgeFutures>
     rdfs:label "Knowledge Futures" ;
+    <Homepage> <https://www.knowledgefutures.org/> ;
+.
+
+<Kudos>
+    rdfs:label "Kudos" ;
+    <Homepage> <https://www.growkudos.com/> ;
 .
 
 <LaReferencia>
@@ -713,10 +755,13 @@ rdfs:seeAlso
 
 <MultipleResolution>
     a <ScholCommTopic> ;
+    rdfs:label "Multiple Resolution" ;
 .
 
 <N2T>
     a <Resolver> ;
+    rdfs:label "Name-to-Thing (N2T) Resolver" ;
+    <Homepage> <https://n2t.net/> ;
     <Supports> <ARK> ;
 .
 
@@ -745,6 +790,7 @@ rdfs:seeAlso
 <OJS>
     rdfs:label "OJS" ;
     <Homepage> <https://pkp.sfu.ca/software/ojs/> ;
+    <MaintainedBy> <PKP> ;
 .
 
 <OP>
@@ -758,12 +804,6 @@ rdfs:seeAlso
     <Signatory> <POSI> ;
 .
 
-<ORCID>
-    a <PID> ;
-    rdfs:label "ORCID" ;
-    <Homepage> <https://orcid.org/> ;
-.
-
 <OSF>
     rdfs:label "Open Science Framework (OSF)" ;
     rdfs:seeAlso <https://osf.io/> ;
@@ -771,7 +811,7 @@ rdfs:seeAlso
 .
 
 <OpenAire>
-    rdfs:label "OpenAire" ;
+    rdfs:label "OpenAIRE" ;
 .
 
 <OpenAlex>
@@ -781,7 +821,7 @@ rdfs:seeAlso
 .
 
 <OpenAlexIds>
-    rdfs:label "OpenAlexIds" ;
+    rdfs:label "OpenAlex IDs" ;
 .
 
 <OpenApi>
@@ -795,7 +835,7 @@ rdfs:seeAlso
 .
 
 <OpenData>
-    rdfs:label "OpenData" ;
+    rdfs:label "Open Data" ;
 .
 
 <OpenFunderRegistry>
@@ -815,6 +855,7 @@ rdfs:seeAlso
 
 <OpenUrl>
     a <Standard> ;
+    rdfs:label "OpenURL" ;
 .
 
 <OriginEditorial>
@@ -833,14 +874,8 @@ rdfs:seeAlso
     <Homepage> <https://www.overton.io/> ;
 .
 
-<PKP>
-    rdfs:label "PKP" ;
-    <Homepage> <https://pkp.sfu.ca/> ;
-    <Signatory> <POSI> ;
-.
-
 <PLOS>
-    a schema:Publisher ;
+    a <Publisher> ;
     <Access> <OpenAccess> ;
     <Homepage> <https://plos.org/> ;
     <Uses>
@@ -851,15 +886,17 @@ rdfs:seeAlso
 <PURL>
     rdfs:label "Persistent uniform resource locator (PURL)" ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator> ;
+    <Homepage> <https://purl.archive.org/> ;
 .
 
 <Papers>
-    rdfs:label "Papers" ;
+    rdfs:label "Papers (reference manager)" ;
     schema:parentOrganization <DigitalScience> ;
 .
 
 <PeerCommunityIn>
     rdfs:label "PeerCommunityIn" ;
+    <Homepage> <https://peercommunityin.org/> ;
     <Signatory> <POSI> ;
 .
 
@@ -874,10 +911,18 @@ rdfs:seeAlso
 <PlanS>
     a <Initiative> ;
     rdfs:label "Plan S" ;
+    <Homepage> <https://www.coalition-s.org/> ;
+.
+
+<PlumX>
+    a <MetricsPlatform> ;
+    rdfs:label "PlumX" ;
+    rdfs:seeAlso <https://www.elsevier.com/insights/metrics/plumx> ;
 .
 
 <PreReview>
     rdfs:label "PreReview" ;
+    <Homepage> <https://prereview.org/> ;
 .
 
 <PreprintServer>
@@ -886,10 +931,11 @@ rdfs:seeAlso
 
 <ProjectMuse>
     rdfs:label "ProjectMuse" ;
+    <Homepage> <https://muse.jhu.edu/> ;
 .
 
 <Protocol>
-    rdfs:label "Protocol" ;
+    rdfs:label "Research Protocol" ;
 .
 
 <ProvO>
@@ -924,14 +970,17 @@ rdfs:seeAlso
 
 <Publons>
     rdfs:label "Publons" ;
+    <Homepage> <https://publons.com/> ;
 .
 
 <RAID>
-    rdfs:label "RAID" ;
+    a <PID> ;
+    rdfs:label "RAiD (Research Activity Identifier)" ;
 .
 
 <RDA>
-    rdfs:label "RDA" ;
+    rdfs:label "Research Data Alliance (RDA)" ;
+    <Homepage> <https://www.rd-alliance.org/> ;
 .
 
 <RI2>
@@ -943,6 +992,11 @@ rdfs:seeAlso
     <About> <Integrity> ;
 .
 
+<RRID>
+    rdfs:label "RRIDs (Research Resource Identifiers)" ;
+    <Homepage> <https://www.rrids.org/> ;
+.
+
 <ReadCube>
     rdfs:label "ReadCube" ;
     <Homepage> <https://www.readcube.com/> ;
@@ -950,6 +1004,7 @@ rdfs:seeAlso
 .
 
 <Refworks>
+    rdfs:label "RefWorks" ;
     rdfs:seeAlso <https://refworks.proquest.com/learn-more/> ;
     <Parent> <ProQuest> ;
     <RelatedTo> <References> ;
@@ -966,7 +1021,7 @@ rdfs:seeAlso
 .
 
 <ResearchSquare>
-    rdfs:label "ResearchSquare" ;
+    rdfs:label "Research Square" ;
 .
 
 <ResourceSync>
@@ -974,12 +1029,14 @@ rdfs:seeAlso
 .
 
 <RetractionWatch>
+    rdfs:label "Retraction Watch" ;
     <Homepage> <https://retractionwatch.com/> ;
     <indexedBy> <Crossref> ;
 .
 
 <RobotsCooking>
     a <Blog> ;
+    rdfs:label "Robots Cooking" ;
     rdfs:seeAlso <https://www.robotscooking.com/> ;
 .
 
@@ -989,7 +1046,7 @@ rdfs:seeAlso
 .
 
 <RubricPeerReview>
-    rdfs:label "RubricPeerReview" ;
+    rdfs:label "Rubric-based Peer Review" ;
 .
 
 <SCOPUS>
@@ -1005,6 +1062,7 @@ rdfs:seeAlso
 
 <ScholarOne>
     rdfs:label "ScholarOne" ;
+    <Homepage> <https://clarivate.com/products/scientific-and-academic-research/research-publishing-solutions/scholarone/> ;
     <acquiredBy> <Silverchair> ;
 .
 
@@ -1020,12 +1078,13 @@ rdfs:seeAlso
 .
 
 <Scholastica>
+    a <ServiceProvider> ;
     rdfs:label "Scholastica" ;
     <Homepage> <https://scholasticahq.com/> ;
 .
 
 <Sci-Rep>
-    rdfs:label "Sci-Rep" ;
+    rdfs:label "Scientific Reports" ;
 .
 
 <SciPost>
@@ -1040,7 +1099,7 @@ rdfs:seeAlso
 .
 
 <ScientificReports>
-    rdfs:label "ScientificReports" ;
+    rdfs:label "Scientific Reports" ;
 .
 
 <Sciety>
@@ -1050,18 +1109,22 @@ rdfs:seeAlso
 .
 
 <SciteAi>
+    a <ServiceProvider> ;
     rdfs:label "Scite.ai" ;
+    <Homepage> <https://scite.ai/> ;
 .
 
 <Scitility>
+    a <ServiceProvider> ;
     rdfs:label "Scitility" ;
 .
 
 <Shibboleth>
-    rdfs:label "Shibboleth" ;
+    rdfs:label "Shibboleth (authentication system)" ;
 .
 
 <Signals>
+    a <ServiceProvider> ;
     rdfs:label "Research Signals" ;
 .
 
@@ -1072,9 +1135,8 @@ rdfs:seeAlso
 
 <Signposting>
     rdfs:label "Signposting the scholarly web" ;
-    rdfs:seeAlso
-        <https://signposting.org/> ,
-        <https://signposting.org/FAIR/> ;
+    rdfs:seeAlso <https://signposting.org/FAIR/> ;
+    <Homepage> <https://signposting.org/> ;
 .
 
 <SingaporeStatement>
@@ -1099,14 +1161,17 @@ rdfs:seeAlso
 
 <SpecialIssue>
     rdfs:label "SpecialIssue" ;
+    rdfs:comment "An issue of a journal dedicated to a specific topic or theme" ;
 .
 
 <SpringerNature>
+    a <Publisher> ;
     rdfs:label "SpringerNature" ;
     <Homepage> <https://www.springernature.com/> ;
 .
 
 <SubscribeToOpen>
+    a <Initiative> ;
     rdfs:label "SubscribeToOpen" ;
 .
 
@@ -1116,15 +1181,17 @@ rdfs:seeAlso
 .
 
 <ThompsonReuters>
-    rdfs:label "ThompsonReuters" ;
+    rdfs:label "Thomson Reuters" ;
 .
 
 <Thoth>
     rdfs:label "Thoth" ;
+    <Homepage> <https://thoth.pub/> ;
 .
 
 <TurnItIn>
-    rdfs:label "TurnItIn" ;
+    rdfs:label "Turnitin" ;
+    <Homepage> <https://www.turnitin.com/> ;
 .
 
 <Vivo>
@@ -1132,9 +1199,11 @@ rdfs:seeAlso
     rdfs:label "VIVO" ;
     rdfs:comment "VIVO is member-supported, open source software and an ontology for representing scholarship" ;
     rdfs:seeAlso <https://wiki.lyrasis.org/display/VIVODOC/All+Documentation> ;
+    <Homepage> <https://vivoweb.org/> ;
 .
 
 <Wax>
+    rdfs:label "Wax" ;
     <CreatedBy>
         <NLNet> ,
         <Nikau> ;
@@ -1148,6 +1217,7 @@ rdfs:seeAlso
 <Wellcome>
     a <Funder> ;
     rdfs:label "Wellcome Trust" ;
+    <Homepage> <https://wellcome.org/> ;
     <Signatory> <Barcelona> ;
 .
 
@@ -1164,7 +1234,9 @@ rdfs:seeAlso
 
 <Wikidata>
     a <Ontology> ;
-    rdfs:label "Wikidata" ;
+    rdfs:label
+        "Wikidata" ,
+        "Wikidata Ontology" ;
     <Homepage> <https://www.wikidata.org/> ;
 .
 
@@ -1175,6 +1247,7 @@ rdfs:seeAlso
 
 <WorldCat>
     rdfs:label "WorldCat" ;
+    <Homepage> <https://search.worldcat.org/> ;
 .
 
 <WriteFull>
@@ -1253,7 +1326,7 @@ rdfs:seeAlso
 .
 
 <DONA>
-    rdfs:label "DONA" ;
+    rdfs:label "Digital Object Numbering Authority (DONA)" ;
     rdfs:related <DOI> ;
 .
 
@@ -1277,10 +1350,12 @@ rdfs:seeAlso
 
 <EditorialManager>
     a <PublishingPlatform> ;
+    rdfs:label "Editorial Manager" ;
+    <Homepage> <https://www.editorialmanager.com/> ;
 .
 
 <Elsevier>
-    a schema:Publisher ;
+    a <Publisher> ;
     rdfs:label "Elsevier" ;
     <Homepage> <https://www.elsevier.com/> ;
 .
@@ -1290,22 +1365,29 @@ rdfs:seeAlso
 .
 
 <Handle>
+    a <PID> ;
+    rdfs:label "Handle System" ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Handle_System> ;
+    <Homepage> <https://www.handle.net/> ;
 .
 
 <Hum>
     a <ServiceProvider> ;
     rdfs:label "Hum" ;
     rdfs:seeAlso <https://www.hum.works/> ;
+    <Homepage> <https://hum.works/> ;
 .
 
 <Identifier>
     a <Intro> ;
+    ns3:seeAlso <PID> ;
+    rdfs:comment "You're probably more interested in Persistent Identifiers (PIDs), but not all identifiers are persistent" ;
     rdfs:subClassOf <Topic> ;
 .
 
 <Individual>
     a <Intro> ;
+    rdfs:label "Individual" ;
     rdfs:subClassOf <Entity> ;
 .
 
@@ -1324,10 +1406,6 @@ rdfs:seeAlso
     a <Schema> ;
 .
 
-<Kudos>
-    rdfs:label <Kudos> ;
-.
-
 <Metadata>
     a <ScholCommTopic> ;
     rdfs:comment "Scholarly metadata. Information about content." ;
@@ -1339,19 +1417,29 @@ rdfs:seeAlso
 .
 
 <NLNet>
+    rdfs:label "NLnet Foundation" ;
     rdfs:seeAlso <https://nlnet.nl/> ;
 .
 
 <Newsletter>
+    rdfs:label "Newsletter" ;
     rdfs:subClassOf <Literature> ;
 .
 
 <Nikau>
+    rdfs:label "Nikau Consulting" ;
     rdfs:seeAlso <https://nikau.consulting/> ;
 .
 
 <OAIPMH>
     rdfs:label "OAI-PMH" ;
+.
+
+<ORCID>
+    a <PID> ;
+    rdfs:label "ORCID" ;
+    rdfs:comment "Open Identifier for authors" ;
+    <Homepage> <https://orcid.org/> ;
 .
 
 <OpenLibHums>
@@ -1360,24 +1448,21 @@ rdfs:seeAlso
     <Access> <DiamondOA> ;
 .
 
-<PlumX>
-    a <MetricsPlatform> ;
-    rdfs:label <PlumX> ;
-    rdfs:seeAlso <https://www.elsevier.com/insights/metrics/plumx> ;
+<PKP>
+    rdfs:label "PKP" ;
+    rdfs:comment "Public Knowledge Project maintain Open Journal System" ;
+    <Homepage> <https://pkp.sfu.ca/> ;
+    <Signatory> <POSI> ;
 .
 
 <ProQuest>
+    rdfs:label "ProQuest" ;
     rdfs:seeAlso <https://www.proquest.com/> ;
     <Homepage> <https://www.proquest.com/> ;
 .
 
 <Proprietory>
     rdfs:label "Proprietory Code" ;
-.
-
-<ROR>
-    rdfs:label "ROR" ;
-    <Homepage> <https://ror.org/> ;
 .
 
 <ReadingPlatform>
@@ -1405,35 +1490,42 @@ rdfs:seeAlso
 <STM>
     a <Society> ;
     rdfs:label "STM" ;
+    <Homepage> <https://stm-assoc.org/> ;
 .
 
 <Silverchair>
+    a <ServiceProvider> ;
     rdfs:label "Silverchair" ;
+    <Homepage> <https://www.silverchair.com/> ;
 .
 
 <Standard>
+    rdfs:label "Standard" ;
     rdfs:subClassOf <Topic> ;
 .
 
 <TEI>
+    rdfs:label "Text Encoding Initiative (TEI)" ;
     rdfs:seeAlso <https://tei-c.org/> ;
 .
 
 <TaylorAndFrancis>
-    a schema:Publisher ;
+    a <Publisher> ;
     rdfs:label "Taylor and Francis" ;
     <Homepage> <https://taylorandfrancis.com/> ;
 .
 
 <Wiley>
-    a schema:Publisher ;
+    a <Publisher> ;
     rdfs:label "Wiley" ;
     <Homepage> <https://www.wiley.com/> ;
 .
 
 <ARK>
     a <PID> ;
+    rdfs:label "Archival Resource Key (ARK)" ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Archival_Resource_Key> ;
+    <Homepage> <https://arks.org/> ;
 .
 
 <Altmetrics>
@@ -1445,6 +1537,8 @@ rdfs:seeAlso
 
 <CERN>
     a <Organization> ;
+    rdfs:label "CERN" ;
+    <Homepage> <https://home.cern/> ;
 .
 
 <Content>
@@ -1453,6 +1547,7 @@ rdfs:seeAlso
 .
 
 <Entity>
+    rdfs:label "Entity" ;
     rdfs:subClassOf <Topic> ;
 .
 
@@ -1470,6 +1565,13 @@ rdfs:seeAlso
     <SerializationFormat> <RDF> ;
 .
 
+<ROR>
+    a <PID> ;
+    rdfs:label "ROR" ;
+    rdfs:comment "Open Identifier for organizations" ;
+    <Homepage> <https://ror.org/> ;
+.
+
 <Society>
     rdfs:label "Society or Association" ;
     rdfs:subClassOf <Organization> ;
@@ -1480,6 +1582,7 @@ rdfs:seeAlso
 .
 
 <Literature>
+    rdfs:label "Literature" ;
     rdfs:subClassOf <Topic> ;
 .
 
@@ -1487,18 +1590,15 @@ rdfs:seeAlso
     rdfs:label "Metric" ;
 .
 
-<Organization>
-    a <Intro> ;
-    rdfs:subClassOf <Entity> ;
-.
-
 <PodcastSeries>
+    rdfs:label "Podcast Series" ;
     rdfs:sameAs <s:PodcastSeries> ;
     rdfs:subClassOf <Literature> ;
 .
 
 <Service>
     a <Intro> ;
+    rdfs:label "Service" ;
     rdfs:subClassOf <Topic> ;
 .
 
@@ -1511,15 +1611,17 @@ rdfs:seeAlso
     rdfs:label "Defunct Organization or Service" ;
 .
 
-<Initiative>
-    rdfs:label "Initative or Topic" ;
-.
-
 <Integrity>
     a <ScholCommTopic> ;
     rdfs:label "Integrity" ;
     rdfs:comment "Research integrity refers to all of the factors that underpin good research practice and promote trust and confidence in the research process - RIO" ;
     rdfs:seeAlso <https://ukrio.org/research-integrity/what-is-research-integrity/> ;
+.
+
+<Organization>
+    a <Intro> ;
+    rdfs:label "Organization" ;
+    rdfs:subClassOf <Entity> ;
 .
 
 <RDF>
@@ -1563,35 +1665,32 @@ rdfs:seeAlso
         <Proprietory> ;
 .
 
-<PID>
-    rdfs:label "Persistent Identifier (PID)" ;
+<Initiative>
+    rdfs:label "Initative or Topic" ;
 .
 
 <Topic>
     rdfs:label "Topic" ;
 .
 
-schema:Publisher
-    rdfs:label "Publisher" ;
-.
-
 <DigitalScience>
     rdfs:label "DigitalScience" ;
+    rdfs:seeAlso <https://www.digital-science.com/blog/2017/11/owns-digital-science-question/> ;
     schema:parentOrganization <Holtzbrinck> ;
-    schema:seeAlso <https://www.digital-science.com/blog/2017/11/owns-digital-science-question/> ;
 .
 
-<Intro>
-    rdfs:label "Introductory Topic" ;
-    rdfs:comment "Topics that are a good way into this map. These are unique or specific to scholarly infrastructure" ;
+<Publisher>
+    rdfs:label "Publisher" ;
 .
 
 <ScholCommTopic>
     a <Intro> ;
+    rdfs:label "Scholarly Communication Topic" ;
     rdfs:subClassOf <Topic> ;
 .
 
 <Ontology>
+    a <Intro> ;
     rdfs:label "Ontology or Taxonomy" ;
     rdfs:comment "An Ontology is a formal method for organizing information. Usually with RDF. Taxonomies talk about types of things, and ontologies talk about specific things. But there's no reason to differentiate here." ;
     rdfs:seeAlso <https://lov.linkeddata.es/dataset/lov> ;
@@ -1601,13 +1700,29 @@ schema:Publisher
     rdfs:label "Open Access" ;
 .
 
+<Intro>
+    rdfs:label "Introductory Topic" ;
+    rdfs:comment "Topics that are a good way into this map. These are unique or specific to scholarly infrastructure" ;
+.
+
 <DoiRegistrationAgency>
     rdfs:label "DOI Registration Agency" ;
+    rdfs:seeAlso "https://www.doi.org/the-community/existing-registration-agencies/" ;
     rdfs:subClassOf <Organization> ;
     <RelatedTo> <DOI> ;
-    schema:seeAlso "https://www.doi.org/the-community/existing-registration-agencies/" ;
+.
+
+<PID>
+    a <Intro> ;
+    rdfs:label "Persistent Identifier (PID)" ;
+    rdfs:subClassOf
+        <Identifier> ,
+        <Topic> ;
 .
 
 <POSI>
+    a <Initiative> ;
     rdfs:label "POSI" ;
+    rdfs:comment "Principles of Open Scholarly Infrastructure" ;
+    <Homepage> <https://openinfrastructure.org> ;
 .
